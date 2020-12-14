@@ -1,0 +1,34 @@
+
+ *{
+     margin: 0;
+ }
+ .hero{
+    background-color: grey;
+ }
+ .content {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./img/fronteEbs.jpg') center no-repeat;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 100px;  
+    -webkit-box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
+box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
+
+}
+#description{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 18px;  
+}
+#azienda{
+    height: 100vh;
+
+}
