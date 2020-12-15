@@ -14,11 +14,12 @@
     background: url('./img/fronteEbs.jpg') center no-repeat;
     font-family: Montserrat;
     text-transform: uppercase;
-    font-size: 100px;  
-    -webkit-box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
-box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
+    font-size: 60px;  
+    font-weight: 900;
 
+}
+.titoloneIniziale{
+    font-weight: 900;
 }
 #description{
     margin-left: 30%;
@@ -31,4 +32,19 @@ box-shadow: 1px 6px 25px -8px rgba(0,0,0,0.75);
 #azienda{
     height: 100vh;
 
+}
+.loStaff{
+        font-family: "Montserrat",sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #FF6C2B;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        position: relative!important;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.5s;
 }
