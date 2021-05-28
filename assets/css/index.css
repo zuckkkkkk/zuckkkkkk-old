@@ -1,0 +1,200 @@
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/assets/font/GothamBook.ttf");
+    }
+    @font-face {
+        font-family: "Cera Pro";
+        src: url("/assets/font/Cera\ Pro\ Medium.otf");
+        }
+*{
+    font-family: 'Gotham', sans-serif;
+
+}
+html{
+    background-color: #282828;
+    overflow-x: hidden;
+}
+body{
+    background-color: #282828;
+}
+#hero{
+    background-color: #282828;
+    height: 100vh;
+}
+.central-text{
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  color: white;
+}
+.slide {
+    line-height: 50px;
+}
+.swappable-text{
+    overflow: hidden;
+    height: 50px;
+}
+ul.slides {
+    margin-left: 10px;
+    list-style-type: none;
+    transform: translateY(50px);
+    padding:0;
+  }
+.nav-link{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.who-are-we{
+    background-color: #282828;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem 0 2rem;
+}
+.services{
+    background-color: #282828;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Cera Pro', sans-serif;
+}
+.services img{
+    height: 200px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: #ff6c2b;
+}
+.title{
+    font-size: 100px;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+.testo{
+    font-size: 18px;
+    text-align: center;
+}
+.lottie-animation{
+    float: left;
+    height: 100vh;
+}
+.who-are-we-bg{
+    position: absolute;
+    width: 40vw;
+    overflow: hidden;
+}
+.services-bg{
+    position: absolute;
+    width: 40vw;
+    overflow: hidden;
+}
+.services-title{
+    font-size: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.cursor {
+    position: fixed;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: scale(1);
+}
+.cursor.active {
+    opacity: 1;
+    transform: scale(0);
+}
+.cursor.menu-active {
+    opacity: 1;
+    transform: scale(0);
+}
+.cursor.hovered {
+    opacity: 1;
+}
+.cursor-follower {
+    position: fixed;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(2px, 2px);
+}
+.cursor-follower.active {
+    opacity: 1;
+    transform: scale(3);
+}
+.cursor-follower.menu-active {
+    opacity: 1;
+    transform: scale(3);
+}
+.cursor-follower.hovered {
+    opacity: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff6c2b;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  .serviceBody{
+      overflow: hidden;
+      background-color: #282828;
+      color: white;
+  }
+  .serviceTitle{
+      margin-top: 10vh;
+      width: 100vw;
+      text-align: center;
+      font-size: 50px;
+  }
+  .serviceContainer{
+      width: 50%;
+      margin: 0 auto;
+  }
