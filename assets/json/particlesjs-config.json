@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 152,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area": 500
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#ff6c2b"
     },
     "shape": {
       "type": "circle",
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#ff6c2b",
       "opacity": 0.4,
       "width": 1
     },
@@ -72,7 +72,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
     updateScroller();  
     window.focus();
     window.addEventListener("resize", onResize);
@@ -33,7 +34,14 @@ $(document).ready(function () {
         autoplay: true, // Optional
         name: "Lottie Who Are We", // Name for future reference. Optional.
       });
-      
+      var animation2 = bodymovin.loadAnimation({
+        container: document.getElementById('lottie-go-down'), // Required
+        path: '/assets/json/lottie-go-down.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Lottie Go Down", // Name for future reference. Optional.
+      });
     });
     var html = document.documentElement;
 var body = document.body;
@@ -96,48 +104,3 @@ function onResize() {
     requestId = requestAnimationFrame(updateScroller);
   }
 }
-// // CURSOR
-// var cursor = $(".cursor"),
-// follower = $(".cursor-follower");
-
-// var posX = 0,
-//     posY = 0;
-
-// var mouseX = 0,
-//     mouseY = 0;
-
-// TweenMax.to({}, 0.006, {
-//   repeat: -1,
-//   onRepeat: function() {
-//     posX += (mouseX - posX) / 9;
-//     posY += (mouseY - posY) / 9;
-
-//     TweenMax.set(follower, {
-//         css: {
-//         left: posX - 12,
-//         top: posY - 12
-//         }
-//     });
-
-//     TweenMax.set(cursor, {
-//         css: {
-//         left: mouseX,
-//         top: mouseY
-//         }
-//     });
-//   }
-// });
-
-// $(document).on("mousemove", function(e) {
-//     mouseX = e.clientX;
-//     mouseY = e.clientY;
-// });
-// // yellow circle
-// $("a").on("mouseenter", function() {
-//     cursor.addClass("active");
-//     follower.addClass("active");
-// });
-// $("a").on("mouseleave", function() {
-//     cursor.removeClass("active");
-//     follower.removeClass("active");
-// });

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>E-BS Energy Billing Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <!-- <link href="assets/css/bootstrap/*" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"
+        integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!--Index js -->
+    <script defer type="text/javascript" src="assets/js/index.js"></script>
+</head>
+<style>
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #282828;
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.main{
+    margin-top: 25vh;
+}
+h1, h2 {
+  margin: 0;
+}
+
+.content-grid {
+  --gridOpacity: 0;
+  --gridScale: 2;
+  --gridTranslate: 5vh;
+  width: 100%;
+}
+
+.content-grid__scroll {
+  min-height: 215vh;
+  position: relative;
+}
+
+.content-grid__sticky {
+  position: sticky;
+  height: calc(100vh + 75px);
+  top: 75px;
+}
+
+.content-grid__items {
+  max-width: 1600px;
+  width: 200vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 36vh);
+  grid-gap: 0.5vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%) scale(var(--gridScale));
+  transform-origin: center top;
+}
+
+.content-grid-title{
+  position: absolute;
+  top: 25vh;
+  line-height: calc(100vh - 6vw *  var(--aspect-ratio));
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  color: white;
+  font-size: calc(6vw * var(--aspect-ratio));
+  opacity: calc(1 - var(--gridOpacity));
+  letter-spacing: 0.15rem;
+}
+
+.grid__item:nth-child(1),
+.grid__item:nth-child(9),
+.grid__item:nth-child(10),
+.grid__item:nth-child(18),
+.grid__item:nth-child(19),
+.grid__item:nth-child(27) {
+  transform: translatey(calc(var(--gridTranslate) * 8));
+}
+
+.grid__item:nth-child(2),
+.grid__item:nth-child(8),
+.grid__item:nth-child(11),
+.grid__item:nth-child(17),
+.grid__item:nth-child(20),
+.grid__item:nth-child(26) {
+  transform: translatey(calc(var(--gridTranslate) * 6));
+}
+
+.grid__item:nth-child(3),
+.grid__item:nth-child(7),
+.grid__item:nth-child(12),
+.grid__item:nth-child(16),
+.grid__item:nth-child(21),
+.grid__item:nth-child(25) {
+  transform: translatey(calc(var(--gridTranslate) * 4));
+}
+
+.grid__item:nth-child(4),
+.grid__item:nth-child(6),
+.grid__item:nth-child(13),
+.grid__item:nth-child(15),
+.grid__item:nth-child(22),
+.grid__item:nth-child(24) {
+  transform: translatey(calc(var(--gridTranslate) * 2));
+}
+
+.grid__item:not(:nth-child(5)) {
+  opacity: var(--gridOpacity);
+}
+
+.band-center-text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  background-color: #282828;
+}
+</style>
+<body>
+    <nav class="position-fixed w-100 navbar navbar-expand-lg" style="z-index: 1001; margin-top: 1rem;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-5" href="/"><img src="assets/img/hand.png" width="32px"
+                style="transform:rotateZ(45deg);"></a>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/who-are-we.html">Chi siamo <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bollette.html">Bollette</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="content-grid">
+          <div class="content-grid-title">
+            <h1>Chi siamo</h1>
+          </div>
+          <div class="content-grid__scroll">
+      
+            <div class="content-grid__sticky">
+      
+              <div class="content-grid__items">
+                <div class="grid__item"><img src="./assets/img/staff/001.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/3.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/003.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/073.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img style="object-fit: contain;  transform: rotate(45deg);"src="./assets/img/hand.png" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/160.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/251.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura2.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/IMG_5648.jpeg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Staff.jpg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/001.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/3.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/003.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/073.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/133.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/160.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/251.JPG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura2.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/IMG_5648.jpeg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Staff.jpg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Cattura2.PNG" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/IMG_5648.jpeg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/Staff.jpg" alt="" class="grid__item_image"></div>
+                <div class="grid__item"><img src="./assets/img/staff/001.JPG" alt="" class="grid__item_image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="band-center-text">
+          <h2>Crediamo nel futuro della contabilizzazione.</h2>
+        </div>
+        <div class="band-center-text">
+            <h2>Siamo un team di giovani.</h2>
+          </div>
+    
+      </div>
+
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget subscribe no-box">
+                                <h5 class="widget-title">E-BS<span></span></h5>
+                                <p>e-bs nasce nel 2018 e qui bisogna metterci una descirizone breve ma non saprei cosa davvero </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Links<span></span></h5>
+                                <ul class="thumbnail-widget">
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Home</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Chi siamo</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Le nostre bollette</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Contattaci</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Iscriviti<span></span></h5>
+                                <p>Lascia qui sotto la tua email</p>
+                                <a class="btn" href="#." target="_blank">Registrati ora</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contattaci<span></span></h5>
+
+                                <p><a href="mailto:assistenza@e-bs.it" title="glorythemes">assistenza@e-bs.it</a></p>
+                                <ul class="social-footer2"></ul>
+                                <li>
+                                    <a>
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                    <a>
+                                        <i class="fab fa-google fa-2x"></i>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>e-bs Energy Billing Services © 2021. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+<script>
+    SmoothScroll({
+  // Scrolling Core
+  animationTime: 400, // [ms]
+  stepSize: 100, // [px]
+
+  // Acceleration
+  accelerationDelta: 50, // 50
+  accelerationMax: 3, // 3
+
+  // Keyboard Settings
+  keyboardSupport: true, // option
+  arrowScroll: 50, // [px]
+
+  // Pulse (less tweakable)
+  // ratio of "tail" to "acceleration"
+  pulseAlgorithm: true,
+  pulseScale: 4,
+  pulseNormalize: 1,
+
+  // Other
+  touchpadSupport: false, // ignore touchpad by default
+  fixedBackground: true,
+  excluded: ""
+});
+
+const gridContent = document.querySelector(".content-grid");
+const gridTitle = gridContent.querySelector(".content-grid-title");
+const gridScroll = gridContent.querySelector(".content-grid__scroll");
+const items = gridContent.querySelectorAll(".grid__item");
+
+const initialValue = {
+  scale: 2,
+  translate: 5
+};
+
+const getScroll = e => {
+  const yNormalized = Math.min(window.scrollY / innerHeight, 1);
+
+  gridContent.style.setProperty("--gridOpacity", yNormalized);
+  gridContent.style.setProperty(
+    "--gridScale",
+    initialValue.scale - yNormalized
+  );
+  gridContent.style.setProperty(
+    "--gridTranslate",
+    5 - initialValue.translate * yNormalized + "vh"
+  );
+  gridTitle.style.setProperty("--gridOpactiy", yNormalized);
+};
+
+window.addEventListener("scroll", e => getScroll(e));
+
+</script>
+</html>

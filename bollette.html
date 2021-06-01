@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style=" height: 100%;
+width: 100%;
+margin: 0!important;
+padding: 0!important;">
+<head>
+    <title>E-BS Energy Billing Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
+    <!-- <link href="assets/css/bootstrap/*" rel="stylesheet"> -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bollette.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Index js -->
+    <!-- <script defer type="text/javascript" src="assets/js/index.js"></script>   -->
+</head>
+<style>
+   button{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ff6c2b;
+    box-sizing: border-box;
+  }
+  .HotspotAnnotation{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 1px;
+    padding: 2px 5px;
+  }
+  /* This keeps child nodes hidden while the element loads */
+  :not(:defined) > * {
+    display: none;
+  }
+</style>
+<body style="overflow-x: hidden;"> 
+    <nav class="position-fixed w-100 navbar navbar-expand-lg" style="z-index: 1001; margin-top: 1rem;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-5" href="/"><img src="assets/img/hand.png" width="32px" style="transform:rotateZ(45deg);"></a>
+      
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/who-are-we.html">Chi siamo <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Servizi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bollette.html">Bollette</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+              </li>
+          </ul>
+        
+        </div>
+      </nav>
+      <model-viewer style="position: absolute; top: 0; left:0;width: 100vw; height: 100vh; "src="./assets/models/BollettaFinal.glb" camera-controls auto-rotate exposure="0.63" shadow-intensity="0" ar-modes="scene-viewer webxr quick-look" ar autoplay shadow-softness="0">
+        <button class="Hotspot" slot="hotspot-1" data-position="1.6577258592001674m 1.3139083396858628e-16m -0.5917317109008239m" data-normal="0m 1m 2.220446049250313e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Grafico a torta</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="0.6002927379712627m 3.147990680440732e-16m -1.4177289655398675m" data-normal="0m 1m 2.220446049250313e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Totale spesa</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="-1.2668285614049029m 2.4156249682861564e-16m -1.08790077070404m" data-normal="-1.232595164407831e-32m 1m 2.2204460492503136e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Statistiche</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="-1.8888427484596362m 1.2227032966557369e-18m -0.005506566111203426m" data-normal="3.0814879110195774e-33m 1m 2.2204460492503136e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Ripartitori</div>
+        </button><button class="Hotspot" slot="hotspot-5" data-position="1.8871420128505836m -3.504916018944454e-16m 1.5784738476883127m" data-normal="6.162975822039155e-33m 1m 2.2204460492503126e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">CLI
+            </div>
+        </button><button class="Hotspot" slot="hotspot-6" data-position="-1.8601151375351836m 5.453436062734162e-16m -2.45600926200184m" data-normal="0m 1m 2.220446049250313e-16m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Utenza</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <!-- <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div> -->
+    </model-viewer>
+  </body>
+</html>
