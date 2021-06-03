@@ -98,26 +98,78 @@ padding: 0!important;">
             </div>
         </nav>
     </header>
-    <model-viewer style="width:100vw;height:100vh;"src="./assets/models/finalBolletta.glb" camera-controls camera-orbit="90.32deg 86.42deg 1.388m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 1.388m" exposure="0.69">
-        <button class="Hotspot" slot="hotspot-1" data-position="1.2366087017439943e-8m 0.41493700328755906m 0.34491019970020775m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Anagrafica</div>
-        </button><button class="Hotspot" slot="hotspot-2" data-position="5.105449418042332e-9m 0.17131046740357703m -0.3265284119889397m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Grafici</div>
-        </button><button class="Hotspot" slot="hotspot-3" data-position="5.9062682671751485e-9m 0.19818146063897746m 0.3489473121104837m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Indice di comfort</div>
-        </button><button class="Hotspot" slot="hotspot-4" data-position="-3.156017345277171e-10m -0.01058983934187006m 0.34117338830531296m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Ripartitori</div>
-        </button>
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
-        <div id="ar-prompt">
-            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-        </div>
-    </model-viewer>
+    <div class="bolletta-container">
+        <div class="tabs-bollette rounded shadow  mt-10">
+            <!-- Rounded tabs -->
+            <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center  border-0 rounded-nav">
+              <li class="nav-item flex-sm-fill">
+                <a id="cli-tab" data-toggle="tab" href="#cli" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Bolletta CLI-ACS</a>
+              </li>
+              <li class="nav-item flex-sm-fill">
+                <a id="afs-tab" data-toggle="tab" href="#afs" role="tab" aria-controls="afs" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Bolletta AFS</a>
+              </li>
+              <li class="nav-item flex-sm-fill">
+                <a id="riepilogo-tab" data-toggle="tab" href="#riepilogo" role="tab" aria-controls="riepilogo" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Riepilogo CLI-AFS</a>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div id="cli" role="tabpanel" aria-labelledby="cli-tab" class="tab-pane fade  show active">
+                <model-viewer style="height: 100vh; width: 100%;"src="./assets/models/finalBolletta.glb" camera-controls camera-orbit="90.32deg 86.42deg 1.388m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 1.388m" exposure="0.69">
+                    <button class="Hotspot" slot="hotspot-1" data-position="1.2366087017439943e-8m 0.41493700328755906m 0.34491019970020775m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Anagrafica</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="5.105449418042332e-9m 0.17131046740357703m -0.3265284119889397m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Grafici</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="5.9062682671751485e-9m 0.19818146063897746m 0.3489473121104837m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Indice di comfort</div>
+                    </button><button class="Hotspot" slot="hotspot-4" data-position="-3.156017345277171e-10m -0.01058983934187006m 0.34117338830531296m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Ripartitori</div>
+                    </button>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    
+                </model-viewer>
+            </div>
+              <div id="afs" role="tabpanel" aria-labelledby="afs-tab" class="tab-pane fade px-4 py-5">
+                <model-viewer style="height: 100vh; width: 100%;"src="./assets/models/finalBollettaAFS.glb" camera-controls camera-orbit="90.32deg 86.42deg 1.388m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 1.388m" exposure="0.69">
+                    <button class="Hotspot" slot="hotspot-1" data-position="1.2366087017439943e-8m 0.41493700328755906m 0.34491019970020775m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Anagrafica</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="5.105449418042332e-9m 0.17131046740357703m -0.3265284119889397m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Grafici</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="5.9062682671751485e-9m 0.19818146063897746m 0.3489473121104837m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Indice di comfort</div>
+                    </button><button class="Hotspot" slot="hotspot-4" data-position="-3.156017345277171e-10m -0.01058983934187006m 0.34117338830531296m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Ripartitori</div>
+                    </button>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    
+                </model-viewer>
+            </div>
+              <div id="riepilogo" role="tabpanel" aria-labelledby="riepilogo-tab" class="tab-pane fade px-4 py-5" style="padding-top: 0!important">
+                <model-viewer style="height: 100vh; width: 100%;"src="./assets/models/Prospetti.glb" camera-controls camera-orbit="90.32deg 86.42deg 1.388m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 1.388m" exposure="0.69">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    
+                </model-viewer>
+            </div>
+            </div>
+            <!-- End rounded tabs -->
+          </div>
+        
+       
+    </div>
     
 </body>
 

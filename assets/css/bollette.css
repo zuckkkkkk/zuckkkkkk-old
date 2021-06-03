@@ -10,6 +10,9 @@
     font-family: 'Gotham', sans-serif;
 
 }
+body{
+  overflow: hidden;
+}
 /*
   NAVBAR
 */
@@ -172,6 +175,10 @@ a {
 button:focus{
 outline: none!important;
 }
+.tabs-bollette {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
@@ -181,4 +188,35 @@ outline: none!important;
   .navbar .navbar-brand, .navbar .nav-link {
       color: #555;
   }
+}
+.bolletta-container{
+  overflow: hidden;
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .rounded-nav {
+    border-radius: 50rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .tabs-bollette {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+@media (min-width: 576px) {
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
+  }
+}
+.mt-10{
+  margin-top: 10vh;
+}
+.tabs-bollette{
+
+}
+.nav-link.active{
+  background-color: transparent!important;
+  color: #ff6c2b!important;
 }
