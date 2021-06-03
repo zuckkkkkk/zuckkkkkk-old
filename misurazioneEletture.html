@@ -5,44 +5,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <link rel="icon" 
+        type="image/png" 
+        href="./assets/img/HandEbs.ico">
         <!-- <link href="assets/css/bootstrap/*" rel="stylesheet"> -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>   
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <!--Index js -->
         <script defer type="text/javascript" src="assets/js/index.js"></script>  
 </head>
     <body style="overflow-x: hidden;">
      
-        <nav class="position-fixed  w-100 navbar navbar-expand-lg" style="z-index: 1001; margin-top: 1rem;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand ml-5" href="/"><img src="assets/img/hand.png" width="32px" style="transform:rotateZ(45deg);"></a>
-          
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
-              <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/who-are-we.html">Chi siamo <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Servizi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/bollette.html">Bollette</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contatti</a>
-                  </li>
-              </ul>
-            
+      <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container" style="min-width: 95vw;"><a href="/" class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" width="32px"
+                style="transform:rotateZ(45deg);"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><div id="lottie-ham" style="width: 20px; height: 20px;"></div></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/who-are-we.html">Chi siamo <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bollette.html">Bollette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
+    </header>
 
           <div class="serviceBody">
               <div class="row">

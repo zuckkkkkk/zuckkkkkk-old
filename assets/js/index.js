@@ -1,9 +1,13 @@
 $(document).ready(function () {
-  
-    updateScroller();  
-    window.focus();
-    window.addEventListener("resize", onResize);
-    document.addEventListener("scroll", onScroll); 
+  $('#lottie-go-down').on('click', function() {
+    console.log(this.hash);  
+    $('html, body').animate({scrollTop: $('#lottie-go-down').offset().top + 100}, 0);
+    return false;
+});
+    // updateScroller();  
+    // window.focus();
+    // window.addEventListener("resize", onResize);
+    // document.addEventListener("scroll", onScroll); 
     particlesJS.load('hero', 'assets/json/particlesjs-config.json', function() {
         console.log('callback - particles.js config loaded');
       });
@@ -26,6 +30,7 @@ $(document).ready(function () {
         })
       })
       vSlide.play()
+      //Maybe legacy
       var animation = bodymovin.loadAnimation({
         container: document.getElementById('lottie-animation'), // Required
         path: '/assets/json/lottie-who-are-we-2.json', // Required
@@ -34,6 +39,24 @@ $(document).ready(function () {
         autoplay: true, // Optional
         name: "Lottie Who Are We", // Name for future reference. Optional.
       });
+      //Ham Anim
+      let iconMenu = document.querySelector('#lottie-ham');
+      let animationMenu = bodymovin.loadAnimation({
+              container: iconMenu,
+              renderer: 'svg',
+              loop: false,
+              autoplay: false,
+              path: "/assets/json/hamburger.json",
+              initialSegment: [20, 60]
+      });
+
+      var directionMenu = 1;
+        iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+      });
+      //Go down anim      
       var animation2 = bodymovin.loadAnimation({
         container: document.getElementById('lottie-go-down'), // Required
         path: '/assets/json/lottie-go-down.json', // Required
@@ -61,46 +84,3 @@ TweenLite.set(scroller.target, {
   rotation: 0.01,
   force3D: true
 });
-
-
-function updateScroller() {
-  
-  var resized = scroller.resizeRequest > 0;
-    
-  if (resized) {    
-    var height = scroller.target.clientHeight;
-    console.log(height);
-    body.style.height = height + "px";
-    scroller.resizeRequest = 0;
-  }
-      
-  var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
-
-  scroller.endY = scrollY;
-  scroller.y += (scrollY - scroller.y) * scroller.ease;
-
-  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-    scroller.y = scrollY;
-    scroller.scrollRequest = 0;
-  }
-  
-  TweenLite.set(scroller.target, { 
-    y: -scroller.y 
-  });
-  
-  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-}
-
-function onScroll() {
-  scroller.scrollRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
-
-function onResize() {
-  scroller.resizeRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
