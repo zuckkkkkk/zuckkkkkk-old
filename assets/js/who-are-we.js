@@ -45,9 +45,9 @@ dispose(0)
 /*--------------------
 Wheel
 --------------------*/
-const handleMouseWheel = (e) => {
-  scrollY -= e.deltaY * 0.9
-}
+// const handleMouseWheel = (e) => {
+//   scrollY -= e.deltaY * 0.9
+// }
 
 
 /*--------------------
@@ -76,7 +76,7 @@ const handleTouchEnd = () => {
 /*--------------------
 Listeners
 --------------------*/
-$menu.addEventListener('mousewheel', handleMouseWheel)
+// $menu.addEventListener('mousewheel', handleMouseWheel)
 
 $menu.addEventListener('touchstart', handleTouchStart)
 $menu.addEventListener('touchmove', handleTouchMove)

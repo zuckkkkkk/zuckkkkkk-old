@@ -79,7 +79,7 @@
     bottom: 1vw;
     left: 1vw;
     display: inline-block;
-    content: "0" counter(count);
+    content: attr(data-name);
     color: #ffffff;
     font-size: 3vw;
   }
