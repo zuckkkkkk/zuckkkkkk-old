@@ -21,7 +21,7 @@ body{
   }
   
   .navbar .nav-link {
-    color: #fff;
+    color: #fff!important;
   }
   
   .navbar .nav-link:hover,
@@ -65,7 +65,9 @@ body{
         color: #555;
     }
   }
-  
+  .navbar-toggler{
+    padding: 0!important;
+  } 
 body {
     background-color: #282828!important;
    overflow-x: hidden;
