@@ -247,60 +247,10 @@ ul.slides {
     color: #000000;
 }
 
-.cursor {
-    position: fixed;
-    background-color: #000000;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    z-index: 1;
-    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-    user-select: none;
-    pointer-events: none;
-    z-index: 10000;
-    transform: scale(1);
-}
-.cursor.active {
-    opacity: 1;
-    transform: scale(0);
-}
-.cursor.menu-active {
-    opacity: 1;
-    transform: scale(0);
-}
-.cursor.hovered {
-    opacity: 1;
-}
-.cursor-follower {
-    position: fixed;
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    z-index: 1;
-    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
-    user-select: none;
-    pointer-events: none;
-    z-index: 10000;
-    transform: translate(2px, 2px);
-}
-.cursor-follower.active {
-    opacity: 1;
-    transform: scale(3);
-}
-.cursor-follower.menu-active {
-    opacity: 1;
-    transform: scale(3);
-}
-.cursor-follower.hovered {
-    opacity: 1;
-}
-
 a {
-    color: #000000;
+    color: #fff!important;
     text-decoration: none;
     letter-spacing: 0.15em;
-    
     display: inline-block;
     padding: 15px 20px;
     position: relative;
@@ -421,7 +371,7 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 ul.social-footer2 { margin: 0;padding: 0; width: auto; text-decoration: none;}
 ul.social-footer2 li {display: inline-block;padding: 0; text-decoration: none; list-style-type: none;}
 ul.social-footer2 li a:hover {background-color:#ff6c2b; text-decoration: none;}
-ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center; text-decoration: none;}
+ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center; text-decoration: none; color:#fff!important;}
 .btn{background-color: #ff6c2b; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #000000;color: #000000;
 -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
