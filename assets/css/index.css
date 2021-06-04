@@ -254,6 +254,7 @@ a {
     display: inline-block;
     padding: 15px 20px;
     position: relative;
+    z-index: 10001;
   }
   a:after {    
     background: none repeat scroll 0 0 transparent;
@@ -371,7 +372,7 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 ul.social-footer2 { margin: 0;padding: 0; width: auto; text-decoration: none;}
 ul.social-footer2 li {display: inline-block;padding: 0; text-decoration: none; list-style-type: none;}
 ul.social-footer2 li a:hover {background-color:#ff6c2b; text-decoration: none;}
-ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center; text-decoration: none; color:#fff!important;}
+ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: center; text-decoration: none; color:#fff!important; z-index: 10001;}
 .btn{background-color: #ff6c2b; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #000000;color: #000000;
 -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -786,8 +787,8 @@ transition: all 250ms ease-in-out 0s;
     font-size: 0.86em;
   }
   .back .location {
-    grid-column: 1/3;
-    justify-self: left;
+    grid-column: 1/5;
+    justify-self: center;
   }
   .back .price {
     grid-column: 3/-1;
@@ -850,4 +851,19 @@ transition: all 250ms ease-in-out 0s;
     color: #ff6c2b!important;
     box-shadow: none;
   }
-  
+
+#mobileButton{
+  float: right;
+}
+.mobile{
+  display: none;
+}
+  /*Desktop and mobile cards home*/
+  /* @media only screen and (max-width: 768px) {
+    .mobile {display: block!important;}
+    .desktop {display: none!important;}
+  }
+  @media only screen and (min-width: 768px) {
+    .mobile {display: none!important;}
+    .desktop {display: block!important;}
+  } */

@@ -48,8 +48,7 @@
 </script>
 </head>
 
-<body>
-
+<body style="overflow-x: hidden;">
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container" style="min-width: 95vw;"><a href="/"
@@ -171,11 +170,11 @@
                 </div>
 
             </div>
-            <div class="card-deck mx-auto align-items-center" style="height: 100vh">
+            <div id="desktop"class="card-deck mx-auto align-items-center " style="height: 100vh">
                 <div class="card">
                     <input type="checkbox" id="card1" class="more" aria-hidden="true">
                     <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/1.png'); background-position: top;">
+                        <div class="front" style="background-image: url('./assets/img/servizi/2.png'); background-position: top;">
                             <div class="inner">
                                 <label for="card1" class="button" aria-hidden="true">
                                     Dettagli
@@ -190,9 +189,9 @@
                                         ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
                                         tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
                                 </div>
-                                <div class="location">Misurazione e lettura</div>
+                                <div class="location">Contabilizzazione energetica dei consumi</div>
                                 <label for="card1" class="button return" aria-hidden="true">
-                                    <a href="misurazioneEletture.html"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="ContabilizzazioneEnergetica.html"><i class="fas fa-arrow-right"></i></a>
                                 </label>
                             </div>
                         </div>
@@ -201,7 +200,7 @@
                 <div class="card">
                     <input type="checkbox" id="card2" class="more">
                     <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/2.png'); background-position: top;">
+                        <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
                             <div class="inner">
                                 <label for="card2" class="button" aria-hidden="true">
                                     Dettagli
@@ -222,9 +221,9 @@
                                         <li>Lorem ipsum dolor sit amet.</li>
                                     </ul>
                                 </div>
-                                <div class="location">Contabilizzazione energetica dei consumi</div>
+                                <div class="location">Contabilizzazione idrica dei consumi</div>
                                 <label for="card2" class="button return" aria-hidden="true">
-                                    <a href="ContabilizzazioneEnergetica.html"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="ContabilizzazioneIdrica.html"><i class="fas fa-arrow-right"></i></a>
                                 </label>
                             </div>
                         </div>
@@ -234,7 +233,7 @@
                 <div class="card">
                     <input type="checkbox" id="card3" class="more">
                     <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
+                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
                             <div class="inner">
                                 <label for="card3" class="button" aria-hidden="true">
                                     Dettagli
@@ -253,9 +252,9 @@
                                         repudiandae
                                         aspernatur explicabo numquam! Tenetur!</p>
                                 </div>
-                                <div class="location">Contabilizzazione idrica dei consumi</div>
+                                <div class="location">Installazione/Noleggio apparechhi di misurazione</div>
                                 <label for="card3" class="button return" aria-hidden="true">
-                                    <a href="ContabilizzazioneIdrica.html"><i class="fas fa-arrow-right"></i></a>
+                                    <a href="ApparecchiDiMisurazione.html"><i class="fas fa-arrow-right"></i></a>
                                 </label>
                                 
                             </div>
@@ -289,6 +288,56 @@
                                     <a href="AssistenzaTecnica.html"><i class="fas fa-arrow-right"></i></a>
                                 </label>
                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile"class="card-deck mx-auto align-items-center mobile" style="height: 100vh">
+                <div class="card">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/2.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <a id="mobileButton" href="ContabilizzazioneEnergetica.html"><label for="card1" class="button return" aria-hidden="true">
+                                   <i class="fas fa-arrow-right"></i>
+                                </label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <a id="mobileButton" href="ContabilizzazioneIdrica.html"><label for="card1" class="button return" aria-hidden="true">
+                                    <i class="fas fa-arrow-right"></i>
+                                 </label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <a id="mobileButton" href="ApparecchiDiMisurazione.html"><label for="card1" class="button return" aria-hidden="true">
+                                    <i class="fas fa-arrow-right"></i>
+                                 </label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/6.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <a id="mobileButton" href="AssistenzaTecnica.html"><label for="card1" class="button return" aria-hidden="true">
+                                    <i class="fas fa-arrow-right"></i>
+                                 </label></a>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,19 @@ $(document).ready(function () {
     $('html, body').animate({scrollTop: $('#lottie-go-down').offset().top + 100}, 0);
     return false;
 });
+    //Media queries
+
+    var mq = window.matchMedia( "(max-width: 768px)" );
+    if (mq.matches) {
+        // window width is at less than 570px
+        $("#desktop").hide();
+        $("#mobile").show();
+    }
+    else {
+        // window width is greater than 570px
+        $("#mobile").hide();
+        $("#desktop").show();
+      }
     // updateScroller();  
     // window.focus();
     // window.addEventListener("resize", onResize);
@@ -204,3 +217,4 @@ const render = () => {
   })
 }
 render()
+
