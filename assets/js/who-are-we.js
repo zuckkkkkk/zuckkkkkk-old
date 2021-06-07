@@ -1,4 +1,5 @@
 
+
 /*--------------------
 Vars
 --------------------*/
@@ -117,4 +118,6 @@ const render = () => {
     scale: 1 - Math.min(100, Math.abs(scrollSpeed)) * 0.003
   })
 }
-render()
+render();
+
+

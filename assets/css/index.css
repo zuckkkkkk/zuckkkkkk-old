@@ -16,9 +16,6 @@ html, body{
   background-color: #282828;
 }
 
-/*
-  NAVBAR
-*/
 .navbar {
   transition: all 0.4s;
 }
@@ -39,7 +36,6 @@ html, body{
 }
 
 
-/* Change navbar styling on scroll */
 .navbar.active {
   background: #fff;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +58,6 @@ html, body{
 button:focus{
 outline: none!important;
 }
-/* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
       background: #282828;
@@ -156,11 +151,11 @@ body{
     width: 100vw;
     position: absolute;
     display: flex;
-    top: 90vh;
+    top: 85vh;
     height: 10vh;
     flex-flow: column nowrap;
-    justify-content: center; /* aligns on vertical for column */
-    align-items: center; /* aligns on horizontal for column */
+    justify-content: center; 
+    align-items: center; 
 }
 #lottie-go-down{
     margin: auto;
@@ -302,15 +297,10 @@ a {
       width: 50%;
       margin: 0 auto;
   }
-  /*==================== 
-  Footer 
-====================== */
 
-/* Main Footer */
 footer .main-footer{  padding: 20px 0;  background: rgb(61, 61, 61);}
 footer ul{  padding-left: 0;  list-style: none;}
 
-/* Copy Right Footer */
 .footer-copyright { background: #222; padding: 5px 0;}
 .footer-copyright .logo {    display: inherit;}
 .footer-copyright nav {    float: right;    margin-top: 5px;    list-style-type: none;}
@@ -321,24 +311,17 @@ footer ul{  padding-left: 0;  list-style: none;}
 .footer-copyright nav ul li:first-child { border: medium none;  padding-left: 0;}
 .footer-copyright p { color: #000000; margin: 2px 0 0;}
 
-/* Footer Top */
 .footer-top{  background: #252525;  padding-bottom: 30px; margin-bottom: 30px;  border-bottom: 3px solid #222;}
 
-/* Footer transparent */
 footer.transparent .footer-top, footer.transparent .main-footer{  background: transparent;}
 footer.transparent .footer-copyright{ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
 
-/* Footer light */
 footer.light .footer-top{ background: #000000;}
 footer.light .main-footer{  background: #000000;}
 footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
 
-/* Footer 4 */
 .footer- .logo {    display: inline-block;}
 
-/*==================== 
-  Widgets 
-====================== */
 .widget{  padding: 20px;  margin-bottom: 40px;}
 .widget.widget-last{  margin-bottom: 0px;}
 .widget.no-box{ padding: 0; background-color: transparent;  margin-bottom: 40px;
@@ -392,8 +375,7 @@ transition: all 250ms ease-in-out 0s;
     background-color: #282828;
     color: #fff;
 }
-/*WHO ARE WE*/
-.main img {
+.content-grid img {
     width: 100%;
     height: 100%;
     display: block;
@@ -411,7 +393,7 @@ transition: all 250ms ease-in-out 0s;
   }
   
   .content-grid__scroll {
-    min-height: 215vh;
+    min-height: 170vh;
     position: relative;
   }
   
@@ -503,26 +485,23 @@ transition: all 250ms ease-in-out 0s;
     display: flex;
     justify-content: center;
     color: white;
+    align-items: center;
     font-size: 1.3rem;
     background-color: #282828;
   }
 .statico{
-  /* d-flex align-items-center justify-content-end */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 0!important;
 }
 .dinamico{
-  /*d-flex align-items-center justify-content-start*/
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 0!important;
 }
-  /* Responsivness*/ 
   @media only screen and (max-width: 768px) {
-    /* For desktop: */
     .title{ font-size: 50px; text-align: center;}
     .testo{ font-size: 15px; text-align: center; width: 100vw; padding: 1rem;}
     .imgStaff{display: none;}
@@ -543,101 +522,12 @@ transition: all 250ms ease-in-out 0s;
     border: 1px solid #ff6c2b;
 
   }
-  /* button {
-    font-family: "Space Mono", monospace;
-    letter-spacing: 1px;
-    background: none;
-    color: white;
-    position: relative;
-    outline: none;
-    border: none;
-    height: 50px;
-    width: 190px;
-    font-size: 14px;
-    z-index: 2;
-    transition: 0.01s 0.23s ease-out all;
-    overflow: hidden!important;
-  }
-  button:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 55%;
-    background: #202020;
-    z-index: -1;
-    transition: 0.3s ease-in all;
-  }
-  button:after {
-    content: "";
-    position: absolute;
-    left: -5%;
-    top: 5%;
-    height: 90%;
-    width: 5%;
-    background: white;
-    z-index: -1;
-    transition: 0.4s 0.02s ease-in all;
-  }
-  button:hover {
-    cursor: pointer!important;
-    color: transparent!important;
-  }
-  button:hover:before {
-    left: 100%!important;
-    width: 25%!important;
-  }
-  button:hover:after {
-    left: 100%!important;
-    width: 70%!important;
-  }
-  button:hover .icon-right.after:after {
-    left: -80px!important;
-    color: white!important;
-    transition: 0.2s 0.2s ease all!important;
-  }
-  button:hover .icon-right.after:before {
-    left: -104px!important;
-    top: 14px!important;
-    opacity: 0.2!important;
-    color: white!important;
-  }
-  
-  .icon-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .icon-right:after {
-    font-family: "FontAwesome";
-    content: "→";
-    font-size: 24px!important;
-    display: inline-block!important;
-    position: relative!important;
-    top: 26px!important;
-    transform: translate3D(0, -50%, 0)!important;
-  }
-  .icon-right.after:after {
-    left: -250px!important;
-    color: black;
-    transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color!important;
-  }
-  .icon-right.after:before {
-    content: "Explore"!important;
-    position: absolute;
-    left: -230px;
-    top: 14px;
-    opacity: 0!important;
-    transition: 0.2s ease-in all;
-  } */
   .servicesIMG{
     width: 100%;
     height: 50vh;
     object-fit: cover;
 
   }
-/*START*/
   .card {
     width: 420px;
     height: 340px;
@@ -695,7 +585,6 @@ transition: all 250ms ease-in-out 0s;
     display: block;
     border-radius: 6px;
     backface-visibility: hidden;
-    /* background: linear-gradient(40deg, rgba(224, 89, 35, 0.7), rgba(255, 242, 166, 0.7)); */
   }
   .front .inner {
     grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
@@ -812,7 +701,6 @@ transition: all 250ms ease-in-out 0s;
     line-height: 2.9em;
     min-width: 3em;
     background-color: transparent;
-    /* border: solid 2px #fff; */
     color: #fff;
     background: #ff6c2b;
     border-radius: 4px;
@@ -859,16 +747,7 @@ transition: all 250ms ease-in-out 0s;
 .mobile{
   display: none;
 }
-  /*Desktop and mobile cards home*/
-  /* @media only screen and (max-width: 768px) {
-    .mobile {display: block!important;}
-    .desktop {display: none!important;}
-  }
-  @media only screen and (min-width: 768px) {
-    .mobile {display: none!important;}
-    .desktop {display: block!important;}
-  } */
-/*Carousel Old/New Company */
+
 .container-carousel {
   position: relative;
   width: 900px;
@@ -955,16 +834,11 @@ transition: all 250ms ease-in-out 0s;
   font-size: 50px;
   font-weight: 700;
   align-items: center;
-  /* Safari */
   -webkit-transform: rotate(-90deg);
   
-  /* Firefox */
   -moz-transform: rotate(-90deg);
-  
-  /* IE */
   -ms-transform: rotate(-90deg);
   
-  /* Opera */
   -o-transform: rotate(-90deg);
   
   float: left;
