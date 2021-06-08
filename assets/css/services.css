@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+    .testoServizio { text-align: justify!important; }
+    .servicesTitle{font-size: 32px!important;}
+    body{overflow: visible!important;}
+    .servicesBody {overflow: visible!important;}
+  }
