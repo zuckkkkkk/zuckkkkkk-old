@@ -1,6 +1,17 @@
+
+.testoServizio{
+    float: right;
+    text-align: right;
+}
+.serviceContainerHeight{
+    height: 85vh;
+}
 @media only screen and (max-width: 600px) {
-    .testoServizio { text-align: justify!important; }
+    .testoServizio { text-align: justify!important; margin: 0px 1rem; }
     .servicesTitle{font-size: 32px!important;}
     body{overflow: visible!important;}
     .servicesBody {overflow: visible!important;}
+    .serviceContainerHeight{
+        height: 65vh;
+    }
   }

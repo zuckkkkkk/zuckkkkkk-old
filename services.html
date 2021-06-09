@@ -34,112 +34,7 @@
     <!--Index js -->
     <script defer type="text/javascript" src="assets/js/index.js"></script>
 </head>
-<style>
  
-.rain {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.rain.back-row {
-  display: none;
-  z-index: 1;
-  bottom: 60px;
-  opacity: 0.5;
-}
-
-body.back-row-toggle .rain.back-row {
-  display: block;
-}
-
-.drop {
-  position: absolute;
-  bottom: 100%;
-  width: 15px;
-  height: 120px;
-  pointer-events: none;
-  animation: drop 0.5s linear infinite;
-}
-
-@keyframes drop {
-  0% {
-    transform: translateY(0vh);
-  }
-  75% {
-    transform: translateY(90vh);
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
-.stem {
-  width: 1px;
-  height: 60%;
-  margin-left: 7px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
-  animation: stem 0.5s linear infinite;
-}
-
-@keyframes stem {
-  0% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
-  display: none;
-}
-
-body.splat-toggle .splat {
-  display: block;
-}
-
-@keyframes splat {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  90% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-
-.toggles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-</style>
 <body>
 
     <header class="header">
@@ -161,6 +56,9 @@ body.splat-toggle .splat {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/services.html">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ebsweb/index.html">E-BS Web</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="bollette.html">Bollette</a>
@@ -217,11 +115,9 @@ body.splat-toggle .splat {
                                     <div class="card">
                                         <input type="checkbox" id="card2" class="more">
                                         <div class="content">
-                                            <div class="front" style="overflow: hidden; background-image: url('./assets/img/servizi/3.png'); background-position: top;">
-                                                <div class="rain front-row"></div>
-                                                <div class="rain back-row"></div>
+                                            <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
                                                 <div class="inner">
-                                                    <label for="card2" class="button" aria-hidden="true" style="z-index: 1001;">
+                                                    <label for="card2" class="button" aria-hidden="true">
                                                         Dettagli
                                                     </label>
                                                 </div>
