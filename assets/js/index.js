@@ -1,30 +1,4 @@
 $(document).ready(function () {
-  var makeItRain = function() {
-    //clear out everything
-    $('.rain').empty();
-  
-    var increment = 0;
-    var drops = "";
-    var backDrops = "";
-  
-    while (increment < 100) {
-        console.log("entra");
-      //couple random numbers to use for various randomizations
-      //random number between 98 and 1
-      var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
-      //random number between 5 and 2
-      var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
-      //increment
-      increment += randoFiver;
-      //add in a new raindrop with various randomizations to certain CSS properties
-      drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-      backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-    }
-  
-    $('.rain.front-row').append(drops);
-    $('.rain.back-row').append(backDrops);
-  };
-  makeItRain();
   if ($('#timeline1') != null)
 {
   $("#timeline-1").timeline();
@@ -81,6 +55,40 @@ $(document).ready(function () {
         loop: true, // Optional
         autoplay: true, // Optional
         name: "Lottie Who Are We", // Name for future reference. Optional.
+      });
+
+        //HomeAnim
+      var animationBuilding = bodymovin.loadAnimation({
+        container: document.getElementById('building-lottie'), // Required
+        path: '/assets/json/building.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Lottie building", // Name for future reference. Optional.
+      });
+      var animationFamily = bodymovin.loadAnimation({
+        container: document.getElementById('family-lottie'), // Required
+        path: '/assets/json/family.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Lottie family", // Name for future reference. Optional.
+      });
+      var animationTech = bodymovin.loadAnimation({
+        container: document.getElementById('tech-lottie'), // Required
+        path: '/assets/json/tech.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Lottie tech", // Name for future reference. Optional.
+      });
+      var animationEbsWeb = bodymovin.loadAnimation({
+        container: document.getElementById('ebsweb-lottie'), // Required
+        path: '/assets/json/ebsweb.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Lottie ebsweb", // Name for future reference. Optional.
       });
       //Ham Anim
       let iconMenu = document.querySelector('#lottie-ham');

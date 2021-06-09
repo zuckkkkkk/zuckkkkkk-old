@@ -15,7 +15,13 @@
 html, body{
   background-color: #282828;
 }
-
+a.btn-primary{
+  background-color: #ff6c2b!important;
+  text-decoration: none!important;
+}
+a.btn-primary:hover{
+  background-color: #282828!important;
+}
 .navbar {
   transition: all 0.4s;
 }
