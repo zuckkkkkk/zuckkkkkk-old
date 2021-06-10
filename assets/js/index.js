@@ -1,4 +1,38 @@
 $(document).ready(function () {
+  function update_users_count() {
+    $('.counter1').animate({
+        counter: 1094
+    }, {
+        duration: 10000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+    });
+    $('.counter2').animate({
+      counter: 22146
+  }, {
+      duration: 11000,
+      easing: 'swing',
+      step: function(now) {
+          $(this).text(Math.ceil(now));
+      },
+      complete: update_users_count
+  });
+  $('.counter3').animate({
+    counter: 129213
+}, {
+    duration: 12000,
+    easing: 'swing',
+    step: function(now) {
+        $(this).text(Math.ceil(now));
+    },
+    complete: update_users_count
+});
+};
+
+update_users_count();
   if ($('#timeline1') != null)
 {
   $("#timeline-1").timeline();
@@ -47,6 +81,8 @@ $(document).ready(function () {
         })
       })
       vSlide.play()
+
+      //START ANIM - LOTTIE
       //Maybe legacy
       var animation = bodymovin.loadAnimation({
         container: document.getElementById('lottie-animation'), // Required
@@ -117,6 +153,43 @@ $(document).ready(function () {
         name: "Lottie Go Down", // Name for future reference. Optional.
       });
     });
+    var animationServiceFire = bodymovin.loadAnimation({
+      container: document.getElementById('fire-service'), // Required
+      path: '/assets/json/services-page-anim/fire.json', // Required
+      renderer: 'svg', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Lottie family", // Name for future reference. Optional.
+    });
+    var animationServiceWater = bodymovin.loadAnimation({
+      container: document.getElementById('water-service'), // Required
+      path: '/assets/json/services-page-anim/water.json', // Required
+      renderer: 'svg', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Lottie family", // Name for future reference. Optional.
+    });
+    var animationServiceScrewdriver = bodymovin.loadAnimation({
+      container: document.getElementById('screwdriver-service'), // Required
+      path: '/assets/json/services-page-anim/screwdriver.json', // Required
+      renderer: 'svg', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Lottie family", // Name for future reference. Optional.
+    });
+    var animationServiceWrench = bodymovin.loadAnimation({
+      container: document.getElementById('wrench-service'), // Required
+      path: '/assets/json/services-page-anim/wrench.json', // Required
+      renderer: 'svg', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Lottie family", // Name for future reference. Optional.
+    });
+
+    //END ANIM
+
+
+
     var html = document.documentElement;
 var body = document.body;
 
