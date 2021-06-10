@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>E-BS Energy Billing Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="icon" type="image/png" href="./assets/img/HandEbs.ico">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"
+        integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Index js -->
+    <script defer type="text/javascript" src="assets/js/index.js"></script>
+</head>
+ 
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container" style="min-width: 95vw;"><a href="/"
+                    class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" width="32px"
+                        style="transform:rotateZ(45deg);"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right">
+                    <div id="lottie-ham" style="width: 20px; height: 20px;"></div>
+                </button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/who-are-we.html">Chi siamo <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">Servizi</a>
+                        </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="bollette.html">Bollette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contatti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ebsweb/index.html">E-BS Web</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="central-text">
+        <div class="services">
+            <div class="row " style="margin-top: 5rem;">
+                <div class="col-md-12">
+                    <div class="title services-title">
+                        I nostri servizi
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="desktop"class="card-deck mx-auto align-items-center" style="margin-top: 20vh;">
+                <div class="card-deck" style="width: 90vw; margin: auto;">
+                    
+                                    <div class="card">
+                                        <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                                        <div class="content">
+                                            <div class="front"  style="background-image: url('./assets/img/servizi/2.png'); background-position: top;"> <!--;-->
+                                                <div class="inner ">
+                                                    <div id="fire-service"></div>
+                                                    <label for="card1" class="button" aria-hidden="true">
+                                                        Dettagli
+                                                    </label>
+                                                </div>
+                                            </div>
+                                                <div class="flame"></div>
+                                            <div class="back">
+                                                <div class="inner">
+                                                    <div class="description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
+                                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
+                                                            ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
+                                                            tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                                                    </div>
+                                                    <div class="location">Contabilizzazione energetica dei consumi</div>
+                                                    <label for="card1" class="button return" aria-hidden="true">
+                                                        <a href="ContabilizzazioneEnergetica.html"><i class="fas fa-arrow-right"></i></a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <input type="checkbox" id="card2" class="more">
+                                        <div class="content">
+                                            <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
+                                                <div class="inner">
+                                                    <div id="water-service"></div>
+                                                    <label for="card2" class="button" aria-hidden="true">
+                                                        Dettagli
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="inner">
+                                                    <div class="description">
+                                                        <p>
+                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas
+                                                            fuga
+                                                            odio vel veniam eveniet, explicabo autem earum?</p>
+                                                        <ul>
+                                                            <li>Lorem ipsum dolor sit amet.</li>
+                                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                            <li>Lorem ipsum dolor sit amet.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="location">Contabilizzazione idrica dei consumi</div>
+                                                    <label for="card2" class="button return" aria-hidden="true">
+                                                        <a href="ContabilizzazioneIdrica.html"><i class="fas fa-arrow-right"></i></a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <div class="card">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
+               
+                            <div class="inner">
+                                <div id="wrench-service"></div>
+                                <label for="card3" class="button" aria-hidden="true">
+                                    Dettagli
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
+                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
+                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
+                                        facilis
+                                        laudantium nam!</p>
+                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
+                                        repudiandae
+                                        aspernatur explicabo numquam! Tenetur!</p>
+                                </div>
+                                <div class="location">Installazione/Noleggio apparechhi di misurazione</div>
+                                <label for="card3" class="button return" aria-hidden="true">
+                                    <a href="ApparecchiDiMisurazione.html"><i class="fas fa-arrow-right"></i></a>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/6.png'); background-position: top;">
+                            <div class="inner">
+                                <div id="screwdriver-service"></div>
+                                <label for="card4" class="button" aria-hidden="true">
+                                    Dettagli
+                                </label>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
+                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
+                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
+                                        facilis
+                                        laudantium nam!</p>
+                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
+                                        repudiandae
+                                        aspernatur explicabo numquam! Tenetur!</p>
+                                </div>
+                                <div class="location">Assistenza Tecnica</div>
+                                <label for="card4" class="button return" aria-hidden="true">
+                                    <a href="AssistenzaTecnica.html"><i class="fas fa-arrow-right"></i></a>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                </div>
+              
+            </div>
+            <div id="mobile"class="card-deck mx-auto align-items-center mobile" style="height: 100vh">
+                <div class="card">
+                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/2.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <label for="card1" class="button return" aria-hidden="true">
+                                    <a id="mobileButton" href="ContabilizzazioneEnergetica.html">
+                                  <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <label for="card1" class="button return" aria-hidden="true">
+                                        <a id="mobileButton" href="ContabilizzazioneIdrica.html">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <label for="card1" class="button return" aria-hidden="true">
+                                    <a id="mobileButton" href="ApparecchiDiMisurazione.html">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('./assets/img/servizi/6.png'); background-position: top;">
+                            <div class="inner" id="mobileButton">
+                                <label for="card1" class="button return" aria-hidden="true">
+                                    <a id="mobileButton" href="AssistenzaTecnica.html">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget subscribe no-box">
+                                <h5 class="widget-title">E-BS<span></span></h5>
+                                <p>e-bs nasce nel 2018 e qui bisogna metterci una descirizone breve ma non saprei cosa
+                                    davvero </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Links<span></span></h5>
+                                <ul class="thumbnail-widget">
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Home</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Chi siamo</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Le nostre bollette</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Contattaci</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Iscriviti<span></span></h5>
+                                <p>Lascia qui sotto la tua email</p>
+                                <a class="btn" href="#." target="_blank">Registrati ora</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contattaci<span></span></h5>
+
+                                <p><a href="mailto:assistenza@e-bs.it" title="glorythemes">assistenza@e-bs.it</a></p>
+                                <ul class="social-footer2"></ul>
+                                <li>
+                                    <a>
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                    <a>
+                                        <i class="fab fa-google fa-2x"></i>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>e-bs Energy Billing Services © 2021. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="cursor"></div>
+        <div class="cursor-follower"></div> -->
+<script>
+
+
+</script>
+</body>
+
+</html>

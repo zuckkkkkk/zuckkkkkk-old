@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/services-page.css">
     <link rel="icon" type="image/png" href="./assets/img/HandEbs.ico">
     <!-- Import the component -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -30,12 +31,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <!--Index js -->
     <script defer type="text/javascript" src="assets/js/index.js"></script>
 </head>
  
-<body>
+<body style="background: #282828;">
 
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -72,287 +72,105 @@
             </div>
         </nav>
     </header>
-    <div class="central-text">
-        <div class="services">
-            <div class="row " style="margin-top: 5rem;">
-                <div class="col-md-12">
-                    <div class="title services-title">
-                        I nostri servizi
-                    </div>
-
-                </div>
-
-            </div>
-            <div id="desktop"class="card-deck mx-auto align-items-center" style="margin-top: 20vh;">
-                <div class="card-deck" style="width: 90vw; margin: auto;">
-                    
-                                    <div class="card">
-                                        <input type="checkbox" id="card1" class="more" aria-hidden="true">
-                                        <div class="content">
-                                            <div class="front"  style="background-image: url('./assets/img/servizi/2.png'); background-position: top;"> <!--;-->
-                                                <div class="inner ">
-                                                    <div id="fire-service"></div>
-                                                    <label for="card1" class="button" aria-hidden="true">
-                                                        Dettagli
-                                                    </label>
-                                                </div>
-                                            </div>
-                                                <div class="flame"></div>
-                                            <div class="back">
-                                                <div class="inner">
-                                                    <div class="description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                                            ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                                            tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                                                    </div>
-                                                    <div class="location">Contabilizzazione energetica dei consumi</div>
-                                                    <label for="card1" class="button return" aria-hidden="true">
-                                                        <a href="ContabilizzazioneEnergetica.html"><i class="fas fa-arrow-right"></i></a>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <input type="checkbox" id="card2" class="more">
-                                        <div class="content">
-                                            <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
-                                                <div class="inner">
-                                                    <div id="water-service"></div>
-                                                    <label for="card2" class="button" aria-hidden="true">
-                                                        Dettagli
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="back">
-                                                <div class="inner">
-                                                    <div class="description">
-                                                        <p>
-                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem unde ea voluptas
-                                                            fuga
-                                                            odio vel veniam eveniet, explicabo autem earum?</p>
-                                                        <ul>
-                                                            <li>Lorem ipsum dolor sit amet.</li>
-                                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-                                                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                            <li>Lorem ipsum dolor sit amet.</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="location">Contabilizzazione idrica dei consumi</div>
-                                                    <label for="card2" class="button return" aria-hidden="true">
-                                                        <a href="ContabilizzazioneIdrica.html"><i class="fas fa-arrow-right"></i></a>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                    <div class="card">
-                    <input type="checkbox" id="card3" class="more">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
-               
-                            <div class="inner">
-                                <div id="wrench-service"></div>
-                                <label for="card3" class="button" aria-hidden="true">
-                                    Dettagli
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
-                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
-                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
-                                        facilis
-                                        laudantium nam!</p>
-                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
-                                        repudiandae
-                                        aspernatur explicabo numquam! Tenetur!</p>
-                                </div>
-                                <div class="location">Installazione/Noleggio apparechhi di misurazione</div>
-                                <label for="card3" class="button return" aria-hidden="true">
-                                    <a href="ApparecchiDiMisurazione.html"><i class="fas fa-arrow-right"></i></a>
-                                </label>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card4" class="more">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/6.png'); background-position: top;">
-                            <div class="inner">
-                                <div id="screwdriver-service"></div>
-                                <label for="card4" class="button" aria-hidden="true">
-                                    Dettagli
-                                </label>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="inner">
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa libero
-                                        totam nostrum consequatur autem quae provident quos alias fugit maxime nisi labore,
-                                        temporibus tempore illo natus voluptates aliquam ipsum officia quasi placeat aut
-                                        facilis
-                                        laudantium nam!</p>
-                                    <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
-                                        repudiandae
-                                        aspernatur explicabo numquam! Tenetur!</p>
-                                </div>
-                                <div class="location">Assistenza Tecnica</div>
-                                <label for="card4" class="button return" aria-hidden="true">
-                                    <a href="AssistenzaTecnica.html"><i class="fas fa-arrow-right"></i></a>
-                                </label>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                </div>
-              
-            </div>
-            <div id="mobile"class="card-deck mx-auto align-items-center mobile" style="height: 100vh">
-                <div class="card">
-                    <input type="checkbox" id="card1" class="more" aria-hidden="true">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/2.png'); background-position: top;">
-                            <div class="inner" id="mobileButton">
-                                <label for="card1" class="button return" aria-hidden="true">
-                                    <a id="mobileButton" href="ContabilizzazioneEnergetica.html">
-                                  <i class="fas fa-arrow-right"></i>
-                                </a>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card2" class="more">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/3.png'); background-position: top;">
-                            <div class="inner" id="mobileButton">
-                                <label for="card1" class="button return" aria-hidden="true">
-                                        <a id="mobileButton" href="ContabilizzazioneIdrica.html">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                 </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card3" class="more">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/5.png'); background-position: top;">
-                            <div class="inner" id="mobileButton">
-                                <label for="card1" class="button return" aria-hidden="true">
-                                    <a id="mobileButton" href="ApparecchiDiMisurazione.html">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="checkbox" id="card4" class="more">
-                    <div class="content">
-                        <div class="front" style="background-image: url('./assets/img/servizi/6.png'); background-position: top;">
-                            <div class="inner" id="mobileButton">
-                                <label for="card1" class="button return" aria-hidden="true">
-                                    <a id="mobileButton" href="AssistenzaTecnica.html">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </a>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="section-hero">
+        I nostri servizi
+    </div>
+    <div class="section servizio1">
+        <div class="row">
+            <div id="fire-service" class="col-md-6"></div>
+            <div class="col-md-6">
+                <p class="service_titolo text-right">Contabilizzazione energetica dei consumi</p>
+                <p class="service_testo">
+                    Tra i criteri scelti da e-bs per garantire un efficiente servizio di lettura vi sono la qualità e la chiarezza dell’elaborato fornito, l’intuitività, l’esaustività dei dati e delle informazioni contenute. La frequenza delle letture, la validazione e il controllo del dato e l’assistenza all’hardware sono fattori determinanti per la valutazione dell’efficienza dei servizi di contabilizzazione forniti.
+                </p>
             </div>
         </div>
-        <footer id="footer" class="footer-1">
-            <div class="main-footer widgets-dark typo-light">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget subscribe no-box">
-                                <h5 class="widget-title">E-BS<span></span></h5>
-                                <p>e-bs nasce nel 2018 e qui bisogna metterci una descirizone breve ma non saprei cosa
-                                    davvero </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Links<span></span></h5>
-                                <ul class="thumbnail-widget">
-                                    <li>
-                                        <div class="thumb-content"><a href="#.">Home</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="#.">Chi siamo</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="#.">Le nostre bollette</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="#.">Contattaci</a></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Iscriviti<span></span></h5>
-                                <p>Lascia qui sotto la tua email</p>
-                                <a class="btn" href="#." target="_blank">Registrati ora</a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Contattaci<span></span></h5>
-
-                                <p><a href="mailto:assistenza@e-bs.it" title="glorythemes">assistenza@e-bs.it</a></p>
-                                <ul class="social-footer2"></ul>
-                                <li>
-                                    <a>
-                                        <i class="fab fa-linkedin fa-2x"></i>
-                                    </a>
-                                    <a>
-                                        <i class="fab fa-google fa-2x"></i>
-                                    </a>
-                                </li>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+      
+    </div>
+    <div class="section servizio2">
+        <div class="row">
+            <div id="water-service" class="col-md-6 order-lg-last"></div>
+            <div class="col-md-6">
+                <p class="service_titolo">Contabilizzazione idrica dei consumi
+                </p>
+                <p class="service_testo">
+                    La suddivisione puntuale dei consumi di acqua fredda e calda sanitaria sono finalmente possibili attraverso
+                    l’installazione dei contatori divisionali leggibili da remoto.
+                    
+                    e-bs ha sviluppato un format, chiaro e intuitivo, di suddivisione delle spese di acqua fredda e calda per le
+                    utenze raggruppate.
+                    
+                    Offre la possibilità di liberarsi velocemente dal vincolo della lettura diretta in loco eliminando i consumi
+                    stimati o mancanti, garantendo un servizio certificato e preciso, in applicazione alle norme vigenti. </div>
+                                  </p>
             </div>
-
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <p>e-bs Energy Billing Services © 2021. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+      
+    </div>
+    <div class="section servizio3">
+        <div class="row">
+            <div id="wrench-service" class="col-md-6 "></div>
+            <div class="col-md-6">
+                <p class="service_titolo text-right">Installazione apparecchi di misurazione</p>
+                <p class="service_testo">
+                    e-bs è in grado di fornire e installare impianti di contabilizzazione e monitoraggio dei consumi ENERGETICI e
+                    IDRICI per qualsiasi tipologia di utenza.
+            
+                    Avvalendosi di contratti di fornitura con le più importanti multinazionali di produzione di apparecchiature e
+                    disponendo di tecnici qualificati, è in grado di affrontare qualsiasi richiesta.
+            
+                    Ad oggi e-bs, forte della sua esperienza e dell’impegno quotidiano nello studio e nella ricerca di nuove
+                    tecnologie, è in grado di proporre l’installazione di nuovi sistemi evoluti capaci di trasmettere dati e consumi
+                    in tempo reale, fruibili su tutte le piattaforme (smartphone, tablet ecc…).
+            
+                    Il noleggio è la soluzione a basso impatto economico che permette di adeguarsi alle normative vigenti
+                    dilazionando il costo delle apparecchiature nel tempo, comprendendo anche il servizio di lettura e
+                    rendicontazione.                </p>
             </div>
-        </footer>
-        <!-- <div class="cursor"></div>
-        <div class="cursor-follower"></div> -->
-<script>
-
-
-</script>
+        </div>
+      
+    </div>
+    <div class="section servizio4">
+        <div class="row">
+            <div id="wrench-service" class="col-md-6 order-lg-last"></div>
+            <div class="col-md-6">
+                <p class="service_titolo">Noleggio apparecchi di misurazione</p>
+                <p class="service_testo">
+                    e-bs è in grado di fornire e installare impianti di contabilizzazione e monitoraggio dei consumi ENERGETICI e
+                    IDRICI per qualsiasi tipologia di utenza.
+            
+                    Avvalendosi di contratti di fornitura con le più importanti multinazionali di produzione di apparecchiature e
+                    disponendo di tecnici qualificati, è in grado di affrontare qualsiasi richiesta.
+            
+                    Ad oggi e-bs, forte della sua esperienza e dell’impegno quotidiano nello studio e nella ricerca di nuove
+                    tecnologie, è in grado di proporre l’installazione di nuovi sistemi evoluti capaci di trasmettere dati e consumi
+                    in tempo reale, fruibili su tutte le piattaforme (smartphone, tablet ecc…).
+            
+                    Il noleggio è la soluzione a basso impatto economico che permette di adeguarsi alle normative vigenti
+                    dilazionando il costo delle apparecchiature nel tempo, comprendendo anche il servizio di lettura e
+                    rendicontazione.                </p>
+            </div>
+        </div>
+      
+    </div>
+    <div class="section servizio5">
+        <div class="row">
+            <div id="screwdriver-service" class="col-md-6"></div>
+            <div class="col-md-6">
+                <p class="service_titolo">Assistenza tecnica</p>
+                <p class="service_testo">
+                    e-bs è in grado di offrire un servizio di assistenza tecnica e fornitura ricambi delle primarie case di
+                    produzione di apparecchiature di contabilizzazione di energia e acqua.
+                    Siamo centro assistenza ufficiale ISTA per l’Emilia-Romagna e partner SINAPSI e offriamo ai nostri clienti un
+                    servizio veloce e competente. Attraverso un front office dedicato, riusciamo a dare risposta ai quesiti della
+                    clientela e a garantire un servizio di contabilizzazione energia e acqua trasparente, intuitivo e innovativo.
+                                  </p>
+            </div>
+        </div>
+      
+    </div>
+ 
 </body>
+  
 
 </html>

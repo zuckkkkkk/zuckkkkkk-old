@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   function update_users_count() {
     $('.counter1').animate({
         counter: 1094
@@ -231,11 +232,12 @@ $.fn.timeline = function() {
   var itemLength = selectors.item.length;
   $(window).scroll(function() {
     var max, min;
-    var pos = $(this).scrollTop();
+    var pos = $(this).scrollTop() + window.screen.height / 3;
     selectors.item.each(function(i) {
       min = $(this).offset().top;
       max = $(this).height() + $(this).offset().top;
       var that = $(this);
+      console.log(min + " - " + max + " - " + " - " + pos);
       if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
         selectors.item.removeClass(selectors.activeClass);
         selectors.id.css(
