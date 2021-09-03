@@ -1,4 +1,4 @@
-.section-hero{
+.section-hero {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,24 +7,37 @@
     justify-content: center;
     font-size: 80px;
 }
-.section{
+
+.section {
     width: 100vw;
     height: 100vh;
 }
-.testoServizio{
+
+.testoServizio {
     float: right;
     text-align: right;
 }
-.serviceContainerHeight{
+
+.serviceContainerHeight {
     height: 85vh;
 }
-.servizio1, .servizio3, .servizio5{
+
+.servizio1,
+.servizio3,
+.servizio5 {
     float: left;
 }
-.servizio2, .servizio4{
-float: right;
+
+.servizio2,
+.servizio4 {
+    float: right;
 }
-.servizio1, .servizio2, .servizio3, .servizio4, .servizio5{
+
+.servizio1,
+.servizio2,
+.servizio3,
+.servizio4,
+.servizio5 {
     width: 50vw;
     height: auto;
     display: flex;
@@ -33,21 +46,36 @@ float: right;
     padding: 2.5rem;
     border-radius: 25px;
 }
-.service_titolo{
+
+#no-transition {
+    transform: none!important;
+}
+
+.service_titolo {
     font-size: 40px;
     line-height: 40px;
     font-weight: 700;
 }
-.service_testo{
- text-align: justify;
+
+.service_testo {
+    text-align: justify;
 }
+
 @media only screen and (max-width: 600px) {
-    .testoServizio { text-align: justify!important; margin: 0px 1rem; }
-    .servicesTitle{font-size: 32px!important;}
-    body{overflow: visible!important;}
-    .servicesBody {overflow: visible!important;}
-    .serviceContainerHeight{
+    .testoServizio {
+        text-align: justify!important;
+        margin: 0px 1rem;
+    }
+    .servicesTitle {
+        font-size: 32px!important;
+    }
+    body {
+        overflow: visible!important;
+    }
+    .servicesBody {
+        overflow: visible!important;
+    }
+    .serviceContainerHeight {
         height: 65vh;
     }
-  }
-  
+}

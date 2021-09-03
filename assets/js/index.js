@@ -2,7 +2,7 @@ $(document).ready(function () {
   
   function update_users_count() {
     $('.counter1').animate({
-        counter: 1094
+        counter: 1132
     }, {
         duration: 10000,
         easing: 'swing',
@@ -12,7 +12,7 @@ $(document).ready(function () {
         complete: update_users_count
     });
     $('.counter2').animate({
-      counter: 22146
+      counter: 23090
   }, {
       duration: 11000,
       easing: 'swing',
@@ -22,7 +22,7 @@ $(document).ready(function () {
       complete: update_users_count
   });
   $('.counter3').animate({
-    counter: 129213
+    counter: 132255
 }, {
     duration: 12000,
     easing: 'swing',
