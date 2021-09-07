@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("/assets/font/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("/assets/font/Cera\ Pro\ Medium.otf");
+}
+
+@font-face {
+    font-family: "Nebula";
+    src: url("/assets/font/Nebula-Regular.otf");
+}
+
+* {
+    font-family: 'Gotham', sans-serif;
+    color: white!important;
+    scroll-behavior: smooth;
+}
+
+.content-grid-title h1 {
+    font-family: 'Nebula', sans-serif;
+}
+
 .menu {
     overflow: hidden;
     cursor: -webkit-grab;
@@ -49,6 +74,10 @@
 
 .menu--item:nth-child(n+12):before {
     content: counter(count);
+}
+
+.content-grid-title {
+    font-family: 'Nebula', sans-serif;
 }
 
 .menu--item figure {

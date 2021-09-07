@@ -32,7 +32,8 @@ body {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 #no-transition {
@@ -58,7 +59,8 @@ body {
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
     color: #555;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 .navbar.active .navbar-brand {
@@ -105,21 +107,25 @@ path {
 }
 
 .nav-link {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
     color: white;
     transition: 1s;
 }
 
 .nav-link:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
     color: #ff6c2b;
 }
 
 a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
     letter-spacing: 0.15em;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
     display: inline-block;
     padding: 15px 20px;
     position: relative;
@@ -141,11 +147,13 @@ a:after {
 a:hover:after {
     width: 100%;
     left: 0;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 
@@ -165,11 +173,16 @@ a:hover {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 .navbar .navbar-brand {
     color: #fff;
+}
+
+.Hotspot {
+    border-radius: 150px;
 }
 
 
@@ -187,7 +200,8 @@ a:hover {
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
     color: #555;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent!important;
 }
 
 .navbar.active .navbar-brand {

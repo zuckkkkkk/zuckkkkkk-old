@@ -8,11 +8,12 @@ $(document).ready(function() {
 
         } else if ($(window).scrollTop() < 50) {
 
-            $(".navbar").css("background-color", "none");
+            $(".navbar").css("background-color", "none!important");
             $(".navbar").css("box-shadow", "none");
 
         }
     });
+
 
     function update_users_count() {
         $('.counter1').animate({
@@ -78,7 +79,7 @@ $(document).ready(function() {
     var vsOpts = {
         $slides: $('.slide'),
         $list: $('.slides'),
-        duration: 6,
+        duration: 24,
         lineHeight: 50
     }
 
@@ -106,39 +107,7 @@ $(document).ready(function() {
         name: "Lottie Who Are We", // Name for future reference. Optional.
     });
 
-    //HomeAnim
-    var animationBuilding = bodymovin.loadAnimation({
-        container: document.getElementById('building-lottie'), // Required
-        path: '/assets/json/building.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Lottie building", // Name for future reference. Optional.
-    });
-    var animationFamily = bodymovin.loadAnimation({
-        container: document.getElementById('family-lottie'), // Required
-        path: '/assets/json/family.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Lottie family", // Name for future reference. Optional.
-    });
-    var animationTech = bodymovin.loadAnimation({
-        container: document.getElementById('tech-lottie'), // Required
-        path: '/assets/json/tech.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Lottie tech", // Name for future reference. Optional.
-    });
-    var animationEbsWeb = bodymovin.loadAnimation({
-        container: document.getElementById('ebsweb-lottie'), // Required
-        path: '/assets/json/ebsweb.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Lottie ebsweb", // Name for future reference. Optional.
-    });
+
     //Ham Anim
     let iconMenu = document.querySelector('#lottie-ham');
     let animationMenu = bodymovin.loadAnimation({
@@ -166,6 +135,73 @@ $(document).ready(function() {
         name: "Lottie Go Down", // Name for future reference. Optional.
     });
 });
+
+function openPopup(val) {
+    switch (val) {
+        case 1:
+            Swal.fire({
+                title: 'Contabilizzazione energetica dei consumi',
+                text: "Tra i criteri scelti da e-bs per garantire un efficiente servizio di lettura vi sono la qualità e la chiarezza dell’elaborato fornito, l’intuitività, l’esaustività dei dati e delle informazioni contenute. La frequenza delle letture, la validazione e il controllo del dato e l’assistenza all’hardware sono fattori determinanti per la valutazione dell’efficienza dei servizi di contabilizzazione forniti.",
+                confirmButtonColor: '#ff6c2b',
+                confirmButtonText: 'Chiamaci!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("tel:+3905119932364");
+                }
+            })
+            break;
+        case 2:
+            Swal.fire({
+                title: 'Contabilizzazione idrica dei consumi',
+                text: 'La suddivisione puntuale dei consumi di acqua fredda e calda sanitaria sono finalmente possibili attraverso l’installazione dei contatori divisionali leggibili da remoto. e-bs ha sviluppato un format, chiaro e intuitivo, di suddivisione delle spese di acqua fredda e calda per le utenze raggruppate. Offre la possibilità di liberarsi velocemente dal vincolo della lettura diretta in loco eliminando i consumi stimati o mancanti, garantendo un servizio certificato e preciso, in applicazione alle norme vigenti.',
+                confirmButtonColor: '#ff6c2b',
+                confirmButtonText: 'Chiamaci!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("tel:+3905119932364");
+                }
+            })
+            break;
+        case 3:
+            Swal.fire({
+                title: 'Installazione apparecchi di misurazione',
+                text: 'e-bs è in grado di fornire e installare impianti di contabilizzazione e monitoraggio dei consumi ENERGETICI e IDRICI per qualsiasi tipologia di utenza. Avvalendosi di contratti di fornitura con le più importanti multinazionali di produzione di apparecchiature e disponendo di tecnici qualificati, è in grado di affrontare qualsiasi richiesta. Ad oggi e-bs, forte della sua esperienza e dell’impegno quotidiano nello studio e nella ricerca di nuove tecnologie, è in grado di proporre l’installazione di nuovi sistemi evoluti capaci di trasmettere dati e consumi in tempo reale, fruibili su tutte le piattaforme (smartphone, tablet ecc…). Il noleggio è la soluzione a basso impatto economico che permette di adeguarsi alle normative vigenti dilazionando il costo delle apparecchiature nel tempo, comprendendo anche il servizio di lettura e rendicontazione.',
+                confirmButtonColor: '#ff6c2b',
+                confirmButtonText: 'Chiamaci!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("tel:+3905119932364");
+                }
+            })
+            break;
+        case 4:
+            Swal.fire({
+                title: 'Noleggio apparecchi di misurazione',
+                text: 'e-bs è in grado di fornire e installare impianti di contabilizzazione e monitoraggio dei consumi ENERGETICI e IDRICI per qualsiasi tipologia di utenza. Avvalendosi di contratti di fornitura con le più importanti multinazionali di produzione di apparecchiature e disponendo di tecnici qualificati, è in grado di affrontare qualsiasi richiesta. Ad oggi e-bs, forte della sua esperienza e dell’impegno quotidiano nello studio e nella ricerca di nuove tecnologie, è in grado di proporre l’installazione di nuovi sistemi evoluti capaci di trasmettere dati e consumi in tempo reale, fruibili su tutte le piattaforme (smartphone, tablet ecc…). Il noleggio è la soluzione a basso impatto economico che permette di adeguarsi alle normative vigenti dilazionando il costo delle apparecchiature nel tempo, comprendendo anche il servizio di lettura e rendicontazione. ',
+                confirmButtonColor: '#ff6c2b',
+                confirmButtonText: 'Chiamaci!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("tel:+3905119932364");
+                }
+            })
+            break;
+        case 5:
+            Swal.fire({
+                title: 'Assistenza tecnica',
+                text: 'e-bs è in grado di offrire un servizio di assistenza tecnica e fornitura ricambi delle primarie case di produzione di apparecchiature di contabilizzazione di energia e acqua. Siamo centro assistenza ufficiale ISTA per l’Emilia-Romagna e partner SINAPSI e offriamo ai nostri clienti un servizio veloce e competente. Attraverso un front office dedicato, riusciamo a dare risposta ai quesiti della clientela e a garantire un servizio di contabilizzazione energia e acqua trasparente, intuitivo e innovativo.',
+                confirmButtonColor: '#ff6c2b',
+                confirmButtonText: 'Chiamaci!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("tel:+3905119932364");
+                }
+            })
+            break;
+    }
+
+}
+
 var animationServiceFire = bodymovin.loadAnimation({
     container: document.getElementById('fire-service'), // Required
     path: '/assets/json/services-page-anim/fire.json', // Required

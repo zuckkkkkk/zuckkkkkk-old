@@ -13,6 +13,7 @@
     <script src="/assets/js/pageable.js"></script>
     <link rel="stylesheet" href="assets/css/pageable.scss">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -105,7 +106,33 @@
                         <li class="slide">
                             del tuo lavoro
                         </li>
-
+                        <li class="slide">
+                            del tuo condominio
+                        </li>
+                        <li class="slide">
+                            dei tuoi condòmini
+                        </li>
+                        <li class="slide">
+                            del tuo lavoro
+                        </li>
+                        <li class="slide">
+                            del tuo condominio
+                        </li>
+                        <li class="slide">
+                            dei tuoi condòmini
+                        </li>
+                        <li class="slide">
+                            del tuo lavoro
+                        </li>
+                        <li class="slide">
+                            del tuo condominio
+                        </li>
+                        <li class="slide">
+                            dei tuoi condòmini
+                        </li>
+                        <li class="slide">
+                            del tuo lavoro
+                        </li>
                     </ul>
 
                 </div>
@@ -117,9 +144,10 @@
         <div class="title">
             I nostri numeri
         </div>
+        <canvas id="myCanvas"></canvas>
         <div class="card-deck mx-md-5">
             <div class="card shadow-lg">
-                <div class=" text-center my-auto" style="font-size: 100px;">
+                <div class=" text-center mb-auto" style="font-size: 100px;">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
                                 <defs>
                                   <clipPath id="clip-path">
@@ -362,7 +390,7 @@
 
             </div>
             <div class="card shadow-lg">
-                <div class=" text-center my-auto" style="font-size: 100px;">
+                <div class=" text-center mb-auto" style="font-size: 100px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
                                     <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(-12557.115 1798.376)">
                                       <g id="Tracciato_37" data-name="Tracciato 37" transform="translate(12565 -1792)" fill="none">
@@ -405,7 +433,7 @@
 
             </div>
             <div class="card shadow-lg">
-                <div class=" text-center my-auto" style="font-size: 100px;">
+                <div class=" text-center mb-auto" style="font-size: 100px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
                                 <g id="Raggruppa_5" data-name="Raggruppa 5" transform="translate(-12350.588 1902.214)">
                                   <g id="Raggruppa_3" data-name="Raggruppa 3" transform="translate(12351.088 -1901.699)">
@@ -456,6 +484,7 @@
         </div>
     </div>
     <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
+
     <!--Parte di testo-->
     <div class="title" style="background-color: #282828;">
         A proposito di noi
@@ -472,8 +501,8 @@
                 <a href="#servizi" class="btn-primary ">Scopri i servizi</a>
             </div>
         </div>
-        <div class="col-md-4 text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 1152.365 941.639">
+        <div class="col-md-4 text-center imgSvg">
+            <svg id="thatSvg" xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 1152.365 941.639">
             <g id="Raggruppa_31" data-name="Raggruppa 31" transform="translate(-4816.444 -8513.5)">
               <g id="Raggruppa_30" data-name="Raggruppa 30">
                 <g id="Raggruppa_5" data-name="Raggruppa 5" transform="matrix(0.978, -0.208, 0.208, 0.978, -6866.377, 13204.217)">
@@ -578,7 +607,7 @@
                     <h3 class="titleHome">Un pensiero in meno, un piacere in più</h3>
                 </div>
                 <!-- section title -->
-                <p class="s ">Le nostre bollette sono pensate per essere intuitive e trasparenti, così che chiunque possa, in qualche minuto, capire esattamente la suddivisione delle sue spese. Sono pure molto belle da vedere😉. </p>
+                <p class="s ">Le nostre bollette sono pensate per essere intuitive e trasparenti, così che chiunque possa, in qualche minuto, capire esattamente la suddivisione delle sue spese. Sono pure molto belle da vedere. </p>
                 <a href="/bollette.html " class="btn-primary ">Scopri le bollette</a>
             </div>
         </div>
@@ -591,14 +620,14 @@
                     <h3 class="titleHome ">Che bella la tecnologia</h3>
                 </div>
                 <!-- section title -->
-                <p class="s ">Siamo giovani, molto giovani, e proprio per questo ci piace la tecnologia. Grazie a questo, gran parte degli aspetti della realtà di e-bs sono digitalizzati. Soprattutto la ricezione dei dati di lettura e l'invio delle bollette 📡.
+                <p class="s ">Siamo giovani, molto giovani, e proprio per questo ci piace la tecnologia. Grazie a questo, gran parte degli aspetti della realtà di e-bs sono digitalizzati. Soprattutto la ricezione dei dati di lettura e l'invio delle bollette .
                 </p>
                 <a href="#servizi" class="btn-primary ">Scopri</a>
             </div>
         </div>
         <div class="col-md-6">
             <img class="img_3_Home" src="/assets/img/Immagine_3_Home.jpg" alt="" srcset="">
-            <img class="img_2_Home" src="/assets/img/Immagine_2_Home.jpg" alt="" srcset="">
+            <img class="img_2_Home" src="/assets/img/Immagine_2_Home.png" alt="" srcset="">
         </div>
     </div>
     <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
@@ -632,7 +661,7 @@
           </svg>
             <h4>Contabilizzazione energetica dei consumi</h4>
             <p>Qualità, chiarezza ed esaustività sono i nostri punti di forza negli elaborati forniti agli utenti.</p>
-            <a href="#" class="cta">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+            <a href="#" class="cta" onclick="openPopup(1)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
 
         <div class="service service2">
@@ -641,7 +670,7 @@
           </svg>
             <h4>Contabilizzazione idrica dei consumi</h4>
             <p>Un format chiaro e intuitivo per la suddivisione delle spese di acqua fredda e calda.</p>
-            <a href="#" class="cta">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+            <a href="#" class="cta" onclick="openPopup(2)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
 
         <div class="service service3">
@@ -650,7 +679,7 @@
           </svg>
             <h4>Installazione apparecchi di misurazione</h4>
             <p>Siamo in grado di installare impianti di contabilizzazione e monitoraggio energetico e idrico. </p>
-            <a href="#" class="cta">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+            <a href="#" class="cta" onclick="openPopup(3)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
     </div>
     <div class="services-grid" style="background-color: #282828">
@@ -664,7 +693,7 @@
           </svg>
             <h4>Noleggio apparecchi di misurazione</h4>
             <p>Effettuiamo anche una formula a noleggio per adeguarsi alle nuove normative dilazionando i costi nel tempo.</p>
-            <a href="#" class="cta">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+            <a href="#" class="cta" onclick="openPopup(4)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
 
         <div class="service service3">
@@ -678,9 +707,10 @@
           </svg>
             <h4>Assistenza tecnica</h4>
             <p>Ovviamente offriamo anche assistenza tecnica e fornitura ricambi di tutti i prodotti che installiamo. Hai bisogno di una mano? Contatta il nostro front office.</p>
-            <a href="#" class="cta">Chiamaci <i class="fas fa-angle-right twodim"></i></a>
+            <a class="cta" onclick="openPopup(5)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
     </div>
+    <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
 
     <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
 
@@ -757,6 +787,7 @@
             </div>
         </div>
     </footer>
+
     <script src="//code.tidio.co/jsgqa5jicfpgw2yzfezqwzoqi2cdgdft.js" async></script>
     <!-- <script src="//code.tidio.co/jsgqa5jicfpgw2yzfezqwzoqi2cdgdft.js" async></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
