@@ -8,6 +8,11 @@
     src: url("/assets/font/Cera\ Pro\ Medium.otf");
 }
 
+@font-face {
+    font-family: "Nebula";
+    src: url("/assets/font/Nebula-Regular.otf");
+}
+
 * {
     font-family: 'Gotham', sans-serif;
     color: white!important;
@@ -16,7 +21,7 @@
 
 html,
 body {
-    background-color: #282828;
+    background-color: #282828!important;
 }
 
 
@@ -1858,7 +1863,8 @@ body {
 
 a.btn-primary {
     background-color: #ff6c2b!important;
-    text-decoration: none!important;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 a.btn-primary:hover {
@@ -1867,7 +1873,7 @@ a.btn-primary:hover {
 
 .navbar {
     transition: all 0.4s;
-    z-index: 10002!important;
+    z-index: 500!important;
 }
 
 .navbar .nav-link {
@@ -1878,7 +1884,8 @@ a.btn-primary:hover {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .navbar .navbar-brand {
@@ -1901,7 +1908,8 @@ a.btn-primary:hover {
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
     color: #555;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .navbar.active .navbar-brand {
@@ -2013,7 +2021,7 @@ body {
 }
 
 .go-down {
-    z-index: 1002;
+    z-index: 499;
     width: 100vw;
     position: absolute;
     display: flex;
@@ -2048,7 +2056,8 @@ ul.slides {
 }
 
 .nav-link {
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     color: #000000;
     transition: 1s;
 }
@@ -2077,10 +2086,12 @@ ul.slides {
 
 .nav-link:hover {
     text-decoration: underline;
+    text-decoration-color: transparent!important;
     color: #000000;
 }
 
 .title {
+    font-family: 'Nebula', sans-serif;
     font-size: 80px;
     text-align: center;
 }
@@ -2118,6 +2129,7 @@ ul.slides {
 }
 
 .titleHome {
+    font-family: 'Cera Pro', sans-serif;
     font-weight: 700;
 }
 
@@ -2130,12 +2142,16 @@ ul.slides {
 
 a {
     color: #fff!important;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     letter-spacing: 0.15em;
     display: inline-block;
     padding: 15px 20px;
     position: relative;
-    z-index: 10001;
+}
+
+.swal2-popup {
+    background-color: #282828!important;
 }
 
 a:after {
@@ -2183,7 +2199,8 @@ a:hover:after {
 
 .service a {
     color: #5b7abb;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .service h4 {
@@ -2253,7 +2270,8 @@ a:hover:after {
 }
 
 a:hover {
-    text-decoration: none!important;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .service>* {
@@ -2337,7 +2355,8 @@ footer ul {
 }
 
 .footer-copyright nav ul li a:hover {
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .footer-copyright nav ul li:first-child {
@@ -2400,17 +2419,20 @@ footer.light .footer-copyright {
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     -o-box-shadow: none;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     color: #ff6c2b;
 }
 
 .widget.no-box a {
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     color: #000000;
 }
 
 .widget.no-box a:hover {
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     color: #ff6c2b;
 }
 
@@ -2420,11 +2442,13 @@ footer.light .footer-copyright {
 
 .widget li a {
     color: #ff6c2b;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .widget li a:hover {
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 .widget-title {
@@ -2479,19 +2503,22 @@ ul.social-footer2 {
     margin: 0;
     padding: 0;
     width: auto;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 ul.social-footer2 li {
     display: inline-block;
     padding: 0;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     list-style-type: none;
 }
 
 ul.social-footer2 li a:hover {
     background-color: #ff6c2b;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
 }
 
 ul.social-footer2 li a {
@@ -2499,7 +2526,8 @@ ul.social-footer2 li a {
     height: 30px;
     width: 30px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline!important;
+    text-decoration-color: transparent!important;
     color: #fff!important;
     z-index: 10001;
 }
@@ -2653,6 +2681,7 @@ h2 {
 }
 
 .statico {
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -2693,6 +2722,8 @@ h2 {
 }
 
 .dinamico {
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 700!important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -2700,6 +2731,11 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+    .imgSvg {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 15px;
+    }
     .card {
         width: 100%!important;
         margin-left: 0px!important;
@@ -2759,13 +2795,16 @@ h2 {
         width: 100vw!important;
     }
     .slide {
-        text-align: center;
+        text-align: left;
     }
     ul.slides {
         text-align: center;
     }
     .front {
         height: 100%!important;
+    }
+    .go-down {
+        top: 80vh!important;
     }
 }
 
@@ -2832,6 +2871,18 @@ h2 {
     background-color: #282828;
     background-size: cover;
     background-position: center center;
+}
+
+.counter1,
+.counter2,
+.counter3 {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 2vh;
 }
 
 .front:after {
@@ -3133,3 +3184,6 @@ h2 {
     -o-transform: rotate(-90deg);
     float: left;
 }
+
+
+/*HOURS BUTTONS */
