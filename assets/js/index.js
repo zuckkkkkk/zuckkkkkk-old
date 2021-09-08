@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
     $(document).scroll(function() {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 150) {
 
             $(".navbar").css("background-color", "#282828");
             $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
 
-        } else if ($(window).scrollTop() < 50) {
+        } else if ($(window).scrollTop() < 150) {
 
             $(".navbar").css("background-color", "none!important");
             $(".navbar").css("box-shadow", "none");
