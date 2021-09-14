@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     $(document).scroll(function() {
         if ($(window).scrollTop() > 150) {
 
@@ -13,7 +14,6 @@ $(document).ready(function() {
 
         }
     });
-
 
     function update_users_count() {
         $('.counter1').animate({
@@ -134,6 +134,65 @@ $(document).ready(function() {
         autoplay: true, // Optional
         name: "Lottie Go Down", // Name for future reference. Optional.
     });
+
+    var botui = new BotUI('manuali-bot');
+    botui.message.add({
+        content: 'Ciao! Seleziona qui sotto la marca dei tuoi dispositivi.'
+    }).then(function() { // wait till its shown
+        botui.action.button({
+            action: [{ // Caleffi
+                    text: 'Caleffi',
+                    value: '1'
+                },
+                { // Controlli
+                    text: 'Controlli',
+                    value: '2'
+                },
+                { // Controlli 2
+                    text: 'Controlli 2',
+                    value: '3'
+                },
+                { // Evohome
+                    text: 'Evohome',
+                    value: '4'
+                },
+                { // Honeywell
+                    text: 'Honeywell',
+                    value: '5'
+                },
+                { // Save Energy
+                    text: 'Save Energy',
+                    value: '6'
+                },
+                { // Siemens
+                    text: 'Siemens',
+                    value: '7'
+                },
+                { // Sontex
+                    text: 'Sontex',
+                    value: '8'
+                },
+                { // Sontex
+                    text: 'Sontex 2',
+                    value: '9'
+                },
+                { // Sontex
+                    text: 'Sontex 3',
+                    value: '10'
+                },
+            ]
+        }).then(function(res) { // will be called when a button is clicked.
+            botui.message.add({ // show next message 'Hai selezionato: ' + res.text + . Scarica il pdf [cliccando qui](http://127.0.0.1:5500/assets/Manuali/1.pdf)
+                content: 'Hai selezionato ' + res.text
+            });
+            var link = "/assets/Manuali/" + res.value + ".pdf";
+            botui.message.add({
+                type: 'html', // this is 'text' by default
+                content: '<a href= "' + link + '" > Clicca qui per scaricare il pdf </a>'
+            });
+        });
+    });
+
 });
 
 function openPopup(val) {

@@ -24,8 +24,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Index js -->
+    <!--BotUI-->
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
     <script defer type="text/javascript" src="assets/js/index.js"></script>
     <script defer type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script src="./assets/js/turn.js"></script>
 </head>
 
 <body id="no-transition">
@@ -46,9 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/services.html">Servizi</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="bollette.html">Bollette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manualistica.html">Manualistica</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contatti</a>
@@ -61,158 +69,719 @@
             </div>
         </nav>
     </header>
-    <div class="main" style="background: #282828;">
-        <ul id="bk-list" class="bk-list clearfix">
-            <li>
-                <div class="bk-book book-1 bk-bookdefault">
-                    <div class="bk-front">
-                        <div class="bk-cover-back"></div>
-                        <div class="bk-cover">
-                            <h2>
-                                <span>Anthony Burghiss</span>
-                                <span>A Catwork Orange</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="bk-page">
-                        <div class="bk-content bk-content-current">
-                            <p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish
-                                dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
-                        </div>
-                        <div class="bk-content">
-                            <p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail
-                                Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
-                        </div>
-                        <div class="bk-content">
-                            <p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian
-                                mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
-                        </div>
-                    </div>
-                    <div class="bk-back">
-                        <p>In this nightmare vision of cats in revolt, fifteen-year-old Alex and his friends set out on a diabolical orgy of robbery, rape, torture and murder. Alex is jailed for his teenage delinquency and the State tries to reform him -
-                            but at what cost?</p>
-                    </div>
-                    <div class="bk-right"></div>
-                    <div class="bk-left">
-                        <h2>
-                            <span>Anthony Burghiss</span>
-                            <span>A Catwork Orange</span>
-                        </h2>
-                    </div>
-                    <div class="bk-top"></div>
-                    <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                    <button class="bk-bookback">Flip</button>
-                    <button class="bk-bookview">View inside</button>
-                    <h3>
-                        <span>Anthony Burghiss</span>
-                        <span>A Catwork Orange</span>
-                    </h3>
-                    <p>Social prophecy? Black comedy? Study of freewill? A Clockwork Orange is all of these. It is also a dazzling experiment in language, as Burghiss creates a new language - 'meow', the cat slang of a not-too-distant future.</p>
-                </div>
-            </li>
-            <li>
-                <div class="bk-book book-2 bk-bookdefault">
-                    <div class="bk-front">
-                        <div class="bk-cover-back"></div>
-                        <div class="bk-cover">
-                            <h2>
-                                <span>The Catfather</span>
-                                <span>Mario Purrzo</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="bk-page">
-                        <div class="bk-content">
-                            <p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail
-                                Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
-                        </div>
-                        <div class="bk-content">
-                            <p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian
-                                mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
-                        </div>
-                        <div class="bk-content bk-content-current">
-                            <p>Red snapper Kafue pike fangtooth humums's slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish
-                                dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
-                        </div>
-                    </div>
-                    <div class="bk-back">
-                        <p>Tyrant, blackmailer, racketeer, murderer - his influence reaches every level of American society. Meet Cat Corleone, a friendly cat, a just cat, a reasonable cat. The deadliest lord of the Cata Nostra. The Catfather.</p>
-                    </div>
-                    <div class="bk-right"></div>
-                    <div class="bk-left">
-                        <h2>
-                            <span>The Catfather</span>
-                            <span>by Mario Purrzo</span>
-                        </h2>
-                    </div>
-                    <div class="bk-top"></div>
-                    <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                    <button class="bk-bookback">Flip</button>
-                    <button class="bk-bookview">View inside</button>
-                    <h3>
-                        <span>Mario Purrzo</span>
-                        <span>The Catfather</span>
-                    </h3>
-                    <p>A modern masterpiece,The Godfather is a searing portrayal of the 1940s criminal underworld. It is also the intimate story of the Corleone family, at once drawn together and ripped apart by its unique position at the core of the American
-                        Mafia. </p>
-                </div>
-            </li>
-            <li>
-                <div class="bk-book book-3 bk-bookdefault">
-                    <div class="bk-front">
-                        <div class="bk-cover-back"></div>
-                        <div class="bk-cover">
-                            <h2>
-                                <span>J.C. Salinger</span>
-                                <span>The Catcher in the Rye</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="bk-page">
-                        <div class="bk-content bk-content-current">
-                            <p>Oceanic flyingfish spotted danio fingerfish leaffish, Billfish halibut Atlantic cod threadsail poacher slender mola. Swallower muskellunge, turbot needlefish yellow perch trout dhufish dwarf gourami false moray southern smelt
-                                cod dwarf gourami. Betta blue catfish bottlenose electric ray sablefish.</p>
-                        </div>
-                        <div class="bk-content">
-                            <p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail
-                                Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
-                        </div>
-                        <div class="bk-content">
-                            <p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian
-                                mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
-                        </div>
-                    </div>
-                    <div class="bk-back">
-                        <!-- <img src="images/3.png" alt="cat"/> -->
-                        <p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school. Navigating his way through the challenges of growing up, Holden dissects the 'phony' aspects of society.</p>
-                    </div>
-                    <div class="bk-right"></div>
-                    <div class="bk-left">
-                        <h2>
-                            <span>J.C. Salinger</span>
-                            <span>The Catcher in the Rye</span>
-                        </h2>
-                    </div>
-                    <div class="bk-top"></div>
-                    <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                    <button class="bk-bookback">Flip</button>
-                    <button class="bk-bookview">View inside</button>
-                    <h3>
-                        <span>J.C. Salinger</span>
-                        <span>The Catcher in the Rye</span>
-                    </h3>
-                    <p>Originally published for adults, this novel has since become popular with adolescent readers for its themes of cat confusion, angst, alienation, and rebellion.</p>
-                </div>
-            </li>
-        </ul>
+    <div class="title" style=" margin-top:100px; background-color: #282828;">
+        I manuali
     </div>
-    <script defer type="text/javascript" src="assets/js/books1.js"></script>
+    <div id="manuali-bot">
+        <bot-ui>
+            </botui>
+    </div>
+    <div class="container container-libri">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/1/1-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book1">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/2/2-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book2">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/3/3-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book3">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/4/4-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Controlli</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book4">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/5/5-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Controlli - 2</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book5">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/6/6-1.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book6">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/7/7-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book7">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/8/8-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book8">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/9/9-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book9">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover" style="background-image: url('./assets/img/pdf/10/10-01.jpg')!important;">
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>Caleffi</span>
+                            <span>Manuale</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center " style="z-index: 100;">
+                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book10">
+                        Sfoglia Manuale
+                      </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="book1" tabindex="-1" role="dialog" aria-labelledby="ModalBook1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div id="flipbook-1">
+                        <div style="background-image: url('./assets/img/pdf/1/1-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-18.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-19.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-20.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-21.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-22.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-23.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-24.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-25.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-26.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-27.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-28.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-29.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-30.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-31.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/1/1-32.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book2" tabindex="-1" role="dialog" aria-labelledby="ModalBook2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-2">
+                        <div style="background-image: url('./assets/img/pdf/2/2-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/2/2-12.jpg'); background-size: contain;"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book3" tabindex="-1" role="dialog" aria-labelledby="ModalBook3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-3">
+                        <div style="background-image: url('./assets/img/pdf/3/3-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-18.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-19.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-20.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-21.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-22.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-23.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-24.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-25.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-26.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-27.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-28.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-29.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-30.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-31.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-32.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-33.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-34.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-35.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-36.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-37.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-38.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-39.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-40.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-41.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-42.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-43.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-44.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-45.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-46.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-47.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-48.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-49.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-50.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-51.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-52.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-53.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-54.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-55.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-56.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-57.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-58.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/3/3-59.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book4" tabindex="-1" role="dialog" aria-labelledby="ModalBook4" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-4">
+                        <div style="background-image: url('./assets/img/pdf/4/4-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-18.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-19.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-20.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-21.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-22.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-23.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-24.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-25.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-26.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-27.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-28.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-29.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-30.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-31.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-32.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-33.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-34.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-35.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-36.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-37.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-38.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-39.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-40.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-41.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-42.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-43.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-44.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-45.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-46.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-47.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-48.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/4/4-49.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book5" tabindex="-1" role="dialog" aria-labelledby="ModalBook5" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-5">
+                        <div style="background-image: url('./assets/img/pdf/5/5-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/5/5-18.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book6" tabindex="-1" role="dialog" aria-labelledby="ModalBook6" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-6">
+                        <div style="background-image: url('./assets/img/pdf/6/6-1.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/6/6-2.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book7" tabindex="-1" role="dialog" aria-labelledby="ModalBook7" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-7">
+                        <div style="background-image: url('./assets/img/pdf/7/7-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/7/7-14.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book8" tabindex="-1" role="dialog" aria-labelledby="ModalBook8" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-8">
+                        <div style="background-image: url('./assets/img/pdf/8/8-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/8/8-14.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book9" tabindex="-1" role="dialog" aria-labelledby="ModalBook9" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-9">
+                        <div style="background-image: url('./assets/img/pdf/9/9-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-18.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-19.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-20.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-21.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-22.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-23.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-24.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-25.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-26.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-27.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/9/9-28.jpg'); background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book10" tabindex="-1" role="dialog" aria-labelledby="ModalBook10" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="flipbook-10">
+                        <div style="background-image: url('./assets/img/pdf/10/10-01.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-02.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-03.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-04.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-05.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-06.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-07.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-08.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-09.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-10.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-11.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-12.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-13.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-14.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-15.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-16.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-17.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-18.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-19.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-20.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-21.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-22.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-23.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-24.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-25.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-26.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-27.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-28.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-29.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-30.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-31.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-32.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-33.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-34.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-35.jpg'); background-size: contain;"></div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-36.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-37.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-38.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-39.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-40.jpg'); background-size: contain;"> </div>
+                        <div style="background-image: url('./assets/img/pdf/10/10-41.jpg'); background-size: contain;"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">E-BS<span></span></h5>
+                            <p>e-bs nasce nel 2018 e qui bisogna metterci una descirizone breve ma non saprei cosa davvero </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="/index.html">Home</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/who-are-we.html">Chi siamo</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/bollette.html">Le nostre bollette</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/contact-us.html">Contattaci</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Iscriviti<span></span></h5>
+                            <p>Lascia qui sotto la tua email</p>
+                            <a class="btn" href="#." target="_blank">Registrati ora</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Contattaci<span></span></h5>
+
+                            <p><a href="mailto:assistenza@e-bs.it" title="glorythemes">assistenza@e-bs.it</a></p>
+                            <ul class="">
+                                <li>
+                                    <a>
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                    <a>
+                                        <i class="fab fa-google fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>e-bs Energy Billing Services © 2021. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.tidio.co/jsgqa5jicfpgw2yzfezqwzoqi2cdgdft.js" async></script>
+    <script type="text/javascript">
+        $("#flipbook-1").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-2").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-3").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-4").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-5").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-6").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-7").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-8").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-9").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+        $("#flipbook-10").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+    </script>
 
 </body>
 
