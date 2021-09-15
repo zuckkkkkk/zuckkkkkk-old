@@ -16,6 +16,10 @@ body {
     overflow: hidden;
 }
 
+.annotation-wrapper.hide ::slotted(*) {
+    opacity: var(--min-hotspot-opacity, 0.05)!important;
+}
+
 
 /*
   NAVBAR
@@ -195,6 +199,15 @@ a:hover {
 
 .navbar.active .nav-link {
     color: #555;
+}
+
+.HotspotAnnotation {
+    display: none;
+    transition: 1s linear;
+}
+
+.Hotspot:hover>.HotspotAnnotation {
+    display: block;
 }
 
 .navbar.active .nav-link:hover,
