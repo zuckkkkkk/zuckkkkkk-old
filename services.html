@@ -28,6 +28,11 @@
     <title>Servizi - Energy Billing Service</title>
     <script defer type="text/javascript" src="assets/js/index.js"></script>
     <script defer type="text/javascript" src="assets/js/contact-us.js"></script>
+    <style>
+        .annotation-wrapper.hide ::slotted(*) {
+            opacity: var(--min-hotspot-opacity, 0)!important;
+        }
+    </style>
     <!-- Hotjar Tracking Code for http://www.e-bs.it -->
     <script>
         (function(h, o, t, j, a, r) {
@@ -86,7 +91,7 @@
         </nav>
     </header>
     <!--End Navbar-->
-    <div class="go-down" style="cursor: pointer;">
+    <div class="go-down" style="width: 100vw!Important;cursor: pointer;">
         <div id="lottie-go-down">
 
         </div>
@@ -102,24 +107,90 @@
     <div class="title-servizi">
         I nostri servizi
     </div>
+
     <div id="servizi" class="services-grid" style="background-color: #282828">
-        <div class="service service1" style="z-index: 10;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30.106" height="56.001" viewBox="0 0 30.106 56.001">
-            <path id="Icon_simple-mediafire" data-name="Icon simple-mediafire" d="M25.97,12.109c-1.157.98,6.867-1.069,6.067,2.891-.775,3.81-8.447-.8-16.854-.411-3.719.17-7.126,1.237-9.3,3.892,2.27-2.585,6.769-1.969,5.6-.189C8.745,22.436,3.6,19.452,0,27.567c.432-.933,1.6-2.791,6.634-3.561,3.7-.565,9.833-.037,11.793,3.026C20.582,30.4,9.655,30.019,15.7,30.7c8.384.947,14.7,7.723,22.9,7.726,10.617,0,17.318-5.423,17.4-14.341C56.147,7.934,34.764,4.679,25.97,12.109ZM41.762,29.735a19.956,19.956,0,0,1-7.849-2.287c-5.518-2.695-7.789-3.624-7.789-3.752,0-.156,3.313,1.129,8.9-1.841,3.227-1.715,3.341-3.213,6.743-3.512a6.1,6.1,0,0,1,6.911,5.782C48.676,27.273,45.824,29.849,41.762,29.735Z" transform="translate(38.429) rotate(90)" fill="#fff"/>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501" height="1112" viewBox="0 0 501 1112" style="display:block; margin: auto!important;">
+            <defs>
+              <filter id="Ellisse_220" x="0" y="0" width="298" height="298" filterUnits="userSpaceOnUse">
+                <feOffset dx="-15" dy="10" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="15" result="blur"/>
+                <feFlood flood-opacity="0.161"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Ellisse_221" x="204" y="274" width="297" height="298" filterUnits="userSpaceOnUse">
+                <feOffset dx="-15" dy="10" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="15" result="blur-2"/>
+                <feFlood flood-opacity="0.161"/>
+                <feComposite operator="in" in2="blur-2"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Ellisse_222" x="1" y="545" width="298" height="298" filterUnits="userSpaceOnUse">
+                <feOffset dx="-15" dy="10" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="15" result="blur-3"/>
+                <feFlood flood-opacity="0.161"/>
+                <feComposite operator="in" in2="blur-3"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Ellisse_223" x="199" y="814" width="298" height="298" filterUnits="userSpaceOnUse">
+                <feOffset dx="-15" dy="10" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="15" result="blur-4"/>
+                <feFlood flood-opacity="0.161"/>
+                <feComposite operator="in" in2="blur-4"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g id="Raggruppa_147" data-name="Raggruppa 147" transform="translate(-11821 351)">
+              <path id="Tracciato_409" data-name="Tracciato 409" d="M12184.219-74.239s-.262,24.848,0,44.63c.418,31.55,9.809,76.772,61.528,99.948,14.733,6.6,30.976,12.971,52.863,15.021,0,0-91.925-13.436-116.676,89.376,0,0,23.182-138.942-114.536-157.347,0,0,51.113,1.038,78.486-21.781S12184.219-74.239,12184.219-74.239Z" transform="translate(-96.826 -125.584)" fill="#ff6c2b"/>
+              <path id="Tracciato_410" data-name="Tracciato 410" d="M113.82,0a259.559,259.559,0,0,0-2.045,35.945c.418,31.55,9.809,76.772,61.529,99.948,14.733,6.6,30.975,12.971,52.863,15.021,0,0-93.668-14.131-118.419,88.681,0,0,29.97-136.612-107.748-155.017,0,0,45.177,2.589,72.549-20.23S113.82,0,113.82,0Z" transform="translate(12167.118 57.095) rotate(73)" fill="#ff6c2b"/>
+              <path id="Tracciato_411" data-name="Tracciato 411" d="M12191.973-52.827a202.331,202.331,0,0,0-2.32,34.341c.418,31.55,9.81,76.772,61.529,99.948,14.732,6.6,30.975,12.971,52.863,15.021,0,0-93.668-14.131-118.42,88.681,0,0,29.953-133.828-107.764-152.232,0,0,49.465-1.318,76.836-24.137S12191.973-52.827,12191.973-52.827Z" transform="translate(-105.336 404.386)" fill="#ff6c2b"/>
+              <g transform="matrix(1, 0, 0, 1, 11821, -351)" filter="url(#Ellisse_220)">
+                <circle id="Ellisse_220-2" data-name="Ellisse 220" cx="104" cy="104" r="104" transform="translate(60 35)" fill="#fff"/>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, 11821, -351)" filter="url(#Ellisse_221)">
+                <ellipse id="Ellisse_221-2" data-name="Ellisse 221" cx="103.5" cy="104" rx="103.5" ry="104" transform="translate(264 309)" fill="#fff"/>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, 11821, -351)" filter="url(#Ellisse_222)">
+                <circle id="Ellisse_222-2" data-name="Ellisse 222" cx="104" cy="104" r="104" transform="translate(61 580)" fill="#fff"/>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, 11821, -351)" filter="url(#Ellisse_223)">
+                <circle id="Ellisse_223-2" data-name="Ellisse 223" cx="104" cy="104" r="104" transform="translate(259 849)" fill="#fff"/>
+              </g>
+              <g id="Ellisse_224" data-name="Ellisse 224" transform="translate(11881 -316)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-width="4" stroke-dasharray="25">
+                <circle cx="104" cy="104" r="104" stroke="none"/>
+                <circle cx="104" cy="104" r="102" fill="none"/>
+              </g>
+              <g id="Ellisse_225" data-name="Ellisse 225" transform="translate(12085 -42)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-width="4" stroke-dasharray="25">
+                <ellipse cx="103.5" cy="104" rx="103.5" ry="104" stroke="none"/>
+                <ellipse cx="103.5" cy="104" rx="101.5" ry="102" fill="none"/>
+              </g>
+              <g id="Ellisse_226" data-name="Ellisse 226" transform="translate(11881 229)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-width="4" stroke-dasharray="25">
+                <circle cx="104" cy="104" r="104" stroke="none"/>
+                <circle cx="104" cy="104" r="102" fill="none"/>
+              </g>
+              <g id="Ellisse_227" data-name="Ellisse 227" transform="translate(12080 498)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-width="4" stroke-dasharray="25">
+                <circle cx="104" cy="104" r="104" stroke="none"/>
+                <circle cx="104" cy="104" r="102" fill="none"/>
+              </g>
+              <path id="Tracciato_412" data-name="Tracciato 412" d="M8.877,0,0,8.877l8.877,8.877" transform="translate(12176.054 342.332) rotate(180)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+              <path id="Tracciato_413" data-name="Tracciato 413" d="M12501.4,925.588l-8.877,8.877,8.877,8.877" transform="translate(-504.113 -872.517)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+              <path id="Tracciato_414" data-name="Tracciato 414" d="M8.877,0,0,8.877l8.877,8.877" transform="translate(12176.054 -203.085) rotate(180)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+              <path id="Tracciato_415" data-name="Tracciato 415" d="M12501.4,925.588l-8.877,8.877,8.877,8.877" transform="translate(-504.113 -332.386)" fill="none" stroke="#ff6c2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+            </g>
           </svg>
-            <h4>Contabilizzazione energetica dei consumi</h4>
-            <p>Qualità, chiarezza ed esaustività sono i nostri punti di forza negli elaborati forniti agli utenti.</p>
-            <a href="#" class="cta" onclick="openPopup(1)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+
+        <!-- <div class="service service2" style="z-index: 10;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="48.911" viewBox="0 0 31.5 48.911">
+                <g id="Raggruppa_32" data-name="Raggruppa 32" transform="translate(-104.656 1370.657)">
+                  <path id="Icon_map-car-rental" data-name="Icon map-car-rental" d="M29.52,2.88H15.9a6.358,6.358,0,0,0-4.861-2.7,5.885,5.885,0,0,0-5.967,5.87,5.815,5.815,0,0,0,5.967,5.787A6.182,6.182,0,0,0,16.569,7.92h1.984l1.438-1.439L21.428,7.92h.9l1.437-1.439L25.2,7.92h.9l1.438-1.439L28.971,7.92h.549v.2l-.125.03,2.837-2.781ZM9.1,7.639a1.728,1.728,0,1,1,1.729-1.727A1.728,1.728,0,0,1,9.1,7.639Z" transform="translate(101.757 -1370.835)" fill="#fff"/>
+                  <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M30.656,33.75H29.25V1.688A1.687,1.687,0,0,0,27.563,0H3.938A1.687,1.687,0,0,0,2.25,1.688V33.75H.844A.844.844,0,0,0,0,34.594V36H31.5V34.594A.844.844,0,0,0,30.656,33.75ZM9,5.344A.844.844,0,0,1,9.844,4.5h2.813a.844.844,0,0,1,.844.844V8.156A.844.844,0,0,1,12.656,9H9.844A.844.844,0,0,1,9,8.156Zm0,6.75a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844v2.813a.844.844,0,0,1-.844.844H9.844A.844.844,0,0,1,9,14.906ZM12.656,22.5H9.844A.844.844,0,0,1,9,21.656V18.844A.844.844,0,0,1,9.844,18h2.813a.844.844,0,0,1,.844.844v2.813A.844.844,0,0,1,12.656,22.5ZM18,33.75H13.5V27.844A.844.844,0,0,1,14.344,27h2.813a.844.844,0,0,1,.844.844Zm4.5-12.094a.844.844,0,0,1-.844.844H18.844A.844.844,0,0,1,18,21.656V18.844A.844.844,0,0,1,18.844,18h2.813a.844.844,0,0,1,.844.844Zm0-6.75a.844.844,0,0,1-.844.844H18.844A.844.844,0,0,1,18,14.906V12.094a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844Zm0-6.75A.844.844,0,0,1,21.656,9H18.844A.844.844,0,0,1,18,8.156V5.344a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844Z" transform="translate(104.656 -1357.746)" fill="#fff"/>
+                </g>
+              </svg>
+            <h4>Noleggio apparecchi di misurazione</h4>
+            <p>Effettuiamo anche una formula a noleggio per adeguarsi alle nuove normative dilazionando i costi nel tempo.</p>
+            <a href="#" class="cta" onclick="openPopup(4)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
 
-        <div class="service service2" style="z-index: 10;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="56.091" height="60.715" viewBox="0 0 56.091 60.715">
-            <path id="Icon_metro-water" data-name="Icon metro-water" d="M31.433,29.146c-1.551,12.493-9.475,14.715-9.475,23.4a9.832,9.832,0,0,0,19.663,0c0-8.686-7.924-10.908-9.475-23.4a.367.367,0,0,0-.713,0ZM13.221,1.824c-1.551,12.493-9.475,14.712-9.475,23.4a9.831,9.831,0,0,0,19.66,0c0-8.686-7.924-10.908-9.475-23.4a.365.365,0,0,0-.71,0Zm36.43,0c-1.551,12.493-9.475,14.715-9.475,23.4a9.831,9.831,0,0,0,19.66,0c0-8.686-7.924-10.908-9.475-23.4a.365.365,0,0,0-.71,0Z" transform="translate(-3.746 -1.544)" fill="#fff"/>
-          </svg>
-            <h4>Contabilizzazione idrica dei consumi</h4>
-            <p>Un format chiaro e intuitivo per la suddivisione delle spese di acqua fredda e calda.</p>
-            <a href="#" class="cta" onclick="openPopup(2)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
-        </div>
 
         <div class="service service3" style="z-index: 10;">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
@@ -129,20 +200,28 @@
             <p>Siamo in grado di installare impianti di contabilizzazione e monitoraggio energetico e idrico. </p>
             <a href="#" class="cta" onclick="openPopup(3)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
+        <div class="service service1" style="z-index: 10;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30.106" height="56.001" viewBox="0 0 30.106 56.001">
+            <path id="Icon_simple-mediafire" data-name="Icon simple-mediafire" d="M25.97,12.109c-1.157.98,6.867-1.069,6.067,2.891-.775,3.81-8.447-.8-16.854-.411-3.719.17-7.126,1.237-9.3,3.892,2.27-2.585,6.769-1.969,5.6-.189C8.745,22.436,3.6,19.452,0,27.567c.432-.933,1.6-2.791,6.634-3.561,3.7-.565,9.833-.037,11.793,3.026C20.582,30.4,9.655,30.019,15.7,30.7c8.384.947,14.7,7.723,22.9,7.726,10.617,0,17.318-5.423,17.4-14.341C56.147,7.934,34.764,4.679,25.97,12.109ZM41.762,29.735a19.956,19.956,0,0,1-7.849-2.287c-5.518-2.695-7.789-3.624-7.789-3.752,0-.156,3.313,1.129,8.9-1.841,3.227-1.715,3.341-3.213,6.743-3.512a6.1,6.1,0,0,1,6.911,5.782C48.676,27.273,45.824,29.849,41.762,29.735Z" transform="translate(38.429) rotate(90)" fill="#fff"/>
+          </svg>
+            <h4>Contabilizzazione energetica dei consumi</h4>
+            <p>Qualità, chiarezza ed esaustività sono i nostri punti di forza negli elaborati forniti agli utenti.</p>
+            <a href="#" class="cta" onclick="openPopup(1)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+        </div> -->
+
+
     </div>
     <div class="services-grid" style="background-color: #282828">
-
         <div class="service service2" style="z-index: 10;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="48.911" viewBox="0 0 31.5 48.911">
-            <g id="Raggruppa_32" data-name="Raggruppa 32" transform="translate(-104.656 1370.657)">
-              <path id="Icon_map-car-rental" data-name="Icon map-car-rental" d="M29.52,2.88H15.9a6.358,6.358,0,0,0-4.861-2.7,5.885,5.885,0,0,0-5.967,5.87,5.815,5.815,0,0,0,5.967,5.787A6.182,6.182,0,0,0,16.569,7.92h1.984l1.438-1.439L21.428,7.92h.9l1.437-1.439L25.2,7.92h.9l1.438-1.439L28.971,7.92h.549v.2l-.125.03,2.837-2.781ZM9.1,7.639a1.728,1.728,0,1,1,1.729-1.727A1.728,1.728,0,0,1,9.1,7.639Z" transform="translate(101.757 -1370.835)" fill="#fff"/>
-              <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M30.656,33.75H29.25V1.688A1.687,1.687,0,0,0,27.563,0H3.938A1.687,1.687,0,0,0,2.25,1.688V33.75H.844A.844.844,0,0,0,0,34.594V36H31.5V34.594A.844.844,0,0,0,30.656,33.75ZM9,5.344A.844.844,0,0,1,9.844,4.5h2.813a.844.844,0,0,1,.844.844V8.156A.844.844,0,0,1,12.656,9H9.844A.844.844,0,0,1,9,8.156Zm0,6.75a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844v2.813a.844.844,0,0,1-.844.844H9.844A.844.844,0,0,1,9,14.906ZM12.656,22.5H9.844A.844.844,0,0,1,9,21.656V18.844A.844.844,0,0,1,9.844,18h2.813a.844.844,0,0,1,.844.844v2.813A.844.844,0,0,1,12.656,22.5ZM18,33.75H13.5V27.844A.844.844,0,0,1,14.344,27h2.813a.844.844,0,0,1,.844.844Zm4.5-12.094a.844.844,0,0,1-.844.844H18.844A.844.844,0,0,1,18,21.656V18.844A.844.844,0,0,1,18.844,18h2.813a.844.844,0,0,1,.844.844Zm0-6.75a.844.844,0,0,1-.844.844H18.844A.844.844,0,0,1,18,14.906V12.094a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844Zm0-6.75A.844.844,0,0,1,21.656,9H18.844A.844.844,0,0,1,18,8.156V5.344a.844.844,0,0,1,.844-.844h2.813a.844.844,0,0,1,.844.844Z" transform="translate(104.656 -1357.746)" fill="#fff"/>
-            </g>
-          </svg>
-            <h4>Noleggio apparecchi di misurazione</h4>
-            <p>Effettuiamo anche una formula a noleggio per adeguarsi alle nuove normative dilazionando i costi nel tempo.</p>
-            <a href="#" class="cta" onclick="openPopup(4)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="56.091" height="60.715" viewBox="0 0 56.091 60.715">
+                <path id="Icon_metro-water" data-name="Icon metro-water" d="M31.433,29.146c-1.551,12.493-9.475,14.715-9.475,23.4a9.832,9.832,0,0,0,19.663,0c0-8.686-7.924-10.908-9.475-23.4a.367.367,0,0,0-.713,0ZM13.221,1.824c-1.551,12.493-9.475,14.712-9.475,23.4a9.831,9.831,0,0,0,19.66,0c0-8.686-7.924-10.908-9.475-23.4a.365.365,0,0,0-.71,0Zm36.43,0c-1.551,12.493-9.475,14.715-9.475,23.4a9.831,9.831,0,0,0,19.66,0c0-8.686-7.924-10.908-9.475-23.4a.365.365,0,0,0-.71,0Z" transform="translate(-3.746 -1.544)" fill="#fff"/>
+              </svg>
+            <h4>Contabilizzazione idrica dei consumi</h4>
+            <p>Un format chiaro e intuitivo per la suddivisione delle spese di acqua fredda e calda.</p>
+            <a href="#" class="cta" onclick="openPopup(2)">Scopri di più <i class="fas fa-angle-right twodim"></i></a>
         </div>
+
+
 
         <div class="service service3" style="z-index: 10;">
             <svg xmlns="http://www.w3.org/2000/svg" width="63.656" height="40.508" viewBox="0 0 63.656 40.508">

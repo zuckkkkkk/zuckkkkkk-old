@@ -16,10 +16,6 @@ body {
     overflow: hidden;
 }
 
-.annotation-wrapper.hide ::slotted(*) {
-    opacity: var(--min-hotspot-opacity, 0.05)!important;
-}
-
 
 /*
   NAVBAR
@@ -31,6 +27,18 @@ body {
 
 .navbar .nav-link {
     color: #fff!important;
+}
+
+button[slot="hotspot-1"],
+button[slot="hotspot-2"],
+button[slot="hotspot-3"],
+button[slot="hotspot-4"],
+button[slot="hotspot-5"],
+button[slot="hotspot-6"],
+button[slot="hotspot-7"],
+button[slot="hotspot-8"],
+button[slot="hotspot-9"] {
+    --min-hotspot-opacity: 0;
 }
 
 .navbar .nav-link:hover,

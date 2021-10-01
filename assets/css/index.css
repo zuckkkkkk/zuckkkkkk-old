@@ -2049,9 +2049,9 @@ body {
 
 .go-down {
     z-index: 499;
-    width: 100vw;
     position: absolute;
     display: flex;
+    width: 77%!important;
     top: 85vh;
     height: 10vh;
     flex-flow: column nowrap;
@@ -2733,7 +2733,7 @@ h2 {
 .img_2_Home {
     position: inherit;
     z-index: 1;
-    width: 35vw!important;
+    width: 25vw!important;
 }
 
 .img_1_Home {

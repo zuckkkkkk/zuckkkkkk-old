@@ -13,7 +13,7 @@
     <script src="/assets/js/pageable.js"></script>
     <link rel="stylesheet" href="assets/css/pageable.scss">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,6 +50,8 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 </head>
+<div id="hero">
+</div>
 
 <body id="no-transition" style="overflow-x: hidden; transform: none!important;">
     <header class="header">
@@ -86,76 +88,74 @@
             </div>
         </nav>
     </header>
-    <div class="go-down" style="cursor: pointer;">
-        <div id="lottie-go-down">
-
-        </div>
-
-    </div>
-    <!--Hero-->
-    <div id="hero">
-    </div>
-    <div class="central-text">
-        <div class="row" style="width: 100vw; height: 99vh; font-size: 50px;">
-            <div class="col-md-6  statico">
-                Tecnologia a servizio
-
+    <div class="container-fluid" style="max-width: 80%!important; margin-left: auto!important; margin-right: auto!important;">
+        <div class="go-down" style="cursor: pointer;">
+            <div id="lottie-go-down">
             </div>
-            <div class="col-md-6  dinamico">
-                <div class="swappable-text">
-                    <ul class="slides">
-                        <li class="slide">
-                            del tuo condominio
-                        </li>
-                        <li class="slide">
-                            dei tuoi condòmini
-                        </li>
-                        <li class="slide">
-                            del tuo lavoro
-                        </li>
-                        <li class="slide">
-                            del tuo condominio
-                        </li>
-                        <li class="slide">
-                            dei tuoi condòmini
-                        </li>
-                        <li class="slide">
-                            del tuo lavoro
-                        </li>
-                        <li class="slide">
-                            del tuo condominio
-                        </li>
-                        <li class="slide">
-                            dei tuoi condòmini
-                        </li>
-                        <li class="slide">
-                            del tuo lavoro
-                        </li>
-                        <li class="slide">
-                            del tuo condominio
-                        </li>
-                        <li class="slide">
-                            dei tuoi condòmini
-                        </li>
-                        <li class="slide">
-                            del tuo lavoro
-                        </li>
-                    </ul>
+        </div>
+        <!--Hero-->
 
+        <div class="central-text">
+            <div class="row" style="width: 100vw; height: 99vh; font-size: 50px;">
+                <div class="col-md-6  statico">
+                    Tecnologia a servizio
+
+                </div>
+                <div class="col-md-6  dinamico">
+                    <div class="swappable-text">
+                        <ul class="slides">
+                            <li class="slide">
+                                del tuo condominio
+                            </li>
+                            <li class="slide">
+                                dei tuoi condòmini
+                            </li>
+                            <li class="slide">
+                                del tuo lavoro
+                            </li>
+                            <li class="slide">
+                                del tuo condominio
+                            </li>
+                            <li class="slide">
+                                dei tuoi condòmini
+                            </li>
+                            <li class="slide">
+                                del tuo lavoro
+                            </li>
+                            <li class="slide">
+                                del tuo condominio
+                            </li>
+                            <li class="slide">
+                                dei tuoi condòmini
+                            </li>
+                            <li class="slide">
+                                del tuo lavoro
+                            </li>
+                            <li class="slide">
+                                del tuo condominio
+                            </li>
+                            <li class="slide">
+                                dei tuoi condòmini
+                            </li>
+                            <li class="slide">
+                                del tuo lavoro
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
-    <div style="width: 100vw;background-color: #282828;">
-        <div class="title">
-            I nostri numeri
-        </div>
-        <canvas id="myCanvas"></canvas>
-        <div class="card-deck mx-md-5">
-            <div class="card shadow-lg">
-                <div class=" text-center mb-auto" style="font-size: 100px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
+        <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
+        <div style="background-color: #282828;">
+            <div class="title">
+                I nostri numeri
+            </div>
+            <canvas id="myCanvas"></canvas>
+            <div class="card-deck mx-md-5">
+                <div class="card shadow-lg">
+                    <div class=" text-center mb-auto" style="font-size: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
                                 <defs>
                                   <clipPath id="clip-path">
                                     <rect width="32" height="48" fill="none"/>
@@ -391,14 +391,14 @@
                               </svg>
 
 
-                    <br>
-                    <span class="counter1">0</span></div>
-                <p style="text-align: center;">Condomini serviti</p>
+                        <br>
+                        <span class="counter1">0</span></div>
+                    <p style="text-align: center;">Condomini serviti</p>
 
-            </div>
-            <div class="card shadow-lg">
-                <div class=" text-center mb-auto" style="font-size: 100px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
+                </div>
+                <div class="card shadow-lg">
+                    <div class=" text-center mb-auto" style="font-size: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
                                     <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(-12557.115 1798.376)">
                                       <g id="Tracciato_37" data-name="Tracciato 37" transform="translate(12565 -1792)" fill="none">
                                         <path d="M13.5,0c7.456,0,12.3,5.762,12.3,15.151,0,3.971-.291,8.141-2,11.254-1.989,3.633-6,5.552-10.3,5.552a13.219,13.219,0,0,1-7.556-2.7c-3.265-2.524-4.5-7.218-4.5-13.4C1.442,6.462,6.044,0,13.5,0Z" stroke="none"/>
@@ -434,14 +434,14 @@
                                     </g>
                                   </svg>
 
-                    <br>
-                    <span class="counter2">0</span></div>
-                <p style="text-align: center;">Famiglie assistite</p>
+                        <br>
+                        <span class="counter2">0</span></div>
+                    <p style="text-align: center;">Famiglie assistite</p>
 
-            </div>
-            <div class="card shadow-lg">
-                <div class=" text-center mb-auto" style="font-size: 100px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
+                </div>
+                <div class="card shadow-lg">
+                    <div class=" text-center mb-auto" style="font-size: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
                                 <g id="Raggruppa_5" data-name="Raggruppa 5" transform="translate(-12350.588 1902.214)">
                                   <g id="Raggruppa_3" data-name="Raggruppa 3" transform="translate(12351.088 -1901.699)">
                                     <path id="Tracciato_2" data-name="Tracciato 2" d="M12350-1899.595s14.2-6.985,31.949,0v79.13s-13.267,6.871-31.246,0Z" transform="translate(-12349.997 1902.699)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
@@ -482,34 +482,35 @@
                                 </g>
                               </svg>
 
-                    <br>
-                    <span class="counter3">0</span></div>
-                <p style="text-align: center;">Apparecchi installati</p>
-            </div>
-
-
-        </div>
-    </div>
-    <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
-
-    <!--Parte di testo-->
-    <div class="title" style="background-color: #282828;">
-        A proposito di noi
-    </div>
-    <div class="separator p-2" style="background-color: #282828; height:10vh;"></div>
-    <div class="row pl-5 pr-5" style="background-color: #282828 ">
-        <div class="col-md-4 ">
-            <div class="about-content mt-50 wow fadeInLeftBig text-left ">
-                <div class="section-title ">
-                    <h3 class="titleHome ">Servizi adatti ad ogni tua esigenza</h3>
+                        <br>
+                        <span class="counter3">0</span></div>
+                    <p style="text-align: center;">Apparecchi installati</p>
                 </div>
-                <!-- section title -->
-                <p class="s ">La nostra mission è seguire il cliente in ogni aspetto della contabilizzazione: dal montaggio dei ripartitori, alla comunicazione dei dati, fino alla stesura delle bollette. <br> Lo sapevi? Facciamo anche il noleggio.</p>
-                <a href="#servizi" class="btn-primary ">Scopri i servizi</a>
+
+
             </div>
         </div>
-        <div class="col-md-4 text-center imgSvg">
-            <svg id="thatSvg" xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 1152.365 941.639">
+        <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
+
+        <!--Parte di testo-->
+        <div class="title" style="background-color: #282828;">
+            A proposito di noi
+        </div>
+        <div class="separator p-2" style="background-color: #282828; height:10vh;"></div>
+        <div class="row pl-5 pr-5" style="background-color: #282828 ">
+            <div class="col-md-4 ">
+                <div class="about-content mt-50 wow fadeInLeftBig text-left ">
+                    <div class="section-title ">
+                        <h3 class="titleHome ">Servizi adatti ad ogni tua esigenza</h3>
+                    </div>
+                    <!-- section title -->
+                    <p class="s ">La nostra mission è accompagnare i nostri clienti in ogni aspetto della contabilizzazione: dalla preventivazione, alla realizzazione fino al servizio di ripartizione spese e assistenza tecnica. Sapevi che esistono soluzioni a basso
+                        impatto economico come il noleggio dei dispositivi di contabilizzazione?</p>
+                    <a href="/services.html" class="btn-primary ">Scopri i servizi</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center imgSvg">
+                <svg id="thatSvg" xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 1152.365 941.639">
             <g id="Raggruppa_31" data-name="Raggruppa 31" transform="translate(-4816.444 -8513.5)">
               <g id="Raggruppa_30" data-name="Raggruppa 30">
                 <g id="Raggruppa_5" data-name="Raggruppa 5" transform="matrix(0.978, -0.208, 0.208, 0.978, -6866.377, 13204.217)">
@@ -607,71 +608,58 @@
               </g>
             </g>
           </svg>
-        </div>
-        <div class="col-md-4 ">
-            <div class="about-content mt-50 wow fadeInLeftBig text-right ">
-                <div class="section-title ">
-                    <h3 class="titleHome">Un pensiero in meno, un piacere in più</h3>
-                </div>
-                <!-- section title -->
-                <p class="s ">Le nostre bollette sono pensate per essere intuitive e trasparenti, così che chiunque possa, in qualche minuto, capire esattamente la suddivisione delle sue spese. Sono pure molto belle da vedere. </p>
-                <a href="/bollette.html " class="btn-primary ">Scopri le bollette</a>
             </div>
-        </div>
-    </div>
-    <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
-    <div class="row p-3 " style="background-color: #282828; height: auto;">
-        <div class="col-md-6" style="z-index: 100;">
-            <div class="about-content half-section mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
-                <div class="section-title ">
-                    <h3 class="titleHome ">Che bella la tecnologia</h3>
-                </div>
-                <!-- section title -->
-                <p class="s ">Siamo giovani, molto giovani, e proprio per questo ci piace la tecnologia. Grazie a questo, gran parte degli aspetti della realtà di e-bs sono digitalizzati. Soprattutto la ricezione dei dati di lettura e l'invio delle bollette .
-                </p>
-                <a href="#servizi" class="btn-primary ">Scopri</a>
-            </div>
-        </div>
-        <!-- <div class="col-md-6">
-            <div id="imgHomeCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-75" src="/assets/img/carousel/Img_Carousel_001.jpg" alt="First slide">
+            <div class="col-md-4 ">
+                <div class="about-content mt-50 wow fadeInLeftBig text-right ">
+                    <div class="section-title ">
+                        <h3 class="titleHome">Un pensiero in meno, un piacere in più</h3>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-75" src="/assets/img/carousel/Img_Carousel_002.jpeg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-75" src="/assets/img/carousel/Img_Carousel_003.JPG" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-75" src="/assets/img/carousel/Img_Carousel_004.jpeg" alt="Fourth slide">
-                    </div>
+                    <!-- section title -->
+                    <p class="s ">I nostri documenti sono stati creati per essere intuitivi e trasparenti, in modo che chiunque possa in breve tempo capire la composizione delle sue spese di energia e acqua. Perchè non vieni a scoprirle! </p>
+                    <a href="/bollette.html " class="btn-primary ">Scopri le bollette</a>
                 </div>
             </div>
-          </div> -->
-        <img class="img_2_Home" src="/assets/img/sede/sede.png" alt="" srcset="">
-    </div>
-    <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
-    <div class="row p-3 " style="background-color: #282828 ">
-        <div class="col-md-8 ">
-            <div class="about-image text-right mt-50 wow fadeInRightBig " data-wow-duration="1s " data-wow-delay="0.5s ">
-                <img class="img_4_Home" src="/assets/img/Immagine_4_Home.png" alt="" srcset="">
-            </div>
         </div>
-        <div class="col-md-4 ebswebtext">
-            <div class="about-content half-section-right mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
-                <div class="section-title ">
-                    <h3 class="titleHome ">E-BS Web</h3>
-                </div>
-                <!-- section title -->
-                <p class="s ">La domanda ora potrebbe essere "Cos'è sta roba?". Saremo molto sinceri con te, spiegarlo in queste poche righe è pressoche impossibile. Per questo abbiamo creato una pagina apposita in cui ti spieghiamo il suo funzionamento e i vantaggi
-                    per te, amministratore o utente.</p>
-                <a href="/ebsweb/index.html" class="btn-primary">Scopri l'E-BS Web</a>
-            </div>
-        </div>
+        <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
 
+        <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
+        <div class="row p-3 " style="background-color: #282828 ">
+            <div class="col-md-8 ">
+                <div class="about-image text-right mt-50 wow fadeInRightBig " data-wow-duration="1s " data-wow-delay="0.5s ">
+                    <img class="img_4_Home" src="/assets/img/Immagine_4_Home.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="col-md-4 ebswebtext">
+                <div class="about-content half-section-right mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
+                    <div class="section-title ">
+                        <h3 class="titleHome ">E-BS Web</h3>
+                    </div>
+                    <!-- section title -->
+                    <p class="s ">Coming Soon! Il futuro della contabilizzazione è EbsWeb! Il primo portale pensato per la gestione integrata della contabilizzazione dei consumi di calore e acqua. Saremo sinceri, spiegarlo in queste poche righe è davvero impossibile.
+                        Per questo motivo abbiamo pensato di creare una sezione apposita in cui potrai scoprire tutti i vantaggi di EbsWeb.</p>
+                    <a href="/ebsweb/index.html" class="btn-primary">Scopri l'E-BS Web</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
+        <div class="row p-3 " style="background-color: #282828; height: auto;">
+            <div class="col-md-6" style="z-index: 100;">
+                <div class="about-content half-section mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
+                    <div class="section-title ">
+                        <h3 class="titleHome ">Sempre al tuo fianco</h3>
+                    </div>
+                    <!-- section title -->
+                    <p class="s ">Nuove tecnologie, cambiamenti normativi, riesci a stare al passo con tutto? Scopri il servizio di FAQ dedicato a tutti i nostri clienti o contatta il nostro ufficio tecnico per maggiori informazioni sui più moderni sistemi di contabilizzazione
+                        e sulle nuove normative in vigore.
+                    </p>
+                    <a href="#servizi" class="btn-primary ">Scopri</a>
+                </div>
+            </div>
+            <video autoplay loop class="img_2_Home" src="/assets/img/Video_Ripartitori.mp4" alt="" srcset="">
+        </div>
     </div>
+
     <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
     <!--Footer-->
     <footer id="footer" class="footer-1">

@@ -31,12 +31,13 @@
 }
 
 video {
-    position: fixed;
+    position: absolute;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #servizi {

@@ -261,3 +261,12 @@
 .left-side h2 span:last-child {
     font-family: acumin-pro, sans-serif;
 }
+
+@media (max-width: 768px) {
+    .container-libri {
+        display: none!important;
+    }
+    #manuali-bot {
+        height: 90vh;
+    }
+}
