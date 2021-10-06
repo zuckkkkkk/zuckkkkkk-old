@@ -2038,6 +2038,45 @@ body {
     transform: scale(3);
 }
 
+#maxiSchermo {
+    display: none;
+    margin-top: 100vh;
+}
+
+#medioSchermo {
+    display: none;
+    margin-top: 100vh;
+}
+
+#miniSchermo {
+    display: block;
+    margin-top: 100vh;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    #maxiSchermo {
+        display: none!important;
+    }
+    #medioSchermo {
+        display: block!important;
+    }
+    #miniSchermo {
+        display: none!important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #maxiSchermo {
+        display: block!important;
+    }
+    #medioSchermo {
+        display: none!important;
+    }
+    #miniSchermo {
+        display: none!important;
+    }
+}
+
 .cursor-follower.menu-active {
     opacity: 1;
     transform: scale(3);

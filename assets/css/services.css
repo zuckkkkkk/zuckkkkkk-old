@@ -26,6 +26,42 @@
     }
 }
 
+#maxiSchermo {
+    display: none;
+}
+
+#medioSchermo {
+    display: none;
+}
+
+#miniSchermo {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    #maxiSchermo {
+        display: none;
+    }
+    #medioSchermo {
+        display: block;
+    }
+    #miniSchermo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #maxiSchermo {
+        display: block;
+    }
+    #medioSchermo {
+        display: none!;
+    }
+    #miniSchermo {
+        display: none!;
+    }
+}
+
 #no-transition {
     transform: none!important;
 }
