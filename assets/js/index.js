@@ -9,7 +9,7 @@ $(document).ready(function() {
             if (scroll_start > offset.top) {
                 $(".navbar").css("background-color", "#282828");
                 $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
-                $("#navImg").attr("src", "assets/img/Hand.png");
+                $("#navImg").attr("src", "assets/img/hand.png");
                 $("#navImg").css("transform", "rotateZ(45deg)");
                 $("#navImg").attr("width", "32px");
             } else {
