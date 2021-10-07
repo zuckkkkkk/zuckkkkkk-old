@@ -1,64 +1,35 @@
 $(document).ready(function() {
 
-
-    $(document).scroll(function() {
-        if ($(window).scrollTop() > 150) {
-
-            $(".navbar").css("background-color", "#282828");
-            $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
-
-        } else if ($(window).scrollTop() < 150) {
-
-            $(".navbar").css("background-color", "none!important");
-            $(".navbar").css("box-shadow", "none");
-
-        }
-    });
-
-    function update_users_count() {
-        $('.counter1').animate({
-            counter: 1132
-        }, {
-            duration: 10000,
-            easing: 'swing',
-            step: function(now) {
-                $(this).text(Math.ceil(now));
-            },
-            complete: update_users_count
+    var scroll_start = 0;
+    var startchange = $('.title');
+    var offset = startchange.offset();
+    if (startchange.length) {
+        $(document).scroll(function() {
+            scroll_start = $(document).scrollTop();
+            if (scroll_start > offset.top) {
+                $(".navbar").css("background-color", "#282828");
+                $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
+                $("#navImg").attr("src", "assets/img/Hand.png");
+                $("#navImg").css("transform", "rotateZ(45deg)");
+                $("#navImg").attr("width", "32px");
+            } else {
+                $("#navImg").attr("src", "assets/img/Hand_big.png");
+                $("#navImg").css("transform", "rotateZ(0deg)");
+                $("#navImg").attr("width", "128px");
+                $(".navbar").css("background-color", "none!important");
+                $(".navbar").css("box-shadow", "none");
+            }
         });
-        $('.counter2').animate({
-            counter: 23090
-        }, {
-            duration: 11000,
-            easing: 'swing',
-            step: function(now) {
-                $(this).text(Math.ceil(now));
-            },
-            complete: update_users_count
-        });
-        $('.counter3').animate({
-            counter: 132255
-        }, {
-            duration: 12000,
-            easing: 'swing',
-            step: function(now) {
-                $(this).text(Math.ceil(now));
-            },
-            complete: update_users_count
-        });
-    };
-
-    update_users_count();
+    }
     if ($('#timeline1') != null) {
         $("#timeline-1").timeline();
     }
     $('#lottie-go-down').on('click', function() {
         console.log(this.hash);
-        $('html, body').animate({ scrollTop: $('#lottie-go-down').offset().top + 100 }, 0);
+        $('html, body').animate({ scrollTop: $('#ss').offset().top - 300 }, 0);
         return false;
     });
     //Media queries
-
     var mq = window.matchMedia("(max-width: 768px)");
     if (mq.matches) {
         // window width is at less than 570px
@@ -79,8 +50,8 @@ $(document).ready(function() {
     var vsOpts = {
         $slides: $('.slide'),
         $list: $('.slides'),
-        duration: 24,
-        lineHeight: 50
+        duration: 12,
+        lineHeight: 51
     }
 
     var vSlide = new TimelineMax({
@@ -195,6 +166,28 @@ $(document).ready(function() {
 
 
 });
+
+function writeText(val) {
+    switch (val) {
+        case 1:
+            $(".card-title").text("Preventivazione");
+            $(".card-text").text("Testo della preventivazione");
+            break;
+        case 2:
+            $(".card-title").text("Realizzazione Impianti di Contabilizzazione");
+            $(".card-text").text("Usufruisci delle detrazioni fiscali con la formula tradizionale della fornitura e posa in opera del tuo sistema di contabilizzazione. Affidati ad e-bs Enery Billing Service s.r.l. in ogni aspetto, dall'installazione fino al collaudo dell'impianto.");
+            break;
+        case 3:
+            $(".card-title").text("Contabilizzazione Energetica dei consumi");
+            $(".card-text").text("Un unico interlocutore per le tue spese di climatizzazione invernale, climatizzazione estiva e di acqua calda sanitaria. Un format innovativo e trasparente che ti permette di capire ");
+            break;
+        case 4:
+            $(".card-title").text("Noleggio apparecchi di misurazione");
+            $(".card-text").text("Usufruisci delle detrazioni fiscali con la formula tradizionale della fornitura e posa in opera del tuo sistema di contabilizzazione. Affidati ad e-bs Enery Billing Service s.r.l. in ogni aspetto, dall'installazione fino al collaudo dell'impianto.");
+            break;
+
+    }
+}
 
 function openPopup(val) {
     switch (val) {

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/services-page.css">
     <link rel="icon" type="image/png" href="./assets/img/HandEbs.ico">
     <!-- Import the component -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -31,8 +32,20 @@
     <script src="https://unpkg.com/botui/build/botui.min.js"></script>
     <script defer type="text/javascript" src="assets/js/index.js"></script>
     <script defer type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <link href="https://raw.githubusercontent.com/sweetalert2/sweetalert2-themes/master/borderless/borderless.scss" rel="stylesheet">
     <script src="./assets/js/turn.js"></script>
 </head>
+<script>
+    $(document).ready(function() {
+        Swal.fire({
+            title: 'Sezione Manualistica',
+            text: "Nella sezione manualistica potrai consultare e scaricare i manuali dei tuoi dispositivi. Scegli quello associato alla marca dei tuoi dispositivi: potrai consultarlo direttamente sul nostro sito oppure scaricarne una copia in pdf.",
+            showCloseButton: true
+        }).then((result) => {
+            if (result.isConfirmed) {}
+        })
+    });
+</script>
 
 <body id="no-transition">
     <header class="header">

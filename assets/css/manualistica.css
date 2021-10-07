@@ -10,6 +10,14 @@
     height: 440px;
 }
 
+.swal2-actions {
+    display: none!important;
+}
+
+.swal2-html-container {
+    margin-bottom: 2rem!important;
+}
+
 .bookshelf .shelf .row-1 {
     position: relative;
     width: 360px;

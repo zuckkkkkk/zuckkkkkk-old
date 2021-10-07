@@ -57,7 +57,8 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container" style="min-width: 95vw;">
-                <a href="/" class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" width="32px" style="transform:rotateZ(45deg);"></a>
+                <a href="/" class="navbar-brand text-uppercase font-weight-bold"><img id="navImg" src="assets/img/Hand_big.png" width="128px"></a>
+                <!--style="transform:rotateZ(45deg);"-->
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                     <div id="lottie-ham" style="width: 20px; height: 20px;"></div>
                 </button>
@@ -97,48 +98,30 @@
 
         <div class="central-text">
             <div class="row" style="width: 100vw; height: 99vh; font-size: 50px;">
-                <div class="col-md-6  statico">
+                <!-- <div class="col-md-6  statico">
                     Tecnologia a servizio
 
-                </div>
-                <div class="col-md-6  dinamico">
+                </div> -->
+                <div class="col-md-12 dinamico">
                     <div class="swappable-text">
                         <ul class="slides">
                             <li class="slide">
-                                del tuo condominio
+                                Contabilizzazione
                             </li>
                             <li class="slide">
-                                dei tuoi condòmini
+                                Assistenza
                             </li>
                             <li class="slide">
-                                del tuo lavoro
+                                Noleggio
                             </li>
                             <li class="slide">
-                                del tuo condominio
+                                Monitoraggio
                             </li>
                             <li class="slide">
-                                dei tuoi condòmini
+                                Contabilizzazione
                             </li>
                             <li class="slide">
-                                del tuo lavoro
-                            </li>
-                            <li class="slide">
-                                del tuo condominio
-                            </li>
-                            <li class="slide">
-                                dei tuoi condòmini
-                            </li>
-                            <li class="slide">
-                                del tuo lavoro
-                            </li>
-                            <li class="slide">
-                                del tuo condominio
-                            </li>
-                            <li class="slide">
-                                dei tuoi condòmini
-                            </li>
-                            <li class="slide">
-                                del tuo lavoro
+                                Assistenza
                             </li>
                         </ul>
 
@@ -152,10 +135,11 @@
                 I nostri numeri
             </div>
             <canvas id="myCanvas"></canvas>
-            <div class="card-deck mx-md-5">
-                <div class="card shadow-lg">
-                    <div class=" text-center mb-auto" style="font-size: 100px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
+            <div class="row mx-md-5">
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <div class=" text-center mb-auto" style="font-size: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
                                 <defs>
                                   <clipPath id="clip-path">
                                     <rect width="32" height="48" fill="none"/>
@@ -391,14 +375,16 @@
                               </svg>
 
 
-                        <br>
-                        <span class="counter1">0</span></div>
-                    <p style="text-align: center;">Condomini serviti</p>
+                            <br>
+                            <span class="counter1" style=" font-size: 5vw;">1132</span></div>
+                        <p style="text-align: center;">Condomini serviti</p>
 
+                    </div>
                 </div>
-                <div class="card shadow-lg">
-                    <div class=" text-center mb-auto" style="font-size: 100px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <div class=" text-center mb-auto" style="font-size: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
                                     <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(-12557.115 1798.376)">
                                       <g id="Tracciato_37" data-name="Tracciato 37" transform="translate(12565 -1792)" fill="none">
                                         <path d="M13.5,0c7.456,0,12.3,5.762,12.3,15.151,0,3.971-.291,8.141-2,11.254-1.989,3.633-6,5.552-10.3,5.552a13.219,13.219,0,0,1-7.556-2.7c-3.265-2.524-4.5-7.218-4.5-13.4C1.442,6.462,6.044,0,13.5,0Z" stroke="none"/>
@@ -434,14 +420,16 @@
                                     </g>
                                   </svg>
 
-                        <br>
-                        <span class="counter2">0</span></div>
-                    <p style="text-align: center;">Famiglie assistite</p>
+                            <br>
+                            <span class="counter2" style=" font-size: 5vw;">23090</span></div>
+                        <p style="text-align: center;">Famiglie assistite</p>
 
+                    </div>
                 </div>
-                <div class="card shadow-lg">
-                    <div class=" text-center mb-auto" style="font-size: 100px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <div class=" text-center mb-auto" style="font-size: 100px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
                                 <g id="Raggruppa_5" data-name="Raggruppa 5" transform="translate(-12350.588 1902.214)">
                                   <g id="Raggruppa_3" data-name="Raggruppa 3" transform="translate(12351.088 -1901.699)">
                                     <path id="Tracciato_2" data-name="Tracciato 2" d="M12350-1899.595s14.2-6.985,31.949,0v79.13s-13.267,6.871-31.246,0Z" transform="translate(-12349.997 1902.699)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
@@ -482,10 +470,14 @@
                                 </g>
                               </svg>
 
-                        <br>
-                        <span class="counter3">0</span></div>
-                    <p style="text-align: center;">Apparecchi installati</p>
+                            <br>
+                            <span class="counter3" style=" font-size: 5vw;">132255</span></div>
+                        <p style="text-align: center;">Apparecchi installati</p>
+                    </div>
+
                 </div>
+
+
 
 
             </div>
@@ -497,7 +489,7 @@
             A proposito di noi
         </div>
         <div class="separator p-2" style="background-color: #282828; height:10vh;"></div>
-        <div class="row pl-5 pr-5" style="background-color: #282828 ">
+        <div class="row pl-5 pr-5" id="ss" style="background-color: #282828 ">
             <div class="col-md-4 ">
                 <div class="about-content mt-50 wow fadeInLeftBig text-left ">
                     <div class="section-title ">
@@ -630,14 +622,14 @@
                 </div>
             </div>
             <div class="col-md-4 ebswebtext">
-                <div class="about-content half-section-right mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
+                <div class="about-content  mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
                     <div class="section-title ">
                         <h3 class="titleHome ">E-BS Web</h3>
                     </div>
                     <!-- section title -->
-                    <p class="s ">Coming Soon! Il futuro della contabilizzazione è EbsWeb! Il primo portale pensato per la gestione integrata della contabilizzazione dei consumi di calore e acqua. Saremo sinceri, spiegarlo in queste poche righe è davvero impossibile.
+                    <p class="s">Coming Soon! Il futuro della contabilizzazione è EbsWeb! Il primo portale pensato per la gestione integrata della contabilizzazione dei consumi di calore e acqua. Saremo sinceri, spiegarlo in queste poche righe è davvero impossibile.
                         Per questo motivo abbiamo pensato di creare una sezione apposita in cui potrai scoprire tutti i vantaggi di EbsWeb.</p>
-                    <a href="/ebsweb/index.html" class="btn-primary">Scopri l'E-BS Web</a>
+                    <a href="/ebsweb/index.html" class="btn-primary">Scoprilo</a>
                 </div>
             </div>
 
@@ -653,10 +645,12 @@
                     <p class="s ">Nuove tecnologie, cambiamenti normativi, riesci a stare al passo con tutto? Scopri il servizio di FAQ dedicato a tutti i nostri clienti o contatta il nostro ufficio tecnico per maggiori informazioni sui più moderni sistemi di contabilizzazione
                         e sulle nuove normative in vigore.
                     </p>
-                    <a href="#servizi" class="btn-primary ">Scopri</a>
+                    <a href="/contact-us.html" class="btn-primary ">Scopri</a>
                 </div>
             </div>
-            <video autoplay loop class="img_2_Home" src="/assets/img/Video_Ripartitori.mp4" alt="" srcset="">
+            <div class="col-md-6 text-center">
+                <img src="assets/img/question.png" width="300px" />
+            </div>
         </div>
     </div>
 

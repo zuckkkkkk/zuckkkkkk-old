@@ -1991,6 +1991,13 @@ body {
     color: #000000;
 }
 
+.particles-js-canvas-el {
+    /* background-image: url(../img/HandEbsArancio.png); */
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto;
+}
+
 .cursor {
     position: fixed;
     background-color: black;
@@ -2816,7 +2823,9 @@ h2 {
     font-weight: 700!important;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
     padding-left: 0!important;
 }
 
@@ -2886,10 +2895,11 @@ h2 {
         width: 100vw!important;
     }
     .dinamico {
-        align-items: flex-start!important;
+        align-items: center!important;
         justify-content: center!important;
         font-size: 30px!important;
         width: 100vw!important;
+        padding: 0!important;
     }
     .slide {
         text-align: left;
@@ -2920,10 +2930,8 @@ h2 {
 }
 
 .card {
-    width: 420px;
     height: 340px;
-    margin: 1em;
-    perspective: 1500px;
+    /*perspective: 1500px;*/
     background-color: #282828!important;
     border: none!important;
 }

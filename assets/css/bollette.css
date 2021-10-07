@@ -114,6 +114,10 @@ html {
     height: 100%;
 }
 
+.swal2-actions {
+    display: none!important;
+}
+
 path {
     stroke: #fff;
 }
@@ -284,4 +288,14 @@ button:focus {
 .nav-link.active {
     background-color: transparent!important;
     color: #ff6c2b!important;
+}
+
+.swal2-popup {
+    background-color: #282828!important;
+    color: white;
+}
+
+#swal2-title,
+.swal2-html-container {
+    color: white;
 }
