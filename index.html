@@ -11,6 +11,8 @@
     <!-- Import the component -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="/assets/js/pageable.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/pageable.scss">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js"></script>
@@ -19,7 +21,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
@@ -131,12 +132,12 @@
         </div>
         <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
         <div style="background-color: #282828;">
-            <div class="title">
+            <div class="title" data-aos="fade-left">
                 I nostri numeri
             </div>
             <canvas id="myCanvas"></canvas>
             <div class="row mx-md-5">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="card shadow-lg">
                         <div class=" text-center mb-auto" style="font-size: 100px;">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.399" height="87.824" viewBox="0 0 103.399 87.824">
@@ -381,7 +382,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="card shadow-lg">
                         <div class=" text-center mb-auto" style="font-size: 100px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="117.631" height="83.472" viewBox="0 0 117.631 83.472">
@@ -426,7 +427,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="card shadow-lg">
                         <div class=" text-center mb-auto" style="font-size: 100px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32.949" height="86.317" viewBox="0 0 32.949 86.317">
@@ -485,7 +486,7 @@
         <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
 
         <!--Parte di testo-->
-        <div class="title" style="background-color: #282828;">
+        <div class="title" style="background-color: #282828;" data-aos="fade-right">
             A proposito di noi
         </div>
         <div class="separator p-2" style="background-color: #282828; height:10vh;"></div>
@@ -501,7 +502,7 @@
                     <a href="/services.html" class="btn-primary ">Scopri i servizi</a>
                 </div>
             </div>
-            <div class="col-md-4 text-center imgSvg">
+            <div class="col-md-4 text-center imgSvg" data-aos="fade-up">
                 <svg id="thatSvg" xmlns="http://www.w3.org/2000/svg" width="300" height="100%" viewBox="0 0 1152.365 941.639">
             <g id="Raggruppa_31" data-name="Raggruppa 31" transform="translate(-4816.444 -8513.5)">
               <g id="Raggruppa_30" data-name="Raggruppa 30">
@@ -616,12 +617,12 @@
 
         <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
         <div class="row p-3 " style="background-color: #282828 ">
-            <div class="col-md-8 ">
+            <div class="col-md-8 " data-aos="fade-up">
                 <div class="about-image text-right mt-50 wow fadeInRightBig " data-wow-duration="1s " data-wow-delay="0.5s ">
                     <img class="img_4_Home" src="/assets/img/Immagine_4_Home.png" alt="" srcset="">
                 </div>
             </div>
-            <div class="col-md-4 ebswebtext">
+            <div class="col-md-4 ebswebtext" data-aos="fade-left">
                 <div class="about-content  mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
                     <div class="section-title ">
                         <h3 class="titleHome ">E-BS Web</h3>
@@ -636,7 +637,7 @@
         </div>
         <div class="separator p-2" style="background-color: #282828; height:20vh;"></div>
         <div class="row p-3 " style="background-color: #282828; height: auto;">
-            <div class="col-md-6" style="z-index: 100;">
+            <div class="col-md-6" style="z-index: 100;" data-aos="fade-right">
                 <div class="about-content half-section mt-50 wow fadeInLeftBig " data-wow-duration="1s " data-wow-delay="0.5s ">
                     <div class="section-title ">
                         <h3 class="titleHome ">Sempre al tuo fianco</h3>
@@ -648,7 +649,7 @@
                     <a href="/contact-us.html" class="btn-primary ">Scopri</a>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center" data-aos="fade-up">
                 <img src="assets/img/question.png" width="300px" />
             </div>
         </div>

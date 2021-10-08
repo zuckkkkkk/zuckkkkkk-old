@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    AOS.init();
     var scroll_start = 0;
     var startchange = $('.title');
     var offset = startchange.offset();

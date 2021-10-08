@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
     <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
     <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script defer type="text/javascript" src="assets/js/manualistica.js"></script>
     <script defer type="text/javascript" src="assets/js/index.js"></script>
     <script defer type="text/javascript" src="assets/js/modernizr.custom.js"></script>
     <link href="https://raw.githubusercontent.com/sweetalert2/sweetalert2-themes/master/borderless/borderless.scss" rel="stylesheet">
@@ -39,7 +41,7 @@
     $(document).ready(function() {
         Swal.fire({
             title: 'Sezione Manualistica',
-            text: "Nella sezione manualistica potrai consultare e scaricare i manuali dei tuoi dispositivi. Scegli quello associato alla marca dei tuoi dispositivi: potrai consultarlo direttamente sul nostro sito oppure scaricarne una copia in pdf.",
+            html: "Nella sezione manualistica potrai consultare e scaricare i manuali dei tuoi dispositivi.<br/> Scegli quello associato alla marca dei tuoi dispositivi: potrai consultarlo direttamente sul nostro sito oppure scaricarne una copia in pdf. <br/><br/>Usa le freccette della tastiera ⬅️➡️, oppure sfoglialo trascinando l'angolo della pagina.",
             showCloseButton: true
         }).then((result) => {
             if (result.isConfirmed) {}
@@ -105,7 +107,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book1">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(1)" data-toggle="modal" data-target="#book1">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -124,7 +126,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book2">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(2)" data-toggle="modal" data-target="#book2">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -145,7 +147,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book3">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(3)" data-toggle="modal" data-target="#book3">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -164,7 +166,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book4">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(4)" data-toggle="modal" data-target="#book4">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -185,7 +187,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book5">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(5)" data-toggle="modal" data-target="#book5">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -204,7 +206,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book6">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(6)" data-toggle="modal" data-target="#book6">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -225,7 +227,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book7">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(7)" data-toggle="modal" data-target="#book7">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -244,7 +246,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book8">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(8)" data-toggle="modal" data-target="#book8">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -265,7 +267,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book9">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(9)" data-toggle="modal" data-target="#book9">
                         Sfoglia Manuale
                       </button>
                 </div>
@@ -284,7 +286,7 @@
                     </div>
                 </div>
                 <div class="text-center " style="z-index: 100;">
-                    <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#book10">
+                    <button type="button" class="btn btn-primary text-center" onclick="changeGlobString(10)" data-toggle="modal" data-target="#book10">
                         Sfoglia Manuale
                       </button>
                 </div>
