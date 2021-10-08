@@ -160,10 +160,10 @@ video {
 
 .revolver {
     position: relative;
+    margin-bottom: 150px;
 }
 
 #sun {
-    margin-top: 100vh;
     background-image: url("../img/HandEbsArancio.png");
     border-radius: 200px;
     background-size: cover;
@@ -430,4 +430,12 @@ video {
 .terminal p::before {
     color: #ff6c2b;
     content: "~$ ";
+}
+
+.upper-hero {
+    position: absolute;
+}
+
+#hero-container {
+    height: 125vh;
 }
