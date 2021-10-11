@@ -37,7 +37,8 @@ button[slot="hotspot-5"],
 button[slot="hotspot-6"],
 button[slot="hotspot-7"],
 button[slot="hotspot-8"],
-button[slot="hotspot-9"] {
+button[slot="hotspot-9"],
+button[slot="hotspot-10"] {
     --min-hotspot-opacity: 0;
 }
 
@@ -214,12 +215,15 @@ a:hover {
 }
 
 .HotspotAnnotation {
-    display: none;
+    font-weight: 700;
     transition: 1s linear;
+    width: 150px;
+    opacity: 0;
 }
 
 .Hotspot:hover>.HotspotAnnotation {
     display: block;
+    opacity: 1;
 }
 
 .navbar.active .nav-link:hover,

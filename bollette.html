@@ -48,7 +48,7 @@ padding: 0!important;">
         $(document).ready(function() {
             Swal.fire({
                 title: 'Scopri le nostre bollette!',
-                text: "In questa sezione potrai scoprire nel dettaglio tutti i nostri elaborati: potrai zoomarli, ispezionarli e scoprire come si leggono.",
+                html: "In questa sezione potrai scoprire nel dettaglio tutti i nostri elaborati: potrai zoomarli, ispezionarli e scoprire come si leggono. <br/> <br/> Passa il mouse sulle icone 🟠 per scoprire tutte le caratteristiche e i dati dei nostri elaborati.<br /> <br /> Trascina invece con il 🖱️ per analizzare al meglio gli elaborati.",
                 showCloseButton: true
             }).then((result) => {
                 if (result.isConfirmed) {}
@@ -142,26 +142,28 @@ padding: 0!important;">
                 <div id="cli" role="tabpanel" aria-labelledby="cli-tab" class="tab-pane fade  show active" style="padding:0!important;">
                     <model-viewer style="height: 100vh; width: 100%;" src="./assets/models/cliacs.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate camera-orbit="247.4deg 80.38deg auto">
                         <button class="Hotspot" slot="hotspot-1" data-position="-0.2948005199432375m 0.38858668293613824m -0.3455731507970665m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Intestazione del documento con le informazioni principali dell'unità immobiliare.</div>
+                            <div class="HotspotAnnotation d-none">Intestazione del documento con le informazioni principali dell'unità immobiliare.</div>
                         </button><button class="Hotspot" slot="hotspot-2" data-position="1.1481144396308096e-8m 0.38524325681412325m 0.34478567896926554m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m"
                             data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Intestazione del documento con le informazioni principali dell'unità immobiliare</div>
-                        </button><button class="Hotspot" slot="hotspot-3" data-position="6.406013108861686e-9m 0.21495013499622806m -0.330376454046722m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Andamento dei consumi della tua unità immobiliare nei tre anni precedenti</div>
-                        </button><button class="Hotspot" slot="hotspot-4" data-position="-0.2948005199432373m 0.04220095414909797m -0.010337859609665587m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Andamento dei consumi della tua unità immobiliare nei tre anni precedenti</div>
+                            <div class="HotspotAnnotation  d-none">Intestazione del documento con le informazioni principali dell'unità immobiliare</div>
+                        </button><button class="Hotspot" slot="hotspot-3" data-position="6.406013108861686e-9m 0.21495013499622806m 0.34478567896926554m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation  d-none">Dati rilevati dal progetto di contabilizzazione redatto dal termotecnico incaricato    
+                               
+                </button><button class="Hotspot" slot="hotspot-4" data-position="-0.2948005199432373m 0.04220095414909797m -0.010337859609665587m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation  d-none">Andamento dei consumi della tua unità immobiliare nei tre anni precedenti</div>
                         </button><button class="Hotspot" slot="hotspot-5" data-position="-0.2948005199432373m 0.1554035851793502m 0.3131010024070148m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Suddivisione grafica dei consumi per locale</div>
+                            <div class="HotspotAnnotation  d-none">Suddivisione grafica dei consumi per locale</div>
                         </button><button class="Hotspot" slot="hotspot-6" data-position="-0.2948005199432375m -0.0865116205020669m 0.3468174922102073m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Tabella con dettaglio letture consumi e spese dei dispositivi.</div>
-                        </button><button class="Hotspot" slot="hotspot-7" data-position="4.1226976832398066e-9m 0.13833477410193018m 0.02485685665375909m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">CLI</div>
-                        </button><button class="Hotspot" slot="hotspot-8" data-position="4.00824301527436e-9m 0.13449431629921296m -0.09808666370886258m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">ACS</div>
-                        </button><button class="Hotspot" slot="hotspot-9" data-position="-0.2948005199432373m -0.01310860636899032m -0.32544364971234835m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">CLI-2</div>
+                            <div class="HotspotAnnotation  d-none">Tabella con dettaglio letture consumi e spese dei dispositivi.</div>
+                        </button><button class="Hotspot" slot="hotspot-7" data-position="6.406013108861686e-9m 0.31495013499622806m 0.34478567896926554m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation  d-none">Consumi generali dello stabile di climatizzazione invernale e acqua calda sanitaria                            </div>
+                        </button><button class="Hotspot" slot="hotspot-8" data-position="4.00824301527436e-9m 0.15449431629921296m -0.09808666370886258m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation  d-none">Spese sostenute durante il bilancio in corso con la suddivisione delle spesa in climatizzazione invernale e acqua calda sanitaria</div>
+                        </button>
+                        <!-- <button class="Hotspot" slot="hotspot-9" data-position="6.406013108861686e-9m -0.16495013499622806m 0.34478567896926554m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation  d-none">CLI-2</div> -->
                         </button><button class="Hotspot" slot="hotspot-10" data-position="-0.2948005199432375m -0.16487270741045895m -0.31781238044676874m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">ACS-2</div>
+                            <div class="HotspotAnnotation  d-none">ACS-2</div>
                         </button>
                         <div class="progress-bar hide" slot="progress-bar">
                             <div class="update-bar"></div>

@@ -1998,6 +1998,29 @@ body {
     background-size: auto;
 }
 
+.hide {
+    display: none;
+}
+
+.ista {}
+
+.istaMain,
+.saveMain,
+.sontexMain,
+.siemensMain,
+.caleffiMain {
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.istaMain:hover,
+.saveMain:hover,
+.sontexMain:hover,
+.siemensMain:hover,
+.caleffiMain:hover {
+    opacity: 0.5;
+}
+
 .cursor {
     position: fixed;
     background-color: black;
