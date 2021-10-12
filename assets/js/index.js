@@ -21,11 +21,8 @@ $(document).ready(function() {
             }
         });
     }
-    if ($('#timeline1') != null) {
-        $("#timeline-1").timeline();
-    }
+
     $('#lottie-go-down').on('click', function() {
-        console.log(this.hash);
         $('html, body').animate({ scrollTop: $('#ss').offset().top - 300 }, 0);
         return false;
     });
@@ -41,11 +38,9 @@ $(document).ready(function() {
         $("#desktop").show();
     }
     // updateScroller();  
-    // window.focus();
-    // window.addEventListener("resize", onResize);
-    // document.addEventListener("scroll", onScroll); 
+
     particlesJS.load('hero', 'assets/json/particlesjs-config.json', function() {
-        console.log('callback - particles.js config loaded');
+        // console.log('callback - particles.js config loaded');
     });
     var vsOpts = {
         $slides: $('.slide'),
@@ -68,17 +63,6 @@ $(document).ready(function() {
     vSlide.play()
 
     //START ANIM - LOTTIE
-    //Maybe legacy
-    var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie-animation'), // Required
-        path: '/assets/json/lottie-who-are-we-2.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Lottie Who Are We", // Name for future reference. Optional.
-    });
-
-
     //Ham Anim
     let iconMenu = document.querySelector('#lottie-ham');
     let animationMenu = bodymovin.loadAnimation({
@@ -105,89 +89,9 @@ $(document).ready(function() {
         autoplay: true, // Optional
         name: "Lottie Go Down", // Name for future reference. Optional.
     });
-
-    // var botui = new BotUI('manuali-bot');
-    // botui.message.add({
-    //     content: 'Ciao! Seleziona qui sotto la marca dei tuoi dispositivi.'
-    // }).then(function() { // wait till its shown
-    //     botui.action.button({
-    //         action: [{ // Caleffi
-    //                 text: 'Caleffi',
-    //                 value: '1'
-    //             },
-    //             { // Controlli
-    //                 text: 'Controlli',
-    //                 value: '2'
-    //             },
-    //             { // Controlli 2
-    //                 text: 'Controlli 2',
-    //                 value: '3'
-    //             },
-    //             { // Evohome
-    //                 text: 'Evohome',
-    //                 value: '4'
-    //             },
-    //             { // Honeywell
-    //                 text: 'Honeywell',
-    //                 value: '5'
-    //             },
-    //             { // Save Energy
-    //                 text: 'Save Energy',
-    //                 value: '6'
-    //             },
-    //             { // Siemens
-    //                 text: 'Siemens',
-    //                 value: '7'
-    //             },
-    //             { // Sontex
-    //                 text: 'Sontex',
-    //                 value: '8'
-    //             },
-    //             { // Sontex
-    //                 text: 'Sontex 2',
-    //                 value: '9'
-    //             },
-    //             { // Sontex
-    //                 text: 'Sontex 3',
-    //                 value: '10'
-    //             },
-    //         ]
-    //     }).then(function(res) { // will be called when a button is clicked.
-    //         botui.message.add({ // show next message 'Hai selezionato: ' + res.text + . Scarica il pdf [cliccando qui](http://127.0.0.1:5500/assets/Manuali/1.pdf)
-    //             content: 'Hai selezionato ' + res.text
-    //         });
-    //         var link = "/assets/Manuali/" + res.value + ".pdf";
-    //         botui.message.add({
-    //             type: 'html', // this is 'text' by default
-    //             content: '<a href= "' + link + '" > Clicca qui per scaricare il pdf </a>'
-    //         });
-    //     });
-    // });
-
-
 });
 
-function writeText(val) {
-    switch (val) {
-        case 1:
-            $(".card-title").text("Preventivazione");
-            $(".card-text").text("Testo della preventivazione");
-            break;
-        case 2:
-            $(".card-title").text("Realizzazione Impianti di Contabilizzazione");
-            $(".card-text").text("Usufruisci delle detrazioni fiscali con la formula tradizionale della fornitura e posa in opera del tuo sistema di contabilizzazione. Affidati ad e-bs Enery Billing Service s.r.l. in ogni aspetto, dall'installazione fino al collaudo dell'impianto.");
-            break;
-        case 3:
-            $(".card-title").text("Contabilizzazione Energetica dei consumi");
-            $(".card-text").text("Un unico interlocutore per le tue spese di climatizzazione invernale, climatizzazione estiva e di acqua calda sanitaria. Un format innovativo e trasparente che ti permette di capire ");
-            break;
-        case 4:
-            $(".card-title").text("Noleggio apparecchi di misurazione");
-            $(".card-text").text("Usufruisci delle detrazioni fiscali con la formula tradizionale della fornitura e posa in opera del tuo sistema di contabilizzazione. Affidati ad e-bs Enery Billing Service s.r.l. in ogni aspetto, dall'installazione fino al collaudo dell'impianto.");
-            break;
 
-    }
-}
 
 function openPopup(val) {
     switch (val) {
@@ -254,43 +158,7 @@ function openPopup(val) {
     }
 
 }
-
-var animationServiceFire = bodymovin.loadAnimation({
-    container: document.getElementById('fire-service'), // Required
-    path: '/assets/json/services-page-anim/fire.json', // Required
-    renderer: 'svg', // Required
-    loop: true, // Optional
-    autoplay: true, // Optional
-    name: "Lottie family", // Name for future reference. Optional.
-});
-var animationServiceWater = bodymovin.loadAnimation({
-    container: document.getElementById('water-service'), // Required
-    path: '/assets/json/services-page-anim/water.json', // Required
-    renderer: 'svg', // Required
-    loop: true, // Optional
-    autoplay: true, // Optional
-    name: "Lottie family", // Name for future reference. Optional.
-});
-var animationServiceScrewdriver = bodymovin.loadAnimation({
-    container: document.getElementById('screwdriver-service'), // Required
-    path: '/assets/json/services-page-anim/screwdriver.json', // Required
-    renderer: 'svg', // Required
-    loop: true, // Optional
-    autoplay: true, // Optional
-    name: "Lottie family", // Name for future reference. Optional.
-});
-var animationServiceWrench = bodymovin.loadAnimation({
-    container: document.getElementById('wrench-service'), // Required
-    path: '/assets/json/services-page-anim/wrench.json', // Required
-    renderer: 'svg', // Required
-    loop: true, // Optional
-    autoplay: true, // Optional
-    name: "Lottie family", // Name for future reference. Optional.
-});
-
 //END ANIM
-
-
 
 var html = document.documentElement;
 var body = document.body;
@@ -309,190 +177,4 @@ var requestId = null;
 TweenLite.set(scroller.target, {
     rotation: 0.01,
     force3D: true
-});
-/*
-TIMELINE
-*/
-$.fn.timeline = function() {
-    var selectors = {
-        id: $(this),
-        item: $(this).find(".timeline-item"),
-        activeClass: "timeline-item--active",
-        img: ".timeline__img"
-    };
-    selectors.item.eq(0).addClass(selectors.activeClass);
-    selectors.id.css(
-        "background-image",
-        "url(" +
-        selectors.item
-        .first()
-        .find(selectors.img)
-        .attr("src") +
-        ")"
-    );
-    var itemLength = selectors.item.length;
-    $(window).scroll(function() {
-        var max, min;
-        var pos = $(this).scrollTop() + window.screen.height / 3;
-        selectors.item.each(function(i) {
-            min = $(this).offset().top;
-            max = $(this).height() + $(this).offset().top;
-            var that = $(this);
-            console.log(min + " - " + max + " - " + " - " + pos);
-            if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-                selectors.item.removeClass(selectors.activeClass);
-                selectors.id.css(
-                    "background-image",
-                    "url(" +
-                    selectors.item
-                    .last()
-                    .find(selectors.img)
-                    .attr("src") +
-                    ")"
-                );
-                selectors.item.last().addClass(selectors.activeClass);
-            } else if (pos <= max - 40 && pos >= min) {
-                selectors.id.css(
-                    "background-image",
-                    "url(" +
-                    $(this)
-                    .find(selectors.img)
-                    .attr("src") +
-                    ")"
-                );
-                selectors.item.removeClass(selectors.activeClass);
-                $(this).addClass(selectors.activeClass);
-
-            }
-        });
-    });
-};
-
-/*--------------------
-Vars
---------------------*/
-const $menu = document.querySelector('.menu')
-const $items = document.querySelectorAll('.menu--item')
-const $images = document.querySelectorAll('.menu--item img')
-let menuWidth = $menu.clientWidth
-let itemWidth = $items[0].clientWidth
-let wrapWidth = $items.length * itemWidth
-
-let scrollSpeed = 0
-let oldScrollY = 0
-let scrollY = 0
-let y = 0
-
-
-/*--------------------
-Lerp
---------------------*/
-const lerp = (v0, v1, t) => {
-    return v0 * (1 - t) + v1 * t
-}
-
-
-/*--------------------
-Dispose
---------------------*/
-const dispose = (scroll) => {
-    gsap.set($items, {
-        x: (i) => {
-            return i * itemWidth + scroll
-        },
-        modifiers: {
-            x: (x, target) => {
-                const s = gsap.utils.wrap(-itemWidth, wrapWidth - itemWidth, parseInt(x))
-                return `${s}px`
-            }
-        }
-    })
-}
-dispose(0)
-
-
-/*--------------------
-Wheel
---------------------*/
-// const handleMouseWheel = (e) => {
-//   scrollY -= e.deltaY * 0.9
-// }
-
-
-/*--------------------
-Touch
---------------------*/
-let touchStart = 0
-let touchX = 0
-let isDragging = false
-const handleTouchStart = (e) => {
-    touchStart = e.clientX || e.touches[0].clientX
-    isDragging = true
-    $menu.classList.add('is-dragging')
-}
-const handleTouchMove = (e) => {
-    if (!isDragging) return
-    touchX = e.clientX || e.touches[0].clientX
-    scrollY += (touchX - touchStart) * 2.5
-    touchStart = touchX
-}
-const handleTouchEnd = () => {
-    isDragging = false
-    $menu.classList.remove('is-dragging')
-}
-
-
-/*--------------------
-Listeners
---------------------*/
-// $menu.addEventListener('mousewheel', handleMouseWheel)
-
-$menu.addEventListener('touchstart', handleTouchStart)
-$menu.addEventListener('touchmove', handleTouchMove)
-$menu.addEventListener('touchend', handleTouchEnd)
-
-$menu.addEventListener('mousedown', handleTouchStart)
-$menu.addEventListener('mousemove', handleTouchMove)
-$menu.addEventListener('mouseleave', handleTouchEnd)
-$menu.addEventListener('mouseup', handleTouchEnd)
-
-$menu.addEventListener('selectstart', () => { return false })
-
-
-/*--------------------
-Resize
---------------------*/
-window.addEventListener('resize', () => {
-    menuWidth = $menu.clientWidth
-    itemWidth = $items[0].clientWidth
-    wrapWidth = $items.length * itemWidth
-})
-
-
-/*--------------------
-Render
---------------------*/
-const render = () => {
-    requestAnimationFrame(render)
-    y = lerp(y, scrollY, .1)
-    dispose(y)
-
-    scrollSpeed = y - oldScrollY
-    oldScrollY = y
-
-    gsap.to($items, {
-        skewX: -scrollSpeed * .2,
-        rotate: scrollSpeed * .01,
-        scale: 1 - Math.min(100, Math.abs(scrollSpeed)) * 0.003
-    })
-}
-render()
-
-/*Carousel Old New*/
-$("#slider").on("input change", (e) => {
-    const sliderPos = e.target.value;
-    // Update the width of the foreground image
-    $('.foreground-img').css('width', `${sliderPos}% `)
-        // Update the position of the slider button
-    $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
 });

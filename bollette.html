@@ -9,26 +9,17 @@ padding: 0!important;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="./assets/img/HandEbs.ico">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
-    <!-- <link href="assets/css/bootstrap/*" rel="stylesheet"> -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <link rel="stylesheet" href="/assets/css/bollette.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="https://raw.githubusercontent.com/sweetalert2/sweetalert2-themes/master/borderless/borderless.scss" rel="stylesheet">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Index js -->
-    <script defer type="text/javascript" src="assets/js/index.js"></script>
     <!-- Hotjar Tracking Code for http://www.e-bs.it -->
     <script>
         (function(h, o, t, j, a, r) {
@@ -89,7 +80,7 @@ padding: 0!important;">
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container" style="min-width: 95vw;">
-                <a href="/" class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" width="32px" style="transform:rotateZ(45deg);"></a>
+                <a href="/" id="e-bs" class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" width="32px" style="transform:rotateZ(45deg);"></a>
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                     <div id="lottie-ham" style="width: 20px; height: 20px;"></div>
                 </button>
@@ -140,7 +131,7 @@ padding: 0!important;">
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div id="cli" role="tabpanel" aria-labelledby="cli-tab" class="tab-pane fade  show active" style="padding:0!important;">
-                    <model-viewer style="height: 100vh; width: 100%;" src="./assets/models/cliacs.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate camera-orbit="247.4deg 80.38deg auto">
+                    <model-viewer style="height: 100vh; width: 100%;" src="./assets/models/cliacs.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" shadow-intensity="1" auto-rotate camera-orbit="247.4deg 80.38deg auto">
                         <button class="Hotspot" slot="hotspot-1" data-position="-0.2948005199432375m 0.38858668293613824m -0.3455731507970665m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation d-none">Intestazione del documento con le informazioni principali dell'unità immobiliare.</div>
                         </button><button class="Hotspot" slot="hotspot-2" data-position="1.1481144396308096e-8m 0.38524325681412325m 0.34478567896926554m" data-normal="0.9999999999999996m -2.9802323275873745e-8m -8.881784726396864e-16m"

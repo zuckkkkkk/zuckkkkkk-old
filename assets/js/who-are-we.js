@@ -1,3 +1,64 @@
+$(document).ready(function() {
+    AOS.init();
+    var scroll_start = 0;
+    var startchange = $('.title');
+    var offset = startchange.offset();
+    if (startchange.length) {
+        $(document).scroll(function() {
+            scroll_start = $(document).scrollTop();
+            if (scroll_start > offset.top) {
+                $(".navbar").css("background-color", "#282828");
+                $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
+            } else {
+                $(".navbar").css("background-color", "none!important");
+                $(".navbar").css("box-shadow", "none");
+            }
+        });
+    }
+    if ($('#timeline1') != null) {
+        $("#timeline-1").timeline();
+    }
+    var vsOpts = {
+        $slides: $('.slide'),
+        $list: $('.slides'),
+        duration: 12,
+        lineHeight: 51
+    }
+
+    var vSlide = new TimelineMax({
+        paused: false,
+        repeat: -1
+    })
+
+    vsOpts.$slides.each(function(i) {
+        vSlide.to(vsOpts.$list, vsOpts.duration / vsOpts.$slides.length, {
+            ease: Expo.easeInOut, //Elastic.easeOut.config(1, 0.4)
+            y: i * -1 * vsOpts.lineHeight
+        })
+    })
+    vSlide.play()
+
+    //START ANIM - LOTTIE
+    //Ham Anim
+    let iconMenu = document.querySelector('#lottie-ham');
+    let animationMenu = bodymovin.loadAnimation({
+        container: iconMenu,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "/assets/json/hamburger.json",
+        initialSegment: [20, 60]
+    });
+
+    var directionMenu = 1;
+    iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+    });
+});
+
+
 /*--------------------
 Vars
 --------------------*/
@@ -39,19 +100,9 @@ const dispose = (scroll) => {
     })
 }
 dispose(0)
-
-
-/*--------------------
-Wheel
---------------------*/
-// const handleMouseWheel = (e) => {
-//   scrollY -= e.deltaY * 0.9
-// }
-
-
-/*--------------------
-Touch
---------------------*/
+    /*--------------------
+    Touch
+    --------------------*/
 let touchStart = 0
 let touchX = 0
 let isDragging = false
@@ -117,3 +168,59 @@ const render = () => {
     })
 }
 render();
+/*
+TIMELINE
+*/
+$.fn.timeline = function() {
+    var selectors = {
+        id: $(this),
+        item: $(this).find(".timeline-item"),
+        activeClass: "timeline-item--active",
+        img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+        "background-image",
+        "url(" +
+        selectors.item
+        .first()
+        .find(selectors.img)
+        .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+        var max, min;
+        var pos = $(this).scrollTop() + window.screen.height / 3;
+        selectors.item.each(function(i) {
+            min = $(this).offset().top;
+            max = $(this).height() + $(this).offset().top;
+            var that = $(this);
+            if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                selectors.item.removeClass(selectors.activeClass);
+                selectors.id.css(
+                    "background-image",
+                    "url(" +
+                    selectors.item
+                    .last()
+                    .find(selectors.img)
+                    .attr("src") +
+                    ")"
+                );
+                selectors.item.last().addClass(selectors.activeClass);
+            } else if (pos <= max - 40 && pos >= min) {
+                selectors.id.css(
+                    "background-image",
+                    "url(" +
+                    $(this)
+                    .find(selectors.img)
+                    .attr("src") +
+                    ")"
+                );
+                selectors.item.removeClass(selectors.activeClass);
+                $(this).addClass(selectors.activeClass);
+
+            }
+        });
+    });
+};

@@ -14,3 +14,26 @@ $(document).keydown(function(e) {
     }
 
 });
+
+
+var scroll_start = 0;
+var startchange = $('.title');
+var offset = startchange.offset();
+if (startchange.length) {
+    $(document).scroll(function() {
+        scroll_start = $(document).scrollTop();
+        if (scroll_start > offset.top) {
+            $(".navbar").css("background-color", "#282828");
+            $(".navbar").css("box-shadow", "rgb(0 0 0 / 15%) 0px 3px 3px 0px");
+            $("#navImg").attr("src", "assets/img/hand.png");
+            $("#navImg").css("transform", "rotateZ(45deg)");
+            $("#navImg").attr("width", "32px");
+        } else {
+            $("#navImg").attr("src", "assets/img/Hand_big.png");
+            $("#navImg").css("transform", "rotateZ(0deg)");
+            $("#navImg").attr("width", "128px");
+            $(".navbar").css("background-color", "none!important");
+            $(".navbar").css("box-shadow", "none");
+        }
+    });
+}

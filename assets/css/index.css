@@ -1,16 +1,13 @@
 @font-face {
     font-family: "Gotham";
     src: url("/assets/font/GothamBook.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Cera Pro";
     src: url("/assets/font/Cera\ Pro\ Medium.otf");
-}
-
-@font-face {
-    font-family: "Nebula";
-    src: url("/assets/font/Nebula-Regular.otf");
+    font-display: swap;
 }
 
 * {
@@ -2243,6 +2240,7 @@ a {
     letter-spacing: 0.15em;
     display: inline-block;
     padding: 15px 20px;
+    font-weight: 700;
     position: relative;
 }
 
@@ -2646,6 +2644,7 @@ ul.social-footer2 li a {
 .btn {
     background-color: #ff6c2b;
     color: #fff;
+    font-weight: 700;
 }
 
 .btn:hover,
@@ -2925,7 +2924,7 @@ h2 {
         padding: 0!important;
     }
     .slide {
-        text-align: left;
+        text-align: center;
     }
     ul.slides {
         text-align: center;
