@@ -69,6 +69,16 @@
     perspective: 3000px;
 }
 
+#no-transition>div.container>ul>li>a {
+    border-radius: 150px!important;
+    background-color: #202020;
+    margin: 8px;
+}
+
+#no-transition>div.container>ul>li>a:hover {
+    background-color: #282828;
+}
+
 .container .book {
     position: relative;
     display: block;
