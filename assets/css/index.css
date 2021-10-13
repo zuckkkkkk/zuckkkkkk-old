@@ -1874,7 +1874,7 @@ body {
 }
 
 .half-section {
-    width: 50%;
+    width: 75%;
     float: right;
     text-align: right;
 }
@@ -2852,16 +2852,19 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
-    .separator {
-        height: 20vh!important;
-    }
     .botui-container {
         width: 100%!important;
+    }
+    .qst {
+        width: 90%!important;
     }
     .imgSvg {
         margin-top: 2rem;
         margin-bottom: 2rem;
         padding: 15px;
+    }
+    #thatSvg {
+        width: 275px!important;
     }
     .card {
         width: 100%!important;
@@ -2934,6 +2937,12 @@ h2 {
     }
     .go-down {
         top: 80vh!important;
+    }
+    .counter1,
+    .counter2,
+    .counter3 {
+        font-size: 9vh!important;
+        margin-bottom: 1rem;
     }
 }
 
