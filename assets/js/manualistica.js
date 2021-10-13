@@ -1,3 +1,24 @@
+$(document).ready(function() {
+    //START ANIM - LOTTIE
+    //Ham Anim
+    let iconMenu = document.querySelector('#lottie-ham');
+    let animationMenu = bodymovin.loadAnimation({
+        container: iconMenu,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "/assets/json/hamburger.json",
+        initialSegment: [20, 60]
+    });
+
+    var directionMenu = 1;
+    iconMenu.addEventListener('click', (e) => {
+        animationMenu.setDirection(directionMenu);
+        animationMenu.play();
+        directionMenu = -directionMenu;
+    });
+});
+
 var globString = "#flipbook-" + 1;
 
 function changeGlobString(val) {
