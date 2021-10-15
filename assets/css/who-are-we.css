@@ -123,7 +123,7 @@
     display: inline-block;
     content: attr(data-name);
     color: #ffffff;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 

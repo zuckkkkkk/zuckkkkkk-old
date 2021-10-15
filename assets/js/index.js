@@ -15,7 +15,7 @@ $(document).ready(function() {
             } else {
                 $("#navImg").attr("src", "assets/img/Hand_big.png");
                 $("#navImg").css("transform", "rotateZ(0deg)");
-                $("#navImg").attr("width", "128px");
+                $("#navImg").attr("width", "170px");
                 $(".navbar").css("background-color", "none!important");
                 $(".navbar").css("box-shadow", "none");
             }

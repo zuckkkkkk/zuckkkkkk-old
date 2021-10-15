@@ -440,7 +440,7 @@ video {
     height: 125vh;
 }
 .serviceRow{
-    height: 50vh;
+    height: 30vh;
 }
 .serviceText{
    text-align: right;
@@ -460,7 +460,7 @@ video {
 .serviceTextLeft{
     text-align: left;
  }
- .serviceTextLeft h1, .serviceText h1{
+ .serviceTextLeft h2, .serviceText h2{
     font-weight: 700;
     color: #ff6c2b!important;
     width: auto!important;
@@ -486,6 +486,9 @@ video {
     .serviceTextLeft, .serviceText{
         text-align: justify;
 
+    }
+    .serviceText > h2{
+        text-align: left!important;
     }
 }
 

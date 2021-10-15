@@ -2941,11 +2941,14 @@ h2 {
     .counter1,
     .counter2,
     .counter3 {
+        color: #ff6c2b;
         font-size: 9vh!important;
         margin-bottom: 1rem;
     }
 }
-
+.shadowCounter{
+    box-shadow: 5px 5px 20px rgba(255, 108, 43, 1);
+}
 #goToServices {
     border-radius: 10px;
     padding: 5px 20px;
