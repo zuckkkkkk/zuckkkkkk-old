@@ -7,24 +7,30 @@
     <link rel="stylesheet" type="text/css" href="assets/css/services.css">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel="icon" type="image/png" href="./assets/img/HandEbs.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"
+        integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <link href="https://raw.githubusercontent.com/sweetalert2/sweetalert2-themes/master/borderless/borderless.scss" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link href="https://raw.githubusercontent.com/sweetalert2/sweetalert2-themes/master/borderless/borderless.scss"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servizi - Energy Billing Service</title>
     <script defer type="text/javascript" src="assets/js/global_hi.js"></script>
     <script defer type="text/javascript" src="assets/js/services.js"></script>
     <!-- Hotjar Tracking Code for http://www.e-bs.it -->
     <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
                 (h.hj.q = h.hj.q || []).push(arguments)
             };
             h._hjSettings = {
@@ -46,8 +52,11 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container" style="min-width: 95vw;">
-                <a href="/" id="e-bs" class="navbar-brand text-uppercase font-weight-bold"><img src="assets/img/hand.png" alt="e-bs logo" width="32px" style="transform:rotateZ(45deg);"></a>
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+                <a href="/" id="e-bs" class="navbar-brand text-uppercase font-weight-bold"><img
+                        src="assets/img/hand.png" alt="e-bs logo" width="32px" style="transform:rotateZ(45deg);"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right">
                     <div id="lottie-ham" style="width: 20px; height: 20px;"></div>
                 </button>
 
@@ -90,7 +99,7 @@
     <div class="services-hero">
         <video playsinline autoplay muted loop id="bgvid">
             <source src="/assets/video/video_servizi.mp4" type="video/mp4">
-          </video>
+        </video>
     </div>
     <div class="title-servizi title">
         I nostri servizi
@@ -104,35 +113,192 @@
                 <div class="col-md-12 revolver">
                     <div id="sun" onClick="writeText(5)"></div>
                     <div id="earth-orbit">
-                        <div id="earth" onClick="writeText(1)"></div>
-                        <div id="earth-2" onClick="writeText(2)"></div>
-                        <div id="earth-3" onClick="writeText(3)"></div>
-                        <div id="earth-4" onClick="writeText(4)"></div>
+                        <a href="#firstRow"  id="earth">
+                            <div onClick="writeText(1)"></div>
+                        </a>
+                        <a href="#secondRow"  id="earth-2">
+                            <div onClick="writeText(2)"></div>
+                        </a>
+                        <a href="#thirdRow"  id="earth-3">
+                            <div onClick="writeText(3)"></div>
+                        </a>
+                        <a href="#fourthRow"  id="earth-4">
+                            <div onClick="writeText(4)"></div>
+                        </a>
 
                     </div>
                 </div>
-                <!--   <div class="col-md-4 explanation">
-                    <div class="terminal" data-content="~/e-bs/Sito_Web/I_Nostri_Servizi">
-                        <p id="cmd" class="card-title">Curioso di scoprire i nostri servizi?</p>
-                        <p id="cmd" class="card-text">Cliccando sulle icone qui a sinistra potrai scoprire i nostri servizi.</p>
-                    </div>
-                   <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title srv-title text-right">Il nostro ecosistema</h5>
-                        <p class="card-text srv-text text-right">Clicca sulle icone qui a sinistra per scoprire tutti i nostri servizi.</p>
-                        <a href="mailto:assistenza@e-bs.it" class="btn btn-primary" style="float: right; border: none!important;">Contattaci</a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
+    <div class="smaller-title">
+        <h1 class="smaller-title">I servizi nel dettaglio</h1>
     </div>
+    <div class="container">
+        <div id="firstRow" class="row serviceRow">
+            <div class="col-md-6 serviceRowLeft">
+                <img id="img_1"alt="Prima immagine" src="./assets/img/servizi/First.png" width=128px />
+            </div>
+            <div class="col-md-6 serviceRow">
+                <div class="serviceTextLeft">
+                    <h1>Third</h3>
+                        <p>Elit ea esse eiusmod duis reprehenderit quis. Laborum sint nulla dolor excepteur ut labore
+                            irure occaecat veniam. Consequat amet anim ullamco ut. Magna incididunt fugiat cillum
+                            commodo ex veniam esse ut. Dolor consectetur nulla irure commodo duis proident sunt ex
+                            nostrud sint magna ullamco. Minim occaecat laboris sint dolore commodo elit cillum do et ut
+                            id velit ea veniam. Consectetur nulla adipisicing sunt proident quis aliqua laboris Lorem
+                            irure dolore.
+                        </p>
+                        <button class="btn btn-primary">Contattaci</button>
+                </div>
+            </div>
+        </div>
+        <div id="secondRow"class="row">
+            <div class="col-md-6 serviceRow">
+                <div class="serviceText">
+                    <h1>Third</h3>
+                        <p>Elit ea esse eiusmod duis reprehenderit quis. Laborum sint nulla dolor excepteur ut labore
+                            irure occaecat veniam. Consequat amet anim ullamco ut. Magna incididunt fugiat cillum
+                            commodo ex veniam esse ut. Dolor consectetur nulla irure commodo duis proident sunt ex
+                            nostrud sint magna ullamco. Minim occaecat laboris sint dolore commodo elit cillum do et ut
+                            id velit ea veniam. Consectetur nulla adipisicing sunt proident quis aliqua laboris Lorem
+                            irure dolore.
+                        </p>
+                        <button class="btn btn-primary">Contattaci</button>
+                </div>
+            </div>
+            <div class="col-md-6 serviceRow">
+                <img id="img_2"alt="Seconda immagine" src="./assets/img/servizi/Second.png" width=128px />
+            </div>
+        </div>
+        <div id="thirdRow"class="row serviceRow">
+            <div class="col-md-6 serviceRowLeft">
+                <img id="img_3"alt="Terza immagine" src="./assets/img/servizi/Third.png" width=128px />
+            </div>
+            <div class="col-md-6 serviceRow">
+                <div class="serviceTextLeft">
+                    <h1>THIRD</h3>
+                        <p>Elit ea esse eiusmod duis reprehenderit quis. Laborum sint nulla dolor excepteur ut labore
+                            irure occaecat veniam. Consequat amet anim ullamco ut. Magna incididunt fugiat cillum
+                            commodo ex veniam esse ut. Dolor consectetur nulla irure commodo duis proident sunt ex
+                            nostrud sint magna ullamco. Minim occaecat laboris sint dolore commodo elit cillum do et ut
+                            id velit ea veniam. Consectetur nulla adipisicing sunt proident quis aliqua laboris Lorem
+                            irure dolore.
+                        </p>
+                        <button class="btn btn-primary">Contattaci</button>
+                </div>
+            </div>
+        </div>
+        <div id="fourthRow"class="row ">
+            <div class="col-md-6 serviceRow">
+                <div class="serviceText">
+                    <h1>Third</h3>
+                        <p>Elit ea esse eiusmod duis reprehenderit quis. Laborum sint nulla dolor excepteur ut labore
+                            irure occaecat veniam. Consequat amet anim ullamco ut. Magna incididunt fugiat cillum
+                            commodo ex veniam esse ut. Dolor consectetur nulla irure commodo duis proident sunt ex
+                            nostrud sint magna ullamco. Minim occaecat laboris sint dolore commodo elit cillum do et ut
+                            id velit ea veniam. Consectetur nulla adipisicing sunt proident quis aliqua laboris Lorem
+                            irure dolore.
+                        </p>
+                        <button class="btn btn-primary">Contattaci</button>
 
-
-    <div class="text-center">
-        Section 2 con un "Interessato alla ripartizione? BASIC L e R"
+                </div>
+            </div>
+            <div class="col-md-6 serviceRow">
+                <img id="img_4" alt="Quarta immagine" src="./assets/img/servizi/fourth.png" width=128px />
+            </div>
+        </div>
+        <div class="panel pricing-table">
+            <div class="pricing-plan">
+              <img src="./assets/img/servizi/aeroplane.webp" width="200"alt="" class="pricing-img">
+              <h2 class="pricing-header">Basic L</h2>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">Lettura apparecchi a mezzo sistema radio o walk-by.</li>
+                <li class="pricing-features-item">Preparazione di tabulato Excel con il dettaglio delle singole letture suddivise per utente o in alternativa preparazione dell’elaborato con i consumi espressi in KWh sia in formato cartaceo che elettronico.</li>
+                <li class="pricing-features-item">Redazione dei riparti consuntivi di riscaldamento e acqua sanitaria a norma di Legge, produzione del prospetto riepilogativo condominiale e dei singoli rendiconti con la suddivisione dei costi individuali.</li>
+                <li class="pricing-features-item">Assistenza telefonica mediante front office e call center dedicati.</li>
+              </ul>
+              <button  class="pricing-button is-featured">Contattaci</button>
+            </div>
+            
+            <div class="pricing-plan">
+                <img src="./assets/img/servizi/rocket.webp" width="200"alt="" class="pricing-img">
+                <h2 class="pricing-header">Gold R</h2>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">Lettura apparecchi a mezzo sistema radio o walk-by.</li>
+                <li class="pricing-features-item">Preparazione di tabulato Excel con il dettaglio delle singole letture suddivise per utente o in alternativa preparazione dell’elaborato con i consumi espressi in KWh sia in formato cartaceo che elettronico.</li>
+                <li class="pricing-features-item">Redazione dei riparti consuntivi di riscaldamento e acqua sanitaria a norma di Legge, produzione del prospetto riepilogativo condominiale e dei singoli rendiconti con la suddivisione dei costi individuali.</li>
+                <li class="pricing-features-item">Assistenza telefonica mediante front office e call center dedicati.</li>
+                <li class="pricing-features-item">Verifica degli apparecchi con segnalazione dei malfunzionamenti.</li>
+                <li class="pricing-features-item">Integrazione col portale web.</li>
+              </ul>
+              <button  class="pricing-button-other">Contattaci</button>
+            </div>
+            
+          </div>
     </div>
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title">E-BS<span></span></h5>
+                            <p>e-bs nasce nel 2018 e qui bisogna metterci una descirizone breve ma non saprei cosa davvero </p>
+                        </div>
+                    </div>
 
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="/index.html">Home</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/who-are-we.html">Chi siamo</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/bollette.html">Le nostre bollette</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="/contact-us.html">Contattaci</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Iscriviti<span></span></h5>
+                            <p>Lascia qui sotto la tua email</p>
+                            <a class="btn" href="#." target="_blank">Registrati ora</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Contattaci<span></span></h5>
+
+                            <p><a href="mailto:assistenza@e-bs.it" title="glorythemes">assistenza@e-bs.it</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>e-bs Energy Billing Services © 2021. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="//code.tidio.co/jsgqa5jicfpgw2yzfezqwzoqi2cdgdft.js" async></script>
 
 </body>
