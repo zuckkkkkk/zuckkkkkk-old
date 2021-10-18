@@ -49,7 +49,7 @@ $(document).ready(function() {
             $slides: $('.slide'),
             $list: $('.slides'),
             duration: 12,
-            lineHeight: 44
+            lineHeight: 30
         }
     
         var vSlide = new TimelineMax({
