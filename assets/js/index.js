@@ -1,5 +1,6 @@
 $(document).ready(function() {
     AOS.init();
+    var os = platform.os.family.toString();
     var scroll_start = 0;
     var startchange = $('.title');
     var offset = startchange.offset();
@@ -42,6 +43,29 @@ $(document).ready(function() {
     particlesJS.load('hero', 'assets/json/particlesjs-config.json', function() {
         // console.log('callback - particles.js config loaded');
     });
+    console.log(os);
+    if (os.includes("OS X")){
+        var vsOpts = {
+            $slides: $('.slide'),
+            $list: $('.slides'),
+            duration: 12,
+            lineHeight: 44
+        }
+    
+        var vSlide = new TimelineMax({
+            paused: false,
+            repeat: -1
+        })
+    
+        vsOpts.$slides.each(function(i) {
+            vSlide.to(vsOpts.$list, vsOpts.duration / vsOpts.$slides.length, {
+                ease: Expo.easeInOut, //Elastic.easeOut.config(1, 0.4)
+                y: i * -1 * vsOpts.lineHeight
+            })
+        })
+        vSlide.play()
+
+    }else{
     var vsOpts = {
         $slides: $('.slide'),
         $list: $('.slides'),
@@ -61,7 +85,10 @@ $(document).ready(function() {
         })
     })
     vSlide.play()
+}
 
+
+  
     //START ANIM - LOTTIE
     //Ham Anim
     let iconMenu = document.querySelector('#lottie-ham');
