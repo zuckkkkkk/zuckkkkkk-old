@@ -22,7 +22,21 @@ $(document).ready(function() {
             }
         });
     }
-
+    if ($(window).width() > 768){
+        $(".slides").append('<li class="slide"> La Tua Contabilizzazione dei consumi</li>');
+        $(".slides").append('<li class="slide"> La Migliore Assistenza Tecnica</li>');
+        $(".slides").append('<li class="slide"> Il Monitoraggio costante dei tuoi consumi</li>');
+        $(".slides").append('<li class="slide"> La Tua Contabilizzazione dei consumi</li>');
+        $(".slides").append('<li class="slide"> La Migliore Assistenza Tecnica</li>');
+        $(".slides").append('<li class="slide"> Il Monitoraggio costante dei tuoi consumi</li>');
+    }else{
+        $(".slides").append('<li class="slide"> Contabilizzazione</li>');
+        $(".slides").append('<li class="slide"> Assistenza</li>');
+        $(".slides").append('<li class="slide"> Monitoraggio</li>');
+        $(".slides").append('<li class="slide"> Contabilizzazione</li>');
+        $(".slides").append('<li class="slide"> Assistenza</li>');
+        $(".slides").append('<li class="slide"> Monitoraggio</li>');
+    }
     $('#lottie-go-down').on('click', function() {
         $('html, body').animate({ scrollTop: $('#ss').offset().top - 300 }, 0);
         return false;

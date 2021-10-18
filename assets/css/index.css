@@ -2791,7 +2791,7 @@ h2 {
 }
 
 .band-center-about-us {
-    height: 75vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -2899,6 +2899,9 @@ h2 {
     .sSmall{
         display: block;
     } */
+    .ourNumbers{
+        display: none;
+    }
     .botui-container {
         width: 100%!important;
     }

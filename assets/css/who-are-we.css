@@ -126,7 +126,9 @@
     font-size: 2vw;
 }
 
-
+.textPanelStory{
+    width: 50%;
+}
 /*Timeline*/
 
 .timeline {
@@ -171,6 +173,12 @@
 @media only screen and (max-width: 767px) {
     .timeline:before {
         left: 40px;
+    }
+    .textPanelStory{
+        width: 90%!important;
+    }
+    .band-center-about-us {
+        height: 100vh;
     }
 }
 
