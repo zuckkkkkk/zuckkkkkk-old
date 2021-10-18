@@ -168,25 +168,25 @@ video {
     border-radius: 200px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -150px;
+    margin-left: -150px;
     left: 50%;
-    height: 200px;
+    height: 300px;
     position: absolute;
     top: 50%;
-    width: 200px;
+    width: 300px;
 }
 
 #earth-orbit {
     border: 4px solid #ff6c2b;
     border-radius: 50%;
     left: 50%;
-    height: 500px;
-    margin-top: -250px;
-    margin-left: -250px;
+    height: 650px;
+    margin-top: -330px;
+    margin-left: -330px;
     position: absolute;
     top: 50%;
-    width: 500px;
+    width: 650px;
     -webkit-animation: spin-right 10s linear infinite;
     -moz-animation: spin-right 10s linear infinite;
     -ms-animation: spin-right 10s linear infinite;
@@ -194,9 +194,9 @@ video {
     animation: spin-right 10s linear infinite;
 }
 
-#earth-orbit:hover {
+/* #earth-orbit:hover {
     animation-play-state: paused;
-}
+} */
 
 #moon-orbit {
     border-radius: 50%;
@@ -215,7 +215,7 @@ video {
 #earth-2:hover,
 #earth-3:hover,
 #earth-4:hover {
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 #earth,
@@ -227,15 +227,16 @@ video {
 
 #earth {
     background-image: url("../img/servizi/First.png");
-    animation: spin-left 10s linear infinite;
+    animation: 10s linear 0s infinite normal none running spin-left;
     border-radius: 128px;
     margin-left: -25px;
     margin-top: -25px;
-    height: 128px;
     left: 42%;
     position: absolute;
     top: -7%;
-    width: 128px;
+    width: 150px;
+    background-size: contain;
+    height: 150px;
 }
 
 #earth-2 {
@@ -244,11 +245,12 @@ video {
     border-radius: 128px;
     margin-left: -25px;
     margin-top: -25px;
-    height: 128px;
+    height: 150px;
     left: 42%;
     position: absolute;
+    background-size: contain;
     top: 92%;
-    width: 128px;
+    width: 150px;
 }
 
 #earth-3 {
@@ -257,11 +259,12 @@ video {
     border-radius: 128px;
     margin-left: -25px;
     margin-top: -25px;
-    height: 128px;
+    height: 150px;
     left: -7%;
     position: absolute;
+    background-size: contain;
     top: 42%;
-    width: 128px;
+    width: 150px;
 }
 
 #earth-4 {
@@ -270,11 +273,13 @@ video {
     border-radius: 128px;
     margin-left: -25px;
     margin-top: -25px;
-    height: 128px;
+    height: 150px;
     left: 92%;
     position: absolute;
+    background-size: contain;
+
     top: 42%;
-    width: 128px;
+    width: 150px;
 }
 
 .moon-holder {
@@ -489,6 +494,9 @@ video {
     }
     .serviceText > h2{
         text-align: left!important;
+    }
+    #hero{
+        display: none!important;
     }
 }
 

@@ -2790,6 +2790,14 @@ h2 {
     background-color: #282828;
 }
 
+.band-center-about-us {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #282828;
+}
 .statico {
     font-weight: 700;
     display: flex;
@@ -2811,14 +2819,45 @@ h2 {
 .img_4_Home {
     width: 100%;
 }
-
+.kc_fab_main_btn {
+    background-color: #F44336;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #F44336;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 36px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: .3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .kc_fab_main_btn:focus {
+    transform: scale(1.1);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 .ebswebtext {
     display: flex;
     vertical-align: middle;
     align-items: center;
 }
-
-
+.cc-nb-okagree, .cc-nb-reject,.cc-cp-foot-save{
+    background-color: #ff6c2b!important;
+}
+.cc-nb-changep,.cc-cp-body-tabs-item-link{
+    background-color: #282828!important;
+}
+.cc-pc-head-lang-select,.cc-cp-foot-byline, .cc-cp-foot-byline > a{
+    display: none!important;
+    color: #282828!important;
+}
+.cc-cp-body-tabs{
+    background-color: #282828!important;
+}
 /* .Services_First_Row {
     
 } */
@@ -2850,8 +2889,16 @@ h2 {
     justify-content: center;
     padding-left: 0!important;
 }
-
+.sSmall{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
+    /* .sBig{
+        display: none!important;
+    }
+    .sSmall{
+        display: block;
+    } */
     .botui-container {
         width: 100%!important;
     }
