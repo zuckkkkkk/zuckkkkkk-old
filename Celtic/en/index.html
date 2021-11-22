@@ -16,17 +16,34 @@
   </head>
   <body>
     <div class="container">
+      <div class="modal fade" id="allergeniModal" tabindex="-1" aria-labelledby="allergeniModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center w-100" id="allergeniModalLabel">Allergene</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              Tap on the exclamation points around the "food" section to see what they contain. Not sure at all? Ask at the counter!
+              <h4>Download the allergene's list</h4> <br><a target="_blank" class="btn btn-primary" href="../assets/download/libroallerg_561_20200216074522.pdf">Download</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal"id="info" tabindex="-1">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">🛎️Attenzione🛎️</h5>
+              <h5 class="modal-title text-center w-100">🛎️Attenzione🛎️</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <h2>🚫No table service🚫</h3>
+              <h2>No table service</h3>
               <p>Get to the counter to order. For food we will give you a number and we'll take care of you.</p>
               <h2>😷About the anti-covid legislation</h3>
               <p>We'll always ask you to wear masks (you can only remove them while sitting) as all our collaborators do, kitchen included. We remind you that at the entrance and in the services area, sanitizer is available. We have distanced the tables and removed many stools at the counter signaling the distance of 1 meter, we invite you not to move the tables and chairs to keep the distances. We beg you to not create any form of crowd both outside and within the indoor and always maintain distances. Thanks for your kind collaboration.</p>
@@ -37,6 +54,15 @@
         </div>
       </div>
       <div class="row">
+        <div class="jumbotron w-100">
+          <div class="container">
+            <h1 class="display-4">  
+              <div class="text-center">
+                <a id="11"></a><h3>HAPPY HOUR</h3>
+              </div></h1>
+            <p class="lead text-center">From the opening until 7:30PM.</p>
+          </div>
+        </div>
         <div class="col-12">
           <h1 class="my-3 text-center">Irish Pub Celtic Druid</h1>
           <div class="text-center">
@@ -176,12 +202,14 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>OLD STYLE BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p><i>Fresh bread, 160gr beef burger., Smoked bacon, cheddar, salad, tomato, mayonnaise. With fried potatoes.</i></p>
               </div>
               <div class="item">
                 <h4>CHEDDAR BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame, Sulfur dioxide and sulphites">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p><i>Fresh bread, 160gr beef burger, cheddar, caramelized onion, salad, tomato, cheezy sauce. With fried potatoes.</i></p>
@@ -194,12 +222,14 @@
               </div>
               <div class="item">
                 <h4>BLUEBURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Peanuts, Soy, Milk, Celery, Mustard, Sesame, Sulfur dioxide and sulphites">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p>Fresh bread, 160 gr beef burger., BBQ sauce, dried tomatoes. Herbal cheese, salad, with fried potatoes.</p>
               </div>
               <div class="item">
                 <h4>NINÉN BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Crustaceans, Egg, Fish, Soy, Milk, Celery, Mustard, Sesame, Sulfur dioxide and sulphites, Molluschi">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p>Fresh bread, 160 gr pork burger., Smoked provola, flavored aubergines with vinegar and thyme, Parmesan cream. With fried potatoes.</p>
@@ -212,18 +242,21 @@
               </div>
               <div class="item">
                 <h4>RED BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€11,00</span>
                 <p>Fresh bread, 160 gr beef burger., Spicy smoked provola, salad, hot tomato sauce. With spicy fried potatoes.</p>
               </div>
               <div class="item">
                 <h4>CHICKENBURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€9,00</span>
                 <p>Fresh bread, 160 gr. chicken burger, Caesar Salad, tomato, salad. With fried potatoes.</p>
               </div>
               <div class="item">
                 <h4>BO-BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame, Sulfur dioxide and sulphites">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p>Fresh bread, 160 gr. burger, Based on mortadella (with Parmigiano Reggiano, grated bread and eggs), glaze of balsamic vinegar of Modena, tomato, salad. With fried potatoes.</p>
@@ -236,12 +269,14 @@
               </div>
               <div class="item">
                 <h4>VEGGIE-BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard">!</div>
                 <span></span>
                 <span>€9,00</span>
                 <p>Kamut bread, hamburger of about 150 gr.(with potatoes, red turnip, legumes and chili pepper), dried tomatoes, salad. With fried pasteled vegetables.</p>
               </div>
               <div class="item">
                 <h4>CHEESE BURGER</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame, Celery">!</div>
                 <span></span>
                 <span>€5,00</span>
                 <p>Bread, Manzoda Hamburger 90gr, salad, cheeses Edamere Cheddar.</p>
@@ -252,10 +287,39 @@
                 <span>€6,00</span>
                 <p>Bread, manzoda hamburger 90gr, bacon, tomato, edamer, ketchup, salad.</p>
               </div>
-            </div>
+            </div><!--End Burger-->
             <div class="col-sm-6">
               <div class="item">
+                <h4>HOT DOG BASE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€4,00</span>
+                <p>Fresh bread, pork salastel, salad, mustard.</p>
+              </div>
+              <div class="item">
+                <h4>HOT DOG CHEDDAR</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Fresh bread, pork and beef Würstel, cheddar, salad, mayonnaise.</p>
+              </div>
+              <div class="item">
+                <h4>HOT DOG ONION</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Fresh bread, pork würstel and beef, caramelized onion.</p>
+              </div>
+              <div class="item">
+                <h4>HOT DOG PICCANTE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Fresh bread, pork würstel and beef, spicy provola, tomato salshot.</p>
+              </div><!--End Hot Dog-->
+              <div class="item">
                 <h4>CLUB SANDWICH</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame, Sulfur dioxide and sulphites">!</div>
                 <span></span>
                 <span>€10,00</span>
                 <p>Bread, edamer, cooked ham, smoked bacon, salad, tomato, mustard salsa.With fried potatoes
@@ -267,82 +331,67 @@
                 <p>Bread, salad, dried tomatoes, zucchini, aubergines, edamer, genoese pesto salsa. With fried battered vegetables.</p>
               </div>
               <div class="item">
-                <h4>HOT DOG BASE</h4>
-                <span></span>
-                <span>€4,00</span>
-                <p>Fresh bread, pork salastel, salad, mustard.</p>
-              </div>
-              <div class="item">
-                <h4>HOT DOG CHEDDAR</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>Fresh bread, pork and beef Würstel, cheddar, salad, mayonnaise.</p>
-              </div>
-              <div class="item">
-                <h4>HOT DOG ONION</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>Fresh bread, pork würstel and beef, caramelized onion.</p>
-              </div>
-              <div class="item">
-                <h4>HOT DOG PICCANTE</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>Fresh bread, pork würstel and beef, spicy provola, tomato salshot.</p>
-              </div>
-              <div class="item">
-                <h4>FOCACCIA GENOVESE</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>With prosciutto cotto and Edamer. Or with parma ham and smoked provola. Or with tuna, mayonnaise, tomato, salad. Or empty (€ 3.00).</i></p>
-              </div>
-              <div class="item">
-                <h4>PIADINA</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>With Parma ham and Edamer. Or with prosciutto cotto and Edamer. Or with tomato, aubergines, edamer, salad.</p>
-              </div>
-              <div class="item">
-                <h4>PIZZA MARGHERITA</h4>
-                <span></span>
-                <span>€5,00</span>
-                <p>Margherita</p>
-              </div>
-              <div class="item">
-                <h4>Pizza of your choice</h4>
-                <span></span>
-                <span>€6,00</span>
-                <p>With prosciutto cotto. Or with tuna. Or with Würstel.</p>
-              </div>
-              <div class="item">
-                <h4>PIZZA CRUDO DI PARMA</h4>
-                <span></span>
-                <span>€7,00</span>
-                <p>With Parma's Ham.</p>
-              </div>
-              <div class="item">
                 <h4>FISH & CHIPS</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard">!</div>
                 <span></span>
                 <span>€6,00</span>
                 <p>Cod morsels (180 gr.), with fried potatoes.</p>
               </div>
               <div class="item">
                 <h4>FRIED MEATBALLS BOLOGNESI</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€7,00</span>
                 <p>Pork and bovine meat, mortadella, eggs, bread, parmesan, (150g.). With fried potatoes.</p>
               </div>
               <div class="item">
                 <h4>FRIED MEATBALLS VEGETARIANE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Celery, an.solforosa e solfiti">!</div>
                 <span></span>
                 <span>€7,00</span>
                 <p>Aubergines, provola, eggs, bread, parmesan.(150g.). With fried battered vegetables.</p>
               </div>
               <div class="item">
                 <h4>CHICKEN NUGGETS</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk">!</div>
                 <span></span>
                 <span>€7,00</span>
                 <p>Chicken meat (160 gr) breaded with wheat flour. With fried potatoes.</p>
+              </div>
+              <div class="item">
+                <h4>FOCACCIA GENOVESE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>With prosciutto cotto and Edamer. Or with parma ham and smoked provola. Or with tuna, mayonnaise, tomato, salad. Or empty (€ 3.00).</i></p>
+              </div>
+              <div class="item">
+                <h4>PIADINA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Soy, Fish, Milk, Celery, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>With Parma ham and Edamer. Or with prosciutto cotto and Edamer. Or with tomato, aubergines, edamer, salad.</p>
+              </div>
+              <div class="item">
+                <h4>PIZZA MARGHERITA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Margherita</p>
+              </div>
+              <div class="item">
+                <h4>Pizza of your choice</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Ask at the counter.">!</div>
+                <span></span>
+                <span>€6,00</span>
+                <p>With prosciutto cotto. Or with tuna. Or with Würstel.</p>
+              </div>
+              <div class="item">
+                <h4>PIZZA CRUDO DI PARMA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame">!</div>
+                <span></span>
+                <span>€7,00</span>
+                <p>With Parma's Ham.</p>
               </div>
             </div>
           </div>
@@ -353,31 +402,37 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>FRENCH FRIES</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€3,50</span>
               </div>
               <div class="item">
                 <h4>HOT FRENCH FRIES</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€3,50</span>
               </div>
               <div class="item">
                 <h4>FRENCH FRIES CACIO & PEPE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€4,50</span>
               </div>
               <div class="item">
                 <h4>BEER-BAKED ONION RINGS(5pz)</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€4,50</span>
               </div>
               <div class="item">
                 <h4>BEER-BAKED MOZZARELLA STICKS (6pz)</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Crustaceans, Egg, Fish, Peanuts, Soy, Milk, Celery, Mustard, Sesame, Sulfur dioxide and sulphites, Molluschi">!</div>
                 <span></span>
                 <span>€4,50</span>
               </div>
               <div class="item">
                 <h4>OLIVE ALL’ASCOLANA (8pz)</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Crustaceans, Egg, Fish, Soy, Milk, Celery, Mustard, Sesame, Molluschi">!</div>
                 <span></span>
                 <span>€5,00</span>
               </div>
@@ -385,13 +440,13 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>JALAPENO WITH CEESE(6pz)</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Spicy">S</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€5,00</span>
               </div>
               <div class="item">
                 <h4>MIXED VEGETABLES PASTELLATE</h4>
-                <div class="note badge veggie" data-toggle="tooltip" data-placement="right" title="Vegetarian">V</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard">!</div>
                 <span></span>
                 <span>€3,50</span>
               </div>
@@ -419,11 +474,13 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>SEMIFREDDO WITH MASCARPONE Our production</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
               <div class="item">
                 <h4>CHOCOLATE CAKE Our production</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
@@ -431,11 +488,13 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>TARTUFO NERO</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame, Almonds">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
               <div class="item">
                 <h4>TARTUFO NERO AFFOGATO AL CAFFE’</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Soy, Milk, Mustard, Sesame, Almonds">!</div>
                 <span></span>
                 <span>€5,00</span>
               </div>
@@ -448,9 +507,10 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>POP CORN</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Gluten, Egg, Fish, Milk, Mustard, Sesame">!</div>
                 <span></span>
                 <span>€3,00</span>
-                <p>Normal or butter</p>
+                <p>Normal or butter (if normal without milk).</p>
               </div>
               <div class="item">
                 <h4>Packed chips Gluten Free</h4>
@@ -679,7 +739,7 @@
             </div>
           </div>
           <div class="text-center">
-            <h3>TYPICAL FROM IRELAND</h3>
+            <h3>TYPICAL FROM IRELAND (HOT)</h3>
           </div>
           <div class="row">
             <div class="col-sm-4">
@@ -748,37 +808,50 @@
                 <p>Rum & Cola - Whiskey & Cola - Martini & Cola - Gin Tonic  - Gin Lemon - Campari & Orange juice - Vodka Tonic - Vodka & Orange juice </p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>VODKA & RED BULL</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
+          
+          </div>
+          <div class="text-center">
+            <h3>COCKTAIL</h3>
           </div>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <div class="item">
-                <h4>RUMZACAPA 23</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>COGNAC</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>AMARETTO DI SARONNO</h4>
+                <h4>VODKA</h4>
                 <span></span>
                 <span>€4,00</span>
               </div>
             </div>
+          <div class="col-sm-6">
+            <div class="item">
+              <h4>VODKA & RED BULL</h4>
+              <span></span>
+              <span>€7,00</span>
+            </div>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="item">
+              <h4>RUMZACAPA 23</h4>
+              <span></span>
+              <span>€7,00</span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="item">
+              <h4>COGNAC</h4>
+              <span></span>
+              <span>€6,00</span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="item">
+              <h4>AMARETTO DI SARONNO</h4>
+              <span></span>
+              <span>€4,00</span>
+            </div>
+          </div>
+        </div>
           <div class="row">
             <div class="col-sm-4">
               <div class="item">
@@ -812,33 +885,7 @@
                 <span>€4,00</span>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>WINE COL DI SASSO 375ml</h4>
-                <span></span>
-                <span>€6,00</span>
-                <p>Tuscan red</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>WINE LE RIME 375ml</h4>
-                <span></span>
-                <span>€6,00</span>
-                <p>Tuscan white</p>
-              </div>
-            </div>
-            
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>PIGNOLETTO 375ml</h4>
-                <span></span>
-                <span>€7,00</span>
-                <p>Sparkling white</p>
-              </div>
-            </div>
+           
             <div class="col-sm-4">
               <div class="item">
                 <h4>PORTO ROSSO</h4>
@@ -854,7 +901,35 @@
               </div>
             </div>
           </div>
-
+          <div class="text-center">
+            <h3>WINE</h3>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="item">
+                <h4>VINO COL DI SASSO 375ml</h4>
+                <span></span>
+                <span>€6,00</span>
+                <p>Tuscan red</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <h4>VINO LE RIME 375ml</h4>
+                <span></span>
+                <span>€6,00</span>
+                <p>Tuscan white</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <h4>PIGNOLETTO 375ml</h4>
+                <span></span>
+                <span>€7,00</span>
+                <p>Sparkling White</p>
+              </div>
+            </div>
+          </div>
           <div class="text-center">
             <h3>WHISKIES</h3>
             <h5>Irish</h5>
@@ -1147,7 +1222,7 @@
               <div class="item">
                 <h4>COFFEE</h4>
                 <span></span>
-                <span>€1,00</span>
+                <span>€1,50</span>
               </div>
             </div>
           </div>
@@ -1190,6 +1265,7 @@
         </div>
       </div>
     </div>
+    <button id="Allergeni"class="kc_fab_main_btn_allergeni"data-toggle="modal" data-target="#allergeniModal"><img width="28px"src="../assets/pngegg.png"/></button>
     <button id="EnToIt"class="kc_fab_main_btn"><img width="28px"src="../assets/italy_flag.png"/></button>
     <footer class="footer">
       <div class="container">
