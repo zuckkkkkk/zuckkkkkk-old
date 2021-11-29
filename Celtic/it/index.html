@@ -21,9 +21,9 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title text-center w-100" id="allergeniModalLabel">Allergeni</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+          <h5 class="modal-title text-center w-100" id="allergeniModalLabel">Piatti vegeteriani</h5>
+          <button type="button" style="position: absolute; padding: 0!important; margin: 0!important; top:8px; right: 32px; font-size: 50px;"class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body text-center">
@@ -39,33 +39,44 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title text-center w-100">🛎️Attenzione🛎️</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" style="position: absolute; padding: 0!important; margin: 0!important; top:8px; right: 32px; font-size: 50px;"class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <h2>Non si effettua servizio al tavolo</h3>
               <p>Per ordinare rivolgersi direttamente alle casse. Per il cibo ti sarà dato un numero e ci penseremo noi a trovarti.</p>
-              <h2>😷Per la normativa anti covid</h3>
+              <h2>😷Normativa anti covid</h3>
               <p>Vi chiediamo di indossare sempre le mascherine (si possono togliere solo a sedere) come fanno tutti i nostri collaboratori, cucina inclusa. Vi ricordiamo che all’entrata e nella zona servizi è a disposizione gel disinfettante. Abbiamo provveduto a distanziare i tavoli e togliere molti sgabelli al banco segnalando la distanza di 1 metro, vi invitiamo a non spostar i tavoli e le sedie per mantenere le distanze. Ci raccomandiamo di non creare assembramenti sia all’esterno che all’interno del locale e di mantenere sempre le distanze Grazie per la collaborazione</p>
               <h2>Green Pass</h3>
-                <p>Per sedersi nei tavoli all'interno del locale sarà necessario il Green Pass valido sul territorio italiano e in corso di validità. Potrete invece consumare al bancone e nei tavoli all'esterno senza bisogno di mostrarlo.</p>
+                <p>Per sedersi nei tavoli all'interno del locale sarà necessario il Green Pass valido sul territorio italiano e in corso di validità.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="jumbotron w-100">
+        <div id="happyhour"class="jumbotron w-100">
           <div class="container">
             <h1 class="display-4">  
               <div class="text-center">
                 <a id="11"></a><h3>HAPPY HOUR</h3>
               </div></h1>
-            <p class="lead text-center">Valido dall'apertura fino alle ore 19:30.</p>
+            <p class="lead text-center">Valido dall'apertura fino alle ore 20:00.</p>
           </div>
         </div>
         <div class="col-12">
           <h1 class="my-3 text-center">Irish Pub Celtic Druid</h1>
+          <div class="row">
+            <div class="col-md-12 mx-1">
+                <a href="#4"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Birre</a>
+                <a href="#BURGER"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Burger</a>
+                <a href="#FOOD"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Food</a>
+                <a href="#BIB"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Birre in bottiglia</a>
+                <a href="#liquori"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Superalcolici</a>
+                <a href="#analcolici"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Analcolici</a>
+                <a data-toggle="modal" data-target="#allergeniModal" class="badge badge-pill badge-secondary mt-2" style="border-radius: 100px">Vegetariano</a>
+            </div>
+          </div>
           <div class="text-center">
             <a id="4"></a><h3>BIRRE ALLA SPINA</h3>
           </div>
@@ -145,12 +156,12 @@
                 <span>€5,50 • €4,00</span>
                 <p>alc. 5,8 % vol. HEFEWEIZEN - GERMANIA</p>
               </div>
-              <div class="item">
+              <!-- <div class="item">
                 <h4>ERDINGER</h4>
                 <span></span>
                 <span>€5,50 • €4,00</span>
                 <p>alc. 5,3 % vol. HEFEWEIZEN - GERMANIA</p>
-              </div>
+              </div> -->
               <div class="item">
                 <h4>PILS - AYINGER</h4>
                 <span></span>
@@ -159,6 +170,205 @@
               </div>
             </div>
           </div>
+          <div id="BIB"class="text-center">
+              <h3>BIRRE IN BOTTIGLIA</h3>
+              <h5>IL NOSTRO ASSORTIMENTO DI BIRRE IN BOTTIGLIA VARIA COSTANTEMENTE, PER ESSERE SEMPRE AGGIORNATO QUALITATIVAMENTE. TROVATE QUI UN'INDICAZIONE DI MASSIMA. GUARDATE L'ESPOSIZIONE AL BANCO.</h5>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>BUD 330ml</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>TENNENT'S SUPER 330ml</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
+              <!-- <div class="col-sm-4">
+                <div class="item">
+                  <h4>CORONA 335ml</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>ANALCOLICA 330ml</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>AYINGER</h4>
+                  <span></span>
+                  <span>€5,50</span>
+                  <p>JAHRUNDERT / BRAUWEISS / LAGERHELL / KELLER</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>ICHNUSA NON FILTRATA 500 ml</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>GUINNESS 500 ml: WEST INDIES</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>MAHR’S500 ml: PILS / UNGESPUNDET KELLER “U”</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>WESTMALLE330 ml: DUBBEL / TRIPEL</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>ST. BERNARDUS330 ml: WIT</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>RODENBACH GRAND CRU 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>BUCKWEAT WHITE 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>NOBLESSE 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>GOSE 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>SAISON DUPONT 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>ORVAL 330 ml</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>SANTA GOSE 330 ml</h4>
+                  <span></span>
+                  <span>€6,50</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>IVANHOE 500ml</h4>
+                  <span></span>
+                  <span>€6,50</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>St.AUSTELL 500 ml: PROPER JOB</h4>
+                  <span></span>
+                  <span>€6,50</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>SHEPHERDNEAME 500ml: 1698 / SPITFIRE</h4>
+                  <span></span>
+                  <span>€6,50</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>RIDGEWAYG.F.: 500 ml  BLUE / IPA / BITTER</h4>
+                  <span></span>
+                  <span>€7,00</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>St.AUSTELL 500 ml: BIG JOB</h4>
+                  <span></span>
+                  <span>€7,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>ST.PETER’S 500 ml:CREAM STOUT/ MILD/ PORTER</h4>
+                  <span></span>
+                  <span>€7,00</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item">
+                  <h4>OUD BERSEEL375 ml: OUDE GEUZE/ OUDE KRIEK</h4>
+                  <span></span>
+                  <span>€8,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="item">
+                  <h4>OERBIER RESERVA330ml</h4>
+                  <span></span>
+                  <span>€8,00</span>
+                </div>
+              </div>
+            </div>
           <div class="text-center">
             <a id="6"></a><h3>BIRRE A ROTAZIONE</h3>
             <h5>Proponiamo almeno 3 tipologie diverse a rotazione, chiedi al banco.</h5>
@@ -197,93 +407,102 @@
             </div>
           </div>
           <div class="text-center">
-            <a id="7"></a><h3>FOOD</h3>
+            <a id="BURGER"></a><h3>BURGER</h3>
           </div>
-          <div class="row">
+          <div class="jumbotron">
+              <p class="lead">Tappa sui punti esclamativi per controllare gli allergeni di un piatto. Non sei sicuro? Chiedi al bancone!</p>
+              <div style="border-bottom: 1px solid black; margin: 1rem 0rem;"> </div>
+              <p class="lead">Oppure, scarica la lista degli allergeni</p><a target="_blank" class="btn btn-primary" href="../assets/download/libroallerg_561_20200216074522.pdf">Download</a>
+          </div>
+              <div class="row">
             <div class="col-sm-6">
               <div class="item">
                 <h4>CACIO E PEPE BURGER</h4>
                 <span></span>
                 <span>€11,00</span>
-                <p><i>Pane fresco, hamburger di manzo da 160 gr., pancetta croccante, cacio e pepe, uovo all'occhio di bue. Con patate fritte.</i></p>
+                <p><i>Pane fresco, hamburger di manzo da 160 gr., pancetta croccante, cacio e pepe, uovo all'occhio di bue. <br> Con patate fritte.</i></p>
               </div>
               <div class="item">
                 <h4>OLD STYLE BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p><i>Pane fresco, hamburger di manzo da 160 gr., pancetta affumicata, cheddar, insalata, pomodoro, maionese. Con patate fritte.</i></p>
+                <p><i>Pane fresco, hamburger di manzo da 160 gr., pancetta affumicata, cheddar, insalata, pomodoro, maionese. <br> Con patate fritte.</i></p>
               </div>
               <div class="item">
                 <h4>CHEDDAR BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p><i>Pane fresco, hamburger di manzo da 160 gr., cheddar, cipolla caramellata, insalata, pomodoro, salsa Cheezy. Con patate fritte.</i></p>
+                <p><i>Pane fresco, hamburger di manzo da 160 gr., cheddar, cipolla caramellata, insalata, pomodoro, salsa Cheezy. <br> Con patate fritte.</i></p>
               </div>
               <div class="item">
                 <h4>13</h4>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane fresco, hamburger di manzo alla birra Hop House da 160 gr., provola, cipolla marinata nella birra, melanzane, ketchup. Con patate fritte.</p>
+                <p>Pane fresco, hamburger di manzo alla birra Hop House da 160 gr., provola, cipolla marinata nella birra, melanzane, ketchup. <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>BLUE BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Arachidi, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Arachidi, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane fresco, hamburger di manzo da 160 gr., salsa BBQ, pomodori secchi.  formaggio erborinato, insalata, Con patate fritte.</p>
+                <p>Pane fresco, hamburger di manzo da 160 gr., salsa BBQ, pomodori secchi.  formaggio erborinato, insalata, <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>NINÉN BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Crostacei, Uova, Pesce, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti, Molluschi">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Crostacei, Uova, Pesce, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti, Molluschi">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane fresco, hamburger di maiale da 160 gr., provola affumicata,melanzane aromatizzate con aceto e timo, crema di parmigiano. Con patate fritte.</p>
+                <p>Pane fresco, hamburger di maiale da 160 gr., provola affumicata,melanzane aromatizzate con aceto e timo, crema di parmigiano. <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>PORK & PORK</h4>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane fresco, hamburger di maialealla Guinnessda 160 gr., pancetta, cheddar,provola affumicata,pomodoro, insalata, salsa BBQ. Con patate fritte.</p>
+                <p>Pane fresco, hamburger di maialealla Guinnessda 160 gr., pancetta, cheddar,provola affumicata,pomodoro, insalata, salsa BBQ. <br> Con patate fritte.</p>
               </div>
-              <div class="item">
-                <h4>RED BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, senape, sesamo">!</div>
-                <span></span>
-                <span>€11,00</span>
-                <p>Pane fresco, hamburger di manzo da 160 gr., provola affumicata piccante, insalata, salsa hot al pomodoro. Con patate fritte piccanti.</p>
-              </div>
+             
+            </div> <!--End Burger-->
+            <div class="col-sm-6">
+                <div class="item">
+                    <h4>RED BURGER</h4>
+                    <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, senape, sesamo">!</div>
+                    <span></span>
+                    <span>€11,00</span>
+                    <p>Pane fresco, hamburger di manzo da 160 gr., provola affumicata piccante, insalata, salsa hot al pomodoro. <br> Con patate fritte piccanti.</p>
+                  </div>
+    
               <div class="item">
                 <h4>CHICKENBURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€9,00</span>
-                <p>Pane fresco, hamburgerdi polloda 160gr.,caesar salad, pomodoro, insalata. Con patate fritte.</p>
+                <p>Pane fresco, hamburgerdi polloda 160gr.,caesar salad, pomodoro, insalata. <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>BO-BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane fresco, hamburger di circa 150 gr., a base di mortadella (con parmigiano reggiano,pane grattugiato e uova), glassa di aceto balsamico di Modena, pomodoro, insalata. Con patate fritte.</p>
+                <p>Pane fresco, hamburger di circa 150 gr., a base di mortadella (con parmigiano reggiano,pane grattugiato e uova), glassa di aceto balsamico di Modena, pomodoro, insalata. <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>FISH BURGER</h4>
                 <span></span>
                 <span>€11,00</span>
-                <p>Pane kamut, hamburger di merluzzo, zucchine marinate con limone\menta, salsa a base maionese, insalata. Con patate fritte.</p>
+                <p>Pane kamut, hamburger di merluzzo, zucchine marinate con limone\menta, salsa a base maionese, insalata. <br> Con patate fritte.</p>
               </div>
               <div class="item">
                 <h4>VEGGIE-BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape">!</div>
                 <span></span>
                 <span>€9,00</span>
                 <p>Pane kamut, hamburger  di circa 150 gr. (con patate, rapa rossa,legumi e peperoncino), pomodori secchi, insalata. Con verdure pastellate fritte.</p>
               </div>
               <div class="item">
                 <h4>CHEESE BURGER</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Sedano">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Sedano">!</div>
                 <span></span>
                 <span>€5,00</span>
                 <p>Pane, hamburger di manzoda 90gr, insalata, formaggi edamere cheddar.</p>
@@ -294,32 +513,169 @@
                 <span>€6,00</span>
                 <p>Pane, hamburger di manzoda 90gr, pancetta,  pomodoro, edamer, ketchup, insalata.</p>
               </div>
-            </div> <!--End Burger-->
+            </div>
+          </div>
+          <div class="text-center">
+              <a id="9"></a><h3>I FRITTI</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="item">
+                  <h4>PATATE FRITTE</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                  <span></span>
+                  <span>€3,50</span>
+                </div>
+                <div class="item">
+                  <h4>PATATE FRITTE “PICCANTI”</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                  <span></span>
+                  <span>€3,50</span>
+                </div>
+                <div class="item">
+                  <h4>PATATE FRITTE CACIO & PEPE</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Senape, Sesamo">!</div>
+                  <span></span>
+                  <span>€4,50</span>
+                </div>
+                <div class="item">
+                  <h4>ANELLI DI CIPOLLA ALLA BIRRA(5pz)</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                  <span></span>
+                  <span>€4,50</span>
+                </div>
+                <div class="item">
+                  <h4>BASTONCINI DI MOZZARELLA ALLA BIRRA(6pz)</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Crostacei, Uova, Pesce, Arachidi, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti, Molluschi">!</div>
+                  <span></span>
+                  <span>€4,50</span>
+                </div>
+                <div class="item">
+                  <h4>OLIVE ALL’ASCOLANA (8pz)</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Crostacei, Uova, Pesce, Soia, Latte, Sedano, Senape, Sesamo, Molluschi">!</div>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="item">
+                  <h4>JALAPENO AL FORMAGGIO(6pz)</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+                <div class="item">
+                  <h4>VERDURE MISTE PASTELLATE</h4>
+                  <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape">!</div>
+                  <span></span>
+                  <span>€3,50</span>
+                </div>
+                <div class="item">
+                  <h4>CREMA FRITTA con zucchero a velo</h4>
+                  <span></span>
+                  <span>€4,00</span>
+                </div>
+                <div class="item">
+                  <h4>FRITTINO MISTO • 2 polpette, 2 anelli cipolla, 2 mozzarelline e patate</h4>
+                  <span></span>
+                  <span>€6,00</span>
+                </div>
+                <div class="item">
+                  <h4>GRAN FRITTO • polpette,anellidi cipolla, olive, mozzarelline, jalapeño, patate</h4>
+                  <span></span>
+                  <span>€12,00</span>
+                </div>
+              </div>
+            </div>
+          <div class="text-center">
+            <a id="FOOD"></a><h3>FOOD</h3>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="item">
+                <h4>POLPETTE FRITTE BOLOGNESI</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
+                <span></span>
+                <span>€7,00</span>
+                <p>Carne suina e bovina, mortadella, uova, pane, parmigiano, (150gr.). <br> Con patate fritte.</p>
+              </div>
+              <div class="item">
+                <h4>POLPETTE FRITTE VEGETARIANE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, sedano, an.solforosa e solfiti">!</div>
+                <span></span>
+                <span>€7,00</span>
+                <p>Melanzane, provola, uova, pane, parmigiano. (150gr.). Con verdure pastellate fritte.</p>
+              </div>
+              <div class="item">
+                <h4>CHICKEN NUGGETS</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte">!</div>
+                <span></span>
+                <span>€7,00</span>
+                <p>Carne di pollo (160 gr) impanata con farina di frumento. <br> Con patate fritte.</p>
+              </div>
+              <!--END Roba fritta-->
+              <div class="item">
+                <h4>FOCACCIA GENOVESE</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Con prosciutto cotto ed edamer. Oppure con prosciutto crudo di Parma e provola affumicata. Oppure con tonno,maionese, pomodoro,insalata. Oppure vuota (€3,00).</i></p>
+              </div>
+              <div class="item">
+                <h4>PIADINA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Soia, Pesce, Latte, Sedano, Senape, Sesamo">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Con prosciutto crudo di Parma ed edamer. Oppure con prosciutto cottoed edamer. Oppure con pomodoro, melanzane, edamer, insalata.</p>
+              </div>
+              <div class="item">
+                <h4>PIZZA MARGHERITA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
+                <span></span>
+                <span>€5,00</span>
+                <p>Margherita </p>
+              </div>
+              <div class="item">
+                <h4>PIZZA A SCELTA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Chiedere al banco.">!</div>
+                <span></span>
+                <span>€6,00</span>
+                <p>Con prosciutto cotto. Oppure con tonno. Oppure con würstel.</p>
+              </div>
+              <div class="item">
+                <h4>PIZZA CRUDO DI PARMA</h4>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
+                <span></span>
+                <span>€7,00</span>
+                <p>Con prosciutto crudo di Parma.</p>
+              </div>
+             
+            </div>
             <div class="col-sm-6">
               <div class="item">
                 <h4>HOT DOG BASE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€4,00</span>
                 <p>Pane fresco, würstel di suino e manzo, insalata, senape.</p>
               </div>
               <div class="item">
                 <h4>HOT DOG CHEDDAR</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€5,00</span>
                 <p>Pane fresco, würstel di suino e manzo, cheddar, insalata, maionese.</p>
               </div>
               <div class="item">
                 <h4>HOT DOG ONION</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€5,00</span>
                 <p>Pane fresco, würstel di suino e manzo, cipolla caramellata.</p>
               </div>
               <div class="item">
                 <h4>HOT DOG PICCANTE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€5,00</span>
                 <p>Pane fresco, würstel di suino e manzo,  provola piccante, salsahot al pomodoro.</p>
@@ -327,10 +683,10 @@
               <!--END HOT DOG-->
               <div class="item">
                 <h4>CLUB SANDWICH</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, An. solforosa e solfiti">!</div>
                 <span></span>
                 <span>€10,00</span>
-                <p>Pane, edamer,prosciutto cotto, pancetta affumicata, insalata, pomodoro, salsa a base senape. Con patate fritte.</i></p>
+                <p>Pane, edamer,prosciutto cotto, pancetta affumicata, insalata, pomodoro, salsa a base senape. <br> Con patate fritte.</i></p>
               </div>
               <div class="item">
                 <h4>CLUB SANDWICH VEGETARIANO</h4>
@@ -341,143 +697,14 @@
               <!--END CLUB SADNWHICH-->
               <div class="item">
                 <h4>FISH & CHIPS</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, Senape">!</div>
                 <span></span>
                 <span>€6,00</span>
-                <p>Bocconcini di Merluzzo (180 gr.) con patate fritte.</p>
-              </div>
-              <div class="item">
-                <h4>POLPETTE FRITTE BOLOGNESI</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€7,00</span>
-                <p>Carne suina e bovina, mortadella, uova, pane, parmigiano, (150gr.). Con patate fritte.</p>
-              </div>
-              <div class="item">
-                <h4>POLPETTE FRITTE VEGETARIANE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, sedano, an.solforosa e solfiti">!</div>
-                <span></span>
-                <span>€7,00</span>
-                <p>Melanzane, provola, uova, pane, parmigiano. (150gr.). Con verdure pastellate fritte.</p>
-              </div>
-              <div class="item">
-                <h4>CHICKEN NUGGETS</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte">!</div>
-                <span></span>
-                <span>€7,00</span>
-                <p>Carne di pollo (160 gr) impanata con farina di frumento. Con patate fritte.</p>
-              </div>
-              <!--END Roba fritta-->
-              <div class="item">
-                <h4>FOCACCIA GENOVESE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€5,00</span>
-                <p>Con prosciutto cotto ed edamer. Oppure con prosciutto crudo di Parma e provola affumicata. Oppure con tonno,maionese, pomodoro,insalata. Oppure vuota (€3,00).</i></p>
-              </div>
-              <div class="item">
-                <h4>PIADINA</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Soia, Pesce, Latte, Sedano, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€5,00</span>
-                <p>Con prosciutto crudo di Parma ed edamer. Oppure con prosciutto cottoed edamer. Oppure con pomodoro, melanzane, edamer, insalata.</p>
-              </div>
-              <div class="item">
-                <h4>PIZZA MARGHERITA</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€5,00</span>
-                <p>Margherita </p>
-              </div>
-              <div class="item">
-                <h4>PIZZA A SCELTA</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Chiedere al banco.">!</div>
-                <span></span>
-                <span>€6,00</span>
-                <p>Con prosciutto cotto. Oppure con tonno. Oppure con würstel.</p>
-              </div>
-              <div class="item">
-                <h4>PIZZA CRUDO DI PARMA</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€7,00</span>
-                <p>Con prosciutto crudo di Parma.</p>
-              </div>
-             
-            </div>
-          </div>
-          <div class="text-center">
-            <a id="9"></a><h3>I FRITTI</h3>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="item">
-                <h4>PATATE FRITTE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€3,50</span>
-              </div>
-              <div class="item">
-                <h4>PATATE FRITTE “PICCANTI”</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€3,50</span>
-              </div>
-              <div class="item">
-                <h4>PATATE FRITTE CACIO & PEPE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€4,50</span>
-              </div>
-              <div class="item">
-                <h4>ANELLI DI CIPOLLA ALLA BIRRA(5pz)</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€4,50</span>
-              </div>
-              <div class="item">
-                <h4>BASTONCINI DI MOZZARELLA ALLA BIRRA(6pz)</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Crostacei, Uova, Pesce, Arachidi, Soia, Latte, Sedano, Senape, Sesamo, An. solforosa e solfiti, Molluschi">!</div>
-                <span></span>
-                <span>€4,50</span>
-              </div>
-              <div class="item">
-                <h4>OLIVE ALL’ASCOLANA (8pz)</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Crostacei, Uova, Pesce, Soia, Latte, Sedano, Senape, Sesamo, Molluschi">!</div>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <h4>JALAPENO AL FORMAGGIO(6pz)</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape, Sesamo">!</div>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-              <div class="item">
-                <h4>VERDURE MISTE PASTELLATE</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, Senape">!</div>
-                <span></span>
-                <span>€3,50</span>
-              </div>
-              <div class="item">
-                <h4>CREMA FRITTA con zucchero a velo</h4>
-                <span></span>
-                <span>€4,00</span>
-              </div>
-              <div class="item">
-                <h4>FRITTINO MISTO • 2 polpette, 2 anelli cipolla, 2 mozzarelline e patate</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-              <div class="item">
-                <h4>GRAN FRITTO • polpette,anellidi cipolla, olive, mozzarelline, jalapeño, patate</h4>
-                <span></span>
-                <span>€12,00</span>
+                <p>Bocconcini di Merluzzo (180 gr.) <br> Con patate fritte.</p>
               </div>
             </div>
           </div>
+
           <div class="text-center">
             <a id="9"></a><h3>DOLCI</h3>
           </div>
@@ -485,13 +712,13 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>SEMIFREDDO AL MASCARPONE Ns. produzione</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
               <div class="item">
                 <h4>TORTA AL CIOCCOLATO Ns. produzione</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
@@ -499,13 +726,13 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>TARTUFO NERO</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Frutta a guscio(mandorle)">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Frutta a guscio(mandorle)">!</div>
                 <span></span>
                 <span>€4,00</span>
               </div>
               <div class="item">
                 <h4>TARTUFO NERO AFFOGATO AL CAFFE’</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Frutta a guscio(mandorle)">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Soia, Latte, Senape, Sesamo, Frutta a guscio(mandorle)">!</div>
                 <span></span>
                 <span>€5,00</span>
               </div>
@@ -518,7 +745,7 @@
             <div class="col-sm-6">
               <div class="item">
                 <h4>POP CORN CALDI</h4>
-                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="Glutine, Uova, Pesce, Latte, senape, sesamo">!</div>
+                <div class="note badge spicy" data-toggle="tooltip" data-placement="right" title="ALLERGENI:  Glutine, Uova, Pesce, Latte, senape, sesamo">!</div>
                 <span></span>
                 <span>€3,00</span>
                 <p>Normali o al burro (se normali senza Latte).</p>
@@ -551,205 +778,6 @@
             </div>
           </div>
           <div class="text-center">
-            <h3>BIRRE IN BOTTIGLIA</h3>
-            <h5>IL NOSTRO ASSORTIMENTO DI BIRRE IN BOTTIGLIA VARIA COSTANTEMENTE, PER ESSERE SEMPRE AGGIORNATO QUALITATIVAMENTE. TROVATE QUI UN'INDICAZIONE DI MASSIMA. GUARDATE L'ESPOSIZIONE AL BANCO.</h5>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>BUD 330ml</h4>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>TENNENT'S SUPER 330ml</h4>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>CORONA 335ml</h4>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>ANALCOLICA 330ml</h4>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>AYINGER</h4>
-                <span></span>
-                <span>€5,50</span>
-                <p>JAHRUNDERT / BRAUWEISS / LAGERHELL / KELLER</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>ICHNUSA NON FILTRATA 500 ml</h4>
-                <span></span>
-                <span>€5,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>GUINNESS 500 ml: WEST INDIES</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>MAHR’S500 ml: PILS / UNGESPUNDET KELLER “U”</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>WESTMALLE330 ml: DUBBEL / TRIPEL</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>ST. BERNARDUS330 ml: WIT</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>RODENBACH GRAND CRU 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>BUCKWEAT WHITE 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>NOBLESSE 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>GOSE 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>SAISON DUPONT 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>ORVAL 330 ml</h4>
-                <span></span>
-                <span>€6,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>SANTA GOSE 330 ml</h4>
-                <span></span>
-                <span>€6,50</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>IVANHOE 500ml</h4>
-                <span></span>
-                <span>€6,50</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>St.AUSTELL 500 ml: PROPER JOB</h4>
-                <span></span>
-                <span>€6,50</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>SHEPHERDNEAME 500ml: 1698 / SPITFIRE</h4>
-                <span></span>
-                <span>€6,50</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>RIDGEWAYG.F.: 500 ml  BLUE / IPA / BITTER</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>St.AUSTELL 500 ml: BIG JOB</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>ST.PETER’S 500 ml:CREAM STOUT/ MILD/ PORTER</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="item">
-                <h4>OUD BERSEEL375 ml: OUDE GEUZE/ OUDE KRIEK</h4>
-                <span></span>
-                <span>€8,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="item">
-                <h4>OERBIER RESERVA330ml</h4>
-                <span></span>
-                <span>€8,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
             <h3>TIPICI DELL’IRLANDA CALDI</h3>
           </div>
           <div class="row">
@@ -774,8 +802,15 @@
                 <span>€7,00</span>
               </div>
             </div>
+            <div class="col-sm-12">
+                <div class="item">
+                  <h4>HOT PORT</h4>
+                  <span></span>
+                  <span>€5,00</span>
+                </div>
+              </div>
           </div>
-          <div class="text-center">
+          <div id="liquori"class="text-center">
             <h3>LIQUORI D’IRLANDA</h3>
           </div>
           <div class="row">
@@ -786,14 +821,14 @@
                 <span>€4,00</span>
               </div>
             </div>
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
               <div class="item">
                 <h4>BAILEYS  CHOCOLATE</h4>
                 <span></span>
                 <span>€4,00</span>
                 <p>Baileys con cioccolato belga</p>
               </div>
-            </div>
+            </div> -->
             <div class="col-sm-4">
               <div class="item">
                 <h4>SHERIDAN’S</h4>
@@ -823,7 +858,7 @@
             </div>
           </div>
             <div class="text-center">
-              <h3>COCKTAIL</h3>
+              <h3>LIQUORI E AMARI</h3>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -896,13 +931,6 @@
                   <span>€4,00</span>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="item">
-                  <h4>HOT PORT</h4>
-                  <span></span>
-                  <span>€5,00</span>
-                </div>
-              </div>
           </div>
           <div class="text-center">
             <h3>VINI</h3>
@@ -936,8 +964,8 @@
      
 
           <div class="text-center">
-            <h3>WHISKIES</h3>
-            <h5>Irlandesi</h5>
+            <h3>WHISKIES IRLANDESI</h3>
+            <!-- <h5>Irlandesi</h5> -->
           </div>
           <div class="row">
             <div class="col-sm-6">
@@ -1022,8 +1050,8 @@
           </div>
 
           <div class="text-center">
-            <h3>SCOTCH</h3>
-            <h5>Distillati due volte</h5>
+            <h3>WHISKIES SCOZZESI</h3>
+            <!-- <h5>Distillati due volte</h5> -->
           </div>
           <div class="row">
             <div class="col-sm-6">
@@ -1095,14 +1123,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
               <div class="item">
                 <h4>MACHRIE MOOR</h4>
                 <span></span>
                 <span>€7,00</span>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6"> -->
               <div class="item">
                 <h4>LAGAVULIN</h4>
                 <span></span>
@@ -1113,7 +1141,7 @@
           </div>
           <div class="text-center">
             <h3>BOURBON</h3>
-            <h5>Distillati una volta con malto di granoturco</h5>
+            <!-- <h5>Distillati una volta con malto di granoturco</h5> -->
           </div>
           <div class="row">
             <div class="col-sm-6">
@@ -1143,7 +1171,7 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
+          <div id="analcolici"class="text-center">
             <h3>ANALCOLICI</h3>
           </div>
           <div class="row">
@@ -1242,34 +1270,10 @@
                 <span>€3,00</span>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <h4>CORNISH ORCHARDS</h4>
-                <span></span>
-                <span>€3,00</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="item">
-                <h4>Succo di Mela</h4>
-                <span></span>
-                <span>€4,00</span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <h4>ESTRATTO DI SAMBUCO</h4>
-                <span></span>
-                <span>€4,00</span>
-              </div>
-            </div>
-          </div>
+           
         </div>
       </div>
     </div>
-    <button id="Allergeni"class="kc_fab_main_btn_allergeni"data-toggle="modal" data-target="#allergeniModal"><img width="28px"src="../assets/pngegg.png"/></button>
     <button id="itToEn"class="kc_fab_main_btn"><img width="28px"src="../assets/uk_flag.png"/></button>
     <footer class="footer">
       <div class="container">
