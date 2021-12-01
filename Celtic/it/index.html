@@ -11,6 +11,7 @@
     <link href="../css/menu.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/index.js"></script>
   </head>
@@ -40,7 +41,7 @@
             <div class="modal-header">
               <h5 class="modal-title text-center w-100">🛎️Attenzione🛎️</h5>
               <button type="button" style="position: absolute; padding: 0!important; margin: 0!important; top:8px; right: 32px; font-size: 50px;"class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true" style="color: red;">&times;</span>
               </button>
             </div>
             <div class="modal-body">
@@ -65,16 +66,16 @@
           </div>
         </div>
         <div class="col-12">
-          <h1 class="my-3 text-center">Irish Pub Celtic Druid</h1>
+          <h1 class="my-3 text-center" id="Title">Irish Pub Celtic Druid</h1>
           <div class="row">
             <div class="col-md-12 mx-1">
-                <a href="#4"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Birre</a>
-                <a href="#BURGER"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Burger</a>
-                <a href="#FOOD"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Food</a>
-                <a href="#BIB"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Birre in bottiglia</a>
-                <a href="#liquori"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Superalcolici</a>
-                <a href="#analcolici"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px">Analcolici</a>
-                <a data-toggle="modal" data-target="#allergeniModal" class="badge badge-pill badge-secondary mt-2" style="border-radius: 100px">Vegetariano</a>
+                <a href="#4"class="badge badge-pill badge-secondary mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Birre</a>
+                <a href="#BURGER"class="badge badge-pill badge-danger mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Burger</a>
+                <a href="#FOOD"class="badge badge-pill badge-dark mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Food</a>
+                <a href="#BIB"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Birre in bottiglia</a>
+                <a href="#liquori"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Superalcolici</a>
+                <a href="#analcolici"class="badge badge-pill badge-primary mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey">Analcolici</a>
+                <a data-toggle="modal" data-target="#allergeniModal" class="badge badge-pill badge-secondary mt-2" style="border-radius: 100px; font-weight: 700;background-color: grey; color: white!important">Vegetariano</a>
             </div>
           </div>
           <div class="text-center">
@@ -409,11 +410,7 @@
           <div class="text-center">
             <a id="BURGER"></a><h3>BURGER</h3>
           </div>
-          <div class="jumbotron">
-              <p class="lead">Tappa sui punti esclamativi per controllare gli allergeni di un piatto. Non sei sicuro? Chiedi al bancone!</p>
-              <div style="border-bottom: 1px solid black; margin: 1rem 0rem;"> </div>
-              <p class="lead">Oppure, scarica la lista degli allergeni</p><a target="_blank" class="btn btn-primary" href="../assets/download/libroallerg_561_20200216074522.pdf">Download</a>
-          </div>
+
               <div class="row">
             <div class="col-sm-6">
               <div class="item">
@@ -777,6 +774,11 @@
               </div>
             </div>
           </div>
+          <div class="jumbotron">
+            <p class="lead">Tappa sui punti esclamativi per controllare gli allergeni di un piatto. Non sei sicuro? Chiedi al bancone!</p>
+            <div style="border-bottom: 1px solid black; margin: 1rem 0rem;"> </div>
+            <p class="lead">Oppure, scarica la lista degli allergeni</p><a target="_blank" class="btn btn-primary" href="../assets/download/libroallerg_561_20200216074522.pdf">Download</a>
+        </div>
           <div class="text-center">
             <h3>TIPICI DELL’IRLANDA CALDI</h3>
           </div>
@@ -1123,14 +1125,7 @@
             </div>
           </div>
           <div class="row">
-            <!-- <div class="col-sm-6">
-              <div class="item">
-                <h4>MACHRIE MOOR</h4>
-                <span></span>
-                <span>€7,00</span>
-              </div>
-            </div>
-            <div class="col-sm-6"> -->
+            <div class="col-sm-6"> 
               <div class="item">
                 <h4>LAGAVULIN</h4>
                 <span></span>
@@ -1139,6 +1134,8 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
           <div class="text-center">
             <h3>BOURBON</h3>
             <!-- <h5>Distillati una volta con malto di granoturco</h5> -->
@@ -1265,15 +1262,54 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="item">
-                <h4>ACE–Ananas–Arancia–Pera-Pesca–Pompelmo</h4>
+                <h4>ACE</h4>
                 <span></span>
                 <span>€3,00</span>
               </div>
             </div>
-           
+            <div class="col-sm-6">
+              <div class="item">
+                <h4>Ananas</h4>
+                <span></span>
+                <span>€3,00</span>
+              </div>
+            </div>
         </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="item">
+              <h4>Arancia</h4>
+              <span></span>
+              <span>€3,00</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="item">
+              <h4>Pera</h4>
+              <span></span>
+              <span>€3,00</span>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="item">
+            <h4>Pesca</h4>
+            <span></span>
+            <span>€3,00</span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="item">
+            <h4>Pompelmo</h4>
+            <span></span>
+            <span>€3,00</span>
+          </div>
+        </div>
+    </div>
       </div>
     </div>
+    <a href="#Title"id="goBackbtn"class="kc_fab_main_btn_goback"><i class="fas fa-arrow-up"></i></a>
     <button id="itToEn"class="kc_fab_main_btn"><img width="28px"src="../assets/uk_flag.png"/></button>
     <footer class="footer">
       <div class="container">
