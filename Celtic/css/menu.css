@@ -155,7 +155,15 @@ html {
     mix-blend-mode: difference;
   }
   .darkmode-toggle{
+    display: none!important;
     z-index: 1000;
+    position: absolute!important;
+  }
+  .darkmode-layer{
+    display: none!important;
+    z-index: 1000;
+    position: absolute!important;
+
   }
   @media screen and (max-width: 600px) {
    h3::before, h3::after{
