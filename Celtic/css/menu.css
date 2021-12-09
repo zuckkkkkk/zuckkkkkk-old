@@ -118,6 +118,14 @@ html {
     color:#ec4e00;
     border-color:#ec4e00;
   }
+  .scaffale{
+    background-image: url("../assets/Scaffale.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-top: 126%; /* (img-height / img-width * container-width) */
+    /* (853 / 1280 * 100) */
+  }
   .item span:nth-of-type(2n) {
     position:absolute;
     font-size:22px;
@@ -125,6 +133,7 @@ html {
     right:0;
     padding-left:8px;
     z-index:0;
+    line-height: 23px;
   }
   .item h4 {
     display:inline-block;
@@ -179,10 +188,10 @@ html {
     /* bottom: 96px;
     right: 32px; */
     background-color:#5236f4;
-    width:3rem;
-    max-width: 3rem!important;
-    max-height: 3rem!important;
-    height:3rem;
+    width:40px!important;
+    max-width: 40px!important;
+    max-height: 40px!important;
+    height:40px!important;
     border-radius:100%;
     background:#3669f4;
     border:none;
@@ -191,6 +200,7 @@ html {
     font-size:36px;
     transition:.3s;  
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow: hidden!important;
   }
   .kc_fab_main_btn_goback{
     display: flex;
