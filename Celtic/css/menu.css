@@ -126,6 +126,22 @@ html {
     padding-top: 126%; /* (img-height / img-width * container-width) */
     /* (853 / 1280 * 100) */
   }
+  .scaffale2{
+    background-image: url("../assets/scaffale2.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-top: 126%; /* (img-height / img-width * container-width) */
+    /* (853 / 1280 * 100) */
+  }
+  .scaffale3{
+    background-image: url("../assets/scaffale3.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-top: 126%; /* (img-height / img-width * container-width) */
+    /* (853 / 1280 * 100) */
+  }
   .item span:nth-of-type(2n) {
     position:absolute;
     font-size:22px;
