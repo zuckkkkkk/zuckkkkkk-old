@@ -26,7 +26,7 @@
     <div class="modal fade" id="allergeniModal" tabindex="-1" aria-labelledby="allergeniModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" id="Veg">
             <h5 class="modal-title text-center w-100" id="allergeniModalLabel">Piatti vegeteriani</h5>
             <button type="button"
               style="position: absolute; padding: 0!important; margin: 0!important; top:8px; right: 32px; font-size: 50px;"
@@ -56,7 +56,7 @@
               </div>
             </div>
 
-            <div class="text-center">
+            <div  id="frittititle" class="text-center">
               <a id="9"></a>
               <h3>I FRITTI</h3>
             </div>
@@ -125,8 +125,7 @@
               </div>
             </div>
 
-            <div class="text-center">
-              <a id="FOOD"></a>
+            <div  class="text-center">
               <h3>FOOD</h3>
             </div>
 
@@ -278,7 +277,7 @@
       </div>
     </div>
     <div class="row">
-      <div id="happyhour" class="jumbotron w-100">
+      <div id="happyhour" class="jumbotron w-100" style="padding-bottom: 0!important;">
         <div class="container">
           <h1 class="display-4">
             <div class="text-center">
@@ -287,6 +286,9 @@
             </div>
           </h1>
           <p class="lead text-center">Valido dall'apertura fino alle ore 20:00.</p>
+          <div class="jumbotron hh">
+         
+          </div>
         </div>
       </div>
 
@@ -323,11 +325,11 @@
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;">Alcolici</a>
             <a href="#analcolici" class="badge badge-pill badge-primary mt-2"
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;">Analcolici</a>
-            <a href="#BURGER" class="badge badge-pill badge-danger mt-2"
+            <a href="#burgertitle" class="badge badge-pill badge-danger mt-2"
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;">Burger</a>
-            <a href="#9" class="badge badge-pill badge-danger mt-2"
+            <a href="#frittititle" class="badge badge-pill badge-danger mt-2"
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;">Fritti</a>
-            <a href="#FOOD" class="badge badge-pill badge-dark mt-2"
+            <a href="#foodtitle" class="badge badge-pill badge-dark mt-2"
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;">Food</a>
             <a data-toggle="modal" data-target="#allergeniModal" class="badge badge-pill badge-secondary mt-2"
               style="border-radius: 100px; font-weight: 700;background-color: #f28e1c;; color: white!important">Vegetariano</a>
@@ -343,88 +345,83 @@
             <div class="item">
               <h4>GUINNESS</h4>
               <span></span>
-              <span>€5,50 • €3,50 <BR> 0,56L • 0,28L</span>
+              <span><span class="reset-this"> 0,56L</span> €5,50 - <span class="reset-this"> 0,28L</span> €3,50</span>
               <p style="text-align: left;">alc. 4,2 % vol. STOUT- IRLANDA - SPILLATA A CARBOAZOTO </p>
             </div>
             <div class="item">
               <h4>HARP LAGER </h4>
               <span></span>
-              <span>€5,50 • €3,50</span>
-              <p>alc. 5 % vol. LAGER - IRLANDA - SPILLATA A CARBOAZOTO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€5,50 - <span class="reset-this"> 0,28L</span> €3,50</span>
+              <p>alc. 5 % vol. LAGER - IRLANDA - SPILLATA A CARBOAZOTO</p>
             </div>
             <div class="item">
               <h4>HARP STRONG</h4>
               <span></span>
-              <span>€6,00 • €4,00</span>
-              <p>alc. 6,4 % vol. STRONG LAGER - IRLANDA - SPILLATA A CARBOAZOTO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,00 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 6,4 % vol. STRONG LAGER - IRLANDA - SPILLATA A CARBOAZOTO</p>
             </div>
             <div class="item">
               <h4>HOP HOUSE 13</h4>
               <span></span>
-              <span>€6,00 • €4,00</span>
-              <p>alc. 5,0 % vol. LAGER - IRLANDA - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,00 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 5,0 % vol. LAGER - IRLANDA</p>
             </div>
             <div class="item">
               <h4>SMITHWICK’S </h4>
               <span></span>
-              <span>€5,50 • €3,50</span>
-              <p>alc. 3,8 % vol. RED ALE - IRLANDA - SPILLATA A CARBOAZOTO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€5,50 - <span class="reset-this"> 0,28L</span> €3,50</span>
+              <p>alc. 3,8 % vol. RED ALE - IRLANDA - SPILLATA A CARBOAZOTO</p>
             </div>
             <div class="item">
               <h4>KILKENNY CREAM</h4>
               <span></span>
-              <span>€5,50 • €3,50</span>
-              <p>alc. 4,3 % vol. RED ALE - IRLANDA - SPILLATA A CARBOAZOTO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€5,50 - <span class="reset-this"> 0,28L</span> €3,50</span>
+              <p>alc. 4,3 % vol. RED ALE - IRLANDA - SPILLATA A CARBOAZOTO</p>
             </div>
             <div class="item">
               <h4>KILKENNY STRONG</h4>
               <span></span>
-              <span>€6,00 • €4,00</span>
-              <p>alc. 6,4% vol. STRONG RED ALE - IRLANDA - SPILLATA A CARBOAZOTO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,00 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 6,4% vol. STRONG RED ALE - IRLANDA - SPILLATA A CARBOAZOTO</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="item">
-              <h4>BULLDOG STRONG LAGER - 0,56L • 0,28L</h4>
+              <h4>BULLDOG STRONG LAGER </h4>
               <span></span>
-              <span>€6,50 • €4,00</span>
-              <p>alc. 9,0 % vol. STRONG LAGER - INGHILTERRA - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,50 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 9,0 % vol. STRONG LAGER - INGHILTERRA</p>
             </div>
             <div class="item">
               <h4>PUNK IPA - BREWDOG</h4>
               <span></span>
-              <span>€6,00 • €4,00</span>
-              <p>alc. 5,6 %vol. INDIA PALE ALE -SCOZIA-SPILLATA SENZA AGGIUNTA DI GAS - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,00 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 5,6 %vol. INDIA PALE ALE -SCOZIA-SPILLATA SENZA AGGIUNTA DI GAS</p>
             </div>
             <div class="item">
               <h4>NECK OIL - BEAVERTOWN</h4>
               <span></span>
-              <span>€6,50 • €4,00</span>
-              <p>alc. 4,3 %vol. SESSION IPA - INGHILTERRA -SPILLATA SENZA AGGIUNTA DI GAS - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,50 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 4,3 %vol. SESSION IPA - INGHILTERRA -SPILLATA SENZA AGGIUNTA DI GAS</p>
             </div>
             <div class="item">
               <h4>BLANCHE DE BRUXELLES</h4>
               <span></span>
-              <span>€6,50 • €4,00</span>
-              <p>alc. 4,5 % vol. BIERE BLANCHE - BELGIO - 0,56L • 0,28L</p>
+              <span><span class="reset-this"> 0,56L</span>€6,50 - <span class="reset-this"> 0,28L</span> €4,00</span>
+              <p>alc. 4,5 % vol. BIERE BLANCHE - BELGIO</p>
             </div>
             <div class="item">
               <h4>URWEISSE - AYINGER</h4>
               <span></span>
-              <span>€5,50 • €4,00</span>
-              <p>alc. 5,8 % vol. HEFEWEIZEN - GERMANIA - 0,5L • 0,3L</p>
+              <span><span class="reset-this"> 0,5L</span>€5,50 - <span class="reset-this"> 0,3L</span> €4,00</span>
+              <p>alc. 5,8 % vol. HEFEWEIZEN - GERMANIA</p>
             </div>
-            <!-- <div class="item">
-                <h4>ERDINGER</h4>
-                <span></span>
-                <span>€5,50 • €4,00</span>
-                <p>alc. 5,3 % vol. HEFEWEIZEN - GERMANIA</p>
-              </div> -->
+  
             <div class="item">
               <h4>PILS - AYINGER</h4>
               <span></span>
-              <span>€5,50 • €3,50</span>
-              <p>alc. 5,0 % vol. PILSNER - GERMANIA - 0,5L • 0,2L</p>
+              <span><span class="reset-this"> 0,5L</span>€5,50 - <span class="reset-this"> 0,3L</span> €3,50</span>
+              <p>alc. 5,0 % vol. PILSNER - GERMANIA</p>
             </div> -
           </div>
         </div>
@@ -482,9 +479,8 @@
             </div> -->
         </div>
 
-        <div class="text-center">
-          <a id="BURGER"></a>
-          <h3>BURGER</h3>
+        <div id="burgertitle"class="text-center">
+          <h3 id="BURGER">BURGER</h3>
         </div>
 
         <div class="row">
@@ -552,7 +548,7 @@
               title="ALLERGENI:  Glutine, Uova, Latte, Sedano, Senape">!</div>
               <span></span>
               <span>€10,00</span>
-              <p>Pane fresco, hamburger di maialealla Guinnessda 160 gr., pancetta, cheddar,provola affumicata,pomodoro,
+              <p>Pane fresco, hamburger di maiale alla Guinness da 160 gr., pancetta, cheddar,provola affumicata,pomodoro,
                 insalata, salsa BBQ. <br> Con patate fritte.</p>
             </div>
 
@@ -713,7 +709,7 @@
           </div>
         </div>
 
-        <div class="text-center">
+        <div id="foodtitle"  class="text-center">
           <a id="FOOD"></a>
           <h3>FOOD</h3>
         </div>
@@ -1140,7 +1136,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="item">
-              <h4>J.WALKERdouble black</h4>
+              <h4>J.WALKER double black</h4>
               <span></span>
               <span>€5,00</span>
             </div>
@@ -1240,7 +1236,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-sm-12">
         <div class="item">
           <h4>BULLEITOLD</h4>
@@ -1249,7 +1245,7 @@
           <p>10 anni</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="text-center">
       <h3>VINI</h3>
     </div>
@@ -1594,8 +1590,8 @@
       label: '🌓', // default: ''
       autoMatchOsTheme: true // default: true
     }
-    const darkmode = new Darkmode(options);
-    darkmode.showWidget();
+    // const darkmode = new Darkmode(options);
+    // darkmode.showWidget();
     $(window).on('load', function () {
       $('#info').modal('show');
     });
